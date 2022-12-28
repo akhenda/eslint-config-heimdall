@@ -2,7 +2,7 @@
 
 Shared ESLint configs for Node, Web, and universal Expo projects.
 
-[![Test, Release & Publish](https://github.com/akhenda/eslint-config-heimdall/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/akhenda/eslint-config-heimdall/actions/workflows/main.yml) ![npm](https://img.shields.io/npm/v/eslint-config-heimdall)
+[![Test, Release & Publish](https://github.com/akhenda/eslint-config-heimdall/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/akhenda/eslint-config-heimdall/actions/workflows/main.yml) ![npm](https://img.shields.io/npm/v/eslint-config-heimdall) ![Branches](./badges/coverage-branches.svg) ![Functions](./badges/coverage-functions.svg) ![Lines](./badges/coverage-lines.svg) ![Statements](./badges/coverage-statements.svg) ![Jest coverage](./badges/coverage-jest%20coverage.svg)
 
 ## Installation
 
@@ -88,3 +88,8 @@ You also can extend multiple configs, which is useful for projects that span sev
 This config is designed to mark severe problems (ex: syntax errors) as errors and stylistic issues as warnings. This lets your team apply policies like, "make sure a commit has no errors but ignore warnings if the commit didn't introduce them."
 
 It's also designed to be a more lenient config for teams who are stronger at decision-making and have a culture of osmotically learning coding guidelines and benefit more from flexibility than rigid rules.
+
+## Reference
+
+[How to Create Your Own ESLint Config Package](https://www.freecodecamp.org/news/creating-your-own-eslint-config-package/)
+[Expo Eslint Config](https://github.com/expo/expo/tree/main/packages/eslint-config-universe)

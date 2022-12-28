@@ -15,7 +15,16 @@ module.exports = {
     module: false,
     require: false,
   },
-  plugins: ['import', 'node', 'sort-class-members', 'sort-keys-fix', 'unused-imports', 'simple-import-sort'],
+  plugins: [
+    'import',
+    'node',
+    'airbnb-base',
+    'airbnb-typescript/base',
+    'sort-class-members',
+    'sort-keys-fix',
+    'unused-imports',
+    'simple-import-sort',
+  ],
   settings: {
     'import/extensions': jsExtensions,
     'import/ignore': [
