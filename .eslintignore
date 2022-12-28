@@ -1,0 +1,5 @@
+/node_modules/**
+**/node_modules
+**/*.min.js
+*.min.js
+*.stories.js

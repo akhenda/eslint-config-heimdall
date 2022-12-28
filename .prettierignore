@@ -1,0 +1,11 @@
+coverage
+dist
+.circleci
+.github
+build
+docs
+logs
+node_modules
+patches
+.lib.swcrc
+pnpm-lock.yaml
