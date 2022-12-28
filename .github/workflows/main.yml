@@ -1,4 +1,4 @@
-name: Test, Release & Publish
+name: Test, Release & Publish on merge
 'on':
   push:
     branches:
@@ -13,7 +13,11 @@ jobs:
       - uses: pnpm/action-setup@v2.2.4
         name: Install PNPM Packager
       - name: Install Deps & Run Tests
-        run: pnpm install --frozen-lockfile && pnpm run test
+        run: pnpm install --frozen-lockfile && pnpm run test:ci
+      - name: Generating coverage badges
+        uses: jpb06/jest-badges-action@latest
+        with:
+          branches: main,dev
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v3
         env:

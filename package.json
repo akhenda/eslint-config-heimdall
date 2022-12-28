@@ -38,7 +38,8 @@
   "packageManager": "pnpm@7.20.0",
   "scripts": {
     "gc": "git add . && git-cz",
-    "test": "jest",
+    "test": "jest --coverage",
+    "test:ci": "jest --ci --coverage",
     "lint": "eslint .",
     "lint:fix": "eslint --fix",
     "release": "semantic-release"
@@ -46,6 +47,9 @@
   "jest": {
     "testMatch": [
       "**/*.test.js"
+    ],
+    "coverageReporters": [
+      "json-summary"
     ]
   },
   "config": {
