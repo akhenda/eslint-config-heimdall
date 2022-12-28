@@ -17,7 +17,7 @@ module.exports = {
     { value: 'revert', name: 'revert:   Revert to a commit' },
   ],
 
-  scopes: [{ name: 'utils' }],
+  scopes: [{ name: 'utils' }, 'config'],
 
   // override the messages, defaults are as follows
   messages: {
