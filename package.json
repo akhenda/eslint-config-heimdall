@@ -1,0 +1,31 @@
+{
+  "name": "eslint-config-heimdall",
+  "version": "1.0.0",
+  "description": "ESLint and Prettier Config from Joseph Akhenda",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akhenda/eslint-config-heimdall.git"
+  },
+  "keywords": [
+    "javascript",
+    "typescript",
+    "eslint",
+    "config",
+    "airbnb",
+    "prettier",
+    "simple-sort",
+    "unused-imports"
+  ],
+  "author": "Joseph Akhenda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akhenda/eslint-config-heimdall/issues"
+  },
+  "homepage": "https://github.com/akhenda/eslint-config-heimdall#readme",
+  "devDependencies": {},
+  "dependencies": {}
+}
