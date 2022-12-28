@@ -4,7 +4,9 @@
   "description": "ESLint and Prettier Config from Joseph Akhenda",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix"
   },
   "repository": {
     "type": "git",
@@ -18,7 +20,9 @@
     "airbnb",
     "prettier",
     "simple-sort",
-    "unused-imports"
+    "unused-imports",
+    "eslint-config",
+    "expo"
   ],
   "author": "Joseph Akhenda",
   "license": "ISC",
@@ -26,6 +30,34 @@
     "url": "https://github.com/akhenda/eslint-config-heimdall/issues"
   },
   "homepage": "https://github.com/akhenda/eslint-config-heimdall#readme",
-  "devDependencies": {},
-  "dependencies": {}
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.47.1",
+    "@typescript-eslint/parser": "^5.47.1",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx": "^0.1.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.11",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-simple-import-sort": "^8.0.0",
+    "eslint-plugin-unused-imports": "^2.0.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=8.30",
+    "prettier": ">=2.8"
+  },
+  "peerDependenciesMeta": {
+    "prettier": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "eslint": "^8.30.0",
+    "prettier": "^2.8.1",
+    "typescript": "^4.9.4"
+  }
 }
