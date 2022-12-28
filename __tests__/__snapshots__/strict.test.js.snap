@@ -1,0 +1,714 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`doesn't conflict with Prettier: message 1`] = `
+"The following rules are unnecessary or might conflict with Prettier:
+
+- unicorn/empty-brace-spaces
+- unicorn/no-nested-ternary
+- unicorn/number-literal-case
+"
+`;
+
+exports[`doesn't conflict with Prettier: success 1`] = `false`;
+
+exports[`lints with the Strict config: fixtures/all-00.js 1`] = `
+{
+  "errorCount": 3,
+  "fatalErrorCount": 0,
+  "fixableErrorCount": 0,
+  "fixableWarningCount": 0,
+  "messages": [
+    {
+      "column": 1,
+      "endColumn": 2,
+      "endLine": 1,
+      "line": 1,
+      "message": "Definition for rule 'expires' was not found.",
+      "nodeType": null,
+      "ruleId": "expires",
+      "severity": 2,
+    },
+    {
+      "column": 8,
+      "endColumn": 9,
+      "endLine": 8,
+      "line": 8,
+      "message": "Please rename the variable \`e\`. Suggested names are: \`error\`, \`event\`. A more descriptive name will do too.",
+      "messageId": "suggestion",
+      "nodeType": "Identifier",
+      "ruleId": "unicorn/prevent-abbreviations",
+      "severity": 2,
+    },
+    {
+      "column": 8,
+      "endColumn": 12,
+      "endLine": 19,
+      "line": 19,
+      "message": "Use \`undefined\` instead of \`null\`.",
+      "messageId": "error",
+      "nodeType": "Literal",
+      "ruleId": "unicorn/no-null",
+      "severity": 2,
+      "suggestions": [
+        {
+          "data": {},
+          "desc": "Replace \`null\` with \`undefined\`.",
+          "fix": {
+            "range": [
+              232,
+              236,
+            ],
+            "text": "undefined",
+          },
+          "messageId": "replace",
+        },
+      ],
+    },
+  ],
+  "output": "import 'hi';
+
+import a from 'a';
+import { b } from 'b';
+import c, { c1 } from 'c';
+import * as d from 'd';
+
+import e from './e';
+
+export * as f from './f';
+
+export class Example {
+  static s = {
+    a,
+    b,
+  };
+
+  m = {};
+  #n = null;
+  x = 1000;
+  y = 100n;
+
+  hi() {
+    _function() ?? this.byeAsync();
+    this.m &&= {};
+    Example.s?.a?.();
+
+    try {
+      _function();
+    } catch {
+      _function();
+    }
+
+    try {
+      _function();
+    } catch {
+      _function();
+    }
+
+    this.#privateMethod();
+  }
+
+  async byeAsync() {
+    let f = 1;
+    _function(a, b, c, c1, d, e, f);
+
+
+    await import('z');
+    
+    for await (const v of gen()) {
+      _function(v);
+    }
+  }
+
+  #privateMethod() {}
+}
+
+function _function() {}
+
+function *gen() {}
+",
+  "suppressedMessages": [],
+  "usedDeprecatedRules": [],
+  "warningCount": 0,
+}
+`;
+
+exports[`lints with the Strict config: fixtures/all-01.ts 1`] = `
+{
+  "errorCount": 1,
+  "fatalErrorCount": 1,
+  "fixableErrorCount": 0,
+  "fixableWarningCount": 0,
+  "messages": [
+    {
+      "column": 1,
+      "fatal": true,
+      "line": 10,
+      "message": "Parsing error: Unexpected character '@'",
+      "ruleId": null,
+      "severity": 2,
+    },
+  ],
+  "source": "import 'hi';
+
+import a from 'a';
+import { b } from 'b';
+import c, { c1 } from 'c';
+import * as d from 'd';
+
+import e from './e';
+
+@d
+export class Example {
+  static s = {
+    a,
+    b,
+  };
+
+  m: object = {};
+  m: object = {};
+
+  hi(): void {
+    _fn();
+
+    try {
+      _fn();
+    } catch (_notIgnored) {
+      _fn();
+    }
+  }
+
+  async byeAsync(): Promise<void> {
+    _fn(a, b, c, c1, d, e);
+  }
+}
+
+function _fn(...args: any): void {}
+",
+  "suppressedMessages": [],
+  "usedDeprecatedRules": [],
+  "warningCount": 0,
+}
+`;
+
+exports[`lints with the Strict config: fixtures/all-02.js 1`] = `
+{
+  "errorCount": 1,
+  "fatalErrorCount": 0,
+  "fixableErrorCount": 0,
+  "fixableWarningCount": 0,
+  "messages": [
+    {
+      "column": 1,
+      "endColumn": 2,
+      "endLine": 1,
+      "line": 1,
+      "message": "Definition for rule 'expires' was not found.",
+      "nodeType": null,
+      "ruleId": "expires",
+      "severity": 2,
+    },
+  ],
+  "source": "const unused1 = 0;
+
+function unused2() {
+  const unused3 = 'hi';
+}
+",
+  "suppressedMessages": [],
+  "usedDeprecatedRules": [],
+  "warningCount": 0,
+}
+`;
+
+exports[`lints with the Strict config: fixtures/all-03.ts 1`] = `
+{
+  "errorCount": 1,
+  "fatalErrorCount": 1,
+  "fixableErrorCount": 0,
+  "fixableWarningCount": 0,
+  "messages": [
+    {
+      "column": 10,
+      "fatal": true,
+      "line": 4,
+      "message": "Parsing error: Unexpected token :",
+      "ruleId": null,
+      "severity": 2,
+    },
+  ],
+  "source": "const tsUnused1 = 0;
+
+function tsUnused2() {
+  const x: any = 'hi';
+  const asCast = x as string;
+  const angleBracketCast = <string>x;
+}
+",
+  "suppressedMessages": [],
+  "usedDeprecatedRules": [],
+  "warningCount": 0,
+}
+`;
+
+exports[`lints with the Strict config: fixtures/all-04.ts 1`] = `
+{
+  "errorCount": 1,
+  "fatalErrorCount": 1,
+  "fixableErrorCount": 0,
+  "fixableWarningCount": 0,
+  "messages": [
+    {
+      "column": 22,
+      "fatal": true,
+      "line": 1,
+      "message": "Parsing error: Unexpected token )",
+      "ruleId": null,
+      "severity": 2,
+    },
+  ],
+  "source": "export const blah = (): Array<string> => {
+  return ['1'];
+};
+",
+  "suppressedMessages": [],
+  "usedDeprecatedRules": [],
+  "warningCount": 0,
+}
+`;
+
+exports[`lints with the Strict config: fixtures/all-05.ts 1`] = `
+{
+  "errorCount": 1,
+  "fatalErrorCount": 1,
+  "fixableErrorCount": 0,
+  "fixableWarningCount": 0,
+  "messages": [
+    {
+      "column": 22,
+      "fatal": true,
+      "line": 1,
+      "message": "Parsing error: Unexpected token !",
+      "ruleId": null,
+      "severity": 2,
+    },
+  ],
+  "source": "export const blah = 3!!;",
+  "suppressedMessages": [],
+  "usedDeprecatedRules": [],
+  "warningCount": 0,
+}
+`;
+
+exports[`lints with the Strict config: fixtures/all-06.ts 1`] = `
+{
+  "errorCount": 1,
+  "fatalErrorCount": 1,
+  "fixableErrorCount": 0,
+  "fixableWarningCount": 0,
+  "messages": [
+    {
+      "column": 24,
+      "fatal": true,
+      "line": 1,
+      "message": "Parsing error: Unexpected token :",
+      "ruleId": null,
+      "severity": 2,
+    },
+  ],
+  "source": "export const numberTest: Number | null = null;
+export const booleanTest: Boolean | null = null;
+export const symbolTest: Symbol | null = null;
+export const objectTest: Object | null = null;
+export const stringTest: String | null = null;
+export const objectShorthandTest: {} | null = null;",
+  "suppressedMessages": [],
+  "usedDeprecatedRules": [],
+  "warningCount": 0,
+}
+`;
+
+exports[`lints with the Strict config: fixtures/all-07.js 1`] = `
+{
+  "errorCount": 3,
+  "fatalErrorCount": 0,
+  "fixableErrorCount": 0,
+  "fixableWarningCount": 0,
+  "messages": [
+    {
+      "column": 1,
+      "endColumn": 2,
+      "endLine": 1,
+      "line": 1,
+      "message": "Definition for rule 'expires' was not found.",
+      "nodeType": null,
+      "ruleId": "expires",
+      "severity": 2,
+    },
+    {
+      "column": 11,
+      "endColumn": 18,
+      "endLine": 1,
+      "line": 1,
+      "message": "Do not use "require".",
+      "messageId": "error/identifier",
+      "nodeType": "Identifier",
+      "ruleId": "unicorn/prefer-module",
+      "severity": 2,
+      "suggestions": [
+        {
+          "data": {
+            "name": "require",
+          },
+          "desc": "Switch to \`import\`.",
+          "fix": {
+            "range": [
+              0,
+              22,
+            ],
+            "text": "import a from 'a'",
+          },
+          "messageId": "suggestion/import",
+        },
+      ],
+    },
+    {
+      "column": 11,
+      "endColumn": 18,
+      "endLine": 3,
+      "line": 3,
+      "message": "Do not use "require".",
+      "messageId": "error/identifier",
+      "nodeType": "Identifier",
+      "ruleId": "unicorn/prefer-module",
+      "severity": 2,
+      "suggestions": [
+        {
+          "data": {
+            "name": "require",
+          },
+          "desc": "Switch to \`import\`.",
+          "fix": {
+            "range": [
+              45,
+              67,
+            ],
+            "text": "import e from 'e'",
+          },
+          "messageId": "suggestion/import",
+        },
+      ],
+    },
+  ],
+  "source": "const a = require('a');
+import d from './d';
+const e = require('e');
+import c from 'c';
+import b from 'b';
+
+export default a + b + c + d + e;",
+  "suppressedMessages": [],
+  "usedDeprecatedRules": [],
+  "warningCount": 0,
+}
+`;
+
+exports[`lints with the Strict config: fixtures/node-00.js 1`] = `
+{
+  "errorCount": 1,
+  "fatalErrorCount": 0,
+  "fixableErrorCount": 0,
+  "fixableWarningCount": 0,
+  "messages": [
+    {
+      "column": 1,
+      "endColumn": 2,
+      "endLine": 1,
+      "line": 1,
+      "message": "Definition for rule 'expires' was not found.",
+      "nodeType": null,
+      "ruleId": "expires",
+      "severity": 2,
+    },
+  ],
+  "output": "const data = Buffer.alloc(16);
+",
+  "suppressedMessages": [],
+  "usedDeprecatedRules": [],
+  "warningCount": 0,
+}
+`;
+
+exports[`lints with the Strict config: fixtures/web-native-00.js 1`] = `
+{
+  "errorCount": 1,
+  "fatalErrorCount": 1,
+  "fixableErrorCount": 0,
+  "fixableWarningCount": 0,
+  "messages": [
+    {
+      "column": 12,
+      "fatal": true,
+      "line": 33,
+      "message": "Parsing error: Unexpected token <",
+      "ruleId": null,
+      "severity": 2,
+    },
+  ],
+  "source": "import React from 'react';
+
+export default class Example extends React.Component {
+  state = {
+    x: 'x',
+    ...{
+      y: 'y',
+    },
+  };
+
+  props;
+
+  static getInitialProps() {}
+
+  constructor(props, context) {
+    super(props, context);
+    this.state = {
+      ...this.state,
+      x: props.x,
+    };
+  }
+
+  componentDidMount() {
+    fetch('http://example.com');
+    new XMLHttpRequest().send();
+    Uint16Array.from([1, 2, 3, 4, 5]);
+    new SharedArrayBuffer(16).slice();
+  }
+
+  shouldComponentUpdate() {}
+
+  render() {
+    return <div>{this.state.x}</div>;
+  }
+
+  _handleWhatever() {}
+}
+",
+  "suppressedMessages": [],
+  "usedDeprecatedRules": [],
+  "warningCount": 0,
+}
+`;
+
+exports[`lints with the Strict config: fixtures/web-native-01.js 1`] = `
+{
+  "errorCount": 1,
+  "fatalErrorCount": 1,
+  "fixableErrorCount": 0,
+  "fixableWarningCount": 0,
+  "messages": [
+    {
+      "column": 12,
+      "fatal": true,
+      "line": 12,
+      "message": "Parsing error: Unexpected token <",
+      "ruleId": null,
+      "severity": 2,
+    },
+  ],
+  "source": "import React from 'react';
+
+export default class Example extends React.Component {
+  props = { x: 'x' };
+
+  componentDidMount() {
+    alert('uh oh');
+    this.setState({});
+  }
+
+  render() {
+    return <div>{this.props.x}</div>;
+  }
+}
+",
+  "suppressedMessages": [],
+  "usedDeprecatedRules": [],
+  "warningCount": 0,
+}
+`;
+
+exports[`lints with the Strict config: fixtures/web-native-02.js 1`] = `
+{
+  "errorCount": 2,
+  "fatalErrorCount": 0,
+  "fixableErrorCount": 0,
+  "fixableWarningCount": 0,
+  "messages": [
+    {
+      "column": 1,
+      "endColumn": 2,
+      "endLine": 1,
+      "line": 1,
+      "message": "Definition for rule 'expires' was not found.",
+      "nodeType": null,
+      "ruleId": "expires",
+      "severity": 2,
+    },
+    {
+      "column": 12,
+      "endColumn": 16,
+      "endLine": 7,
+      "line": 7,
+      "message": "Use \`undefined\` instead of \`null\`.",
+      "messageId": "error",
+      "nodeType": "Literal",
+      "ruleId": "unicorn/no-null",
+      "severity": 2,
+      "suggestions": [
+        {
+          "data": {},
+          "desc": "Remove \`null\`.",
+          "fix": {
+            "range": [
+              134,
+              138,
+            ],
+            "text": "",
+          },
+          "messageId": "remove",
+        },
+        {
+          "data": {},
+          "desc": "Replace \`null\` with \`undefined\`.",
+          "fix": {
+            "range": [
+              134,
+              138,
+            ],
+            "text": "undefined",
+          },
+          "messageId": "replace",
+        },
+      ],
+    },
+  ],
+  "source": "import React from 'react';
+
+export default class Example extends React.Component {
+  componentDidUpdate() {}
+
+  render() {
+    return null;
+  }
+
+  componentDidMount() {}
+
+  static getInitialProps() {}
+}
+",
+  "suppressedMessages": [],
+  "usedDeprecatedRules": [],
+  "warningCount": 0,
+}
+`;
+
+exports[`lints with the Strict config: fixtures/web-native-03.js 1`] = `
+{
+  "errorCount": 1,
+  "fatalErrorCount": 1,
+  "fixableErrorCount": 0,
+  "fixableWarningCount": 0,
+  "messages": [
+    {
+      "column": 10,
+      "fatal": true,
+      "line": 5,
+      "message": "Parsing error: Unexpected token <",
+      "ruleId": null,
+      "severity": 2,
+    },
+  ],
+  "source": "import React from 'react';
+import { View } from 'react-native';
+
+export default function Example() {
+  return <View testID={'test'} />;
+}
+",
+  "suppressedMessages": [],
+  "usedDeprecatedRules": [],
+  "warningCount": 0,
+}
+`;
+
+exports[`lints with the Strict config: fixtures/web-native-04.js 1`] = `
+{
+  "errorCount": 2,
+  "fatalErrorCount": 0,
+  "fixableErrorCount": 0,
+  "fixableWarningCount": 0,
+  "messages": [
+    {
+      "column": 1,
+      "endColumn": 2,
+      "endLine": 1,
+      "line": 1,
+      "message": "Definition for rule 'expires' was not found.",
+      "nodeType": null,
+      "ruleId": "expires",
+      "severity": 2,
+    },
+    {
+      "column": 7,
+      "endColumn": 36,
+      "endLine": 9,
+      "line": 9,
+      "message": "Use destructured variables over properties.",
+      "messageId": "consistentDestructuring",
+      "nodeType": "MemberExpression",
+      "ruleId": "unicorn/consistent-destructuring",
+      "severity": 2,
+      "suggestions": [
+        {
+          "data": {
+            "expression": "properties.badConditionalHook",
+            "property": "badConditionalHook",
+          },
+          "desc": "Replace \`properties.badConditionalHook\` with destructured property \`badConditionalHook\`.",
+          "fix": {
+            "range": [
+              109,
+              228,
+            ],
+            "text": ", badConditionalHook } = properties;
+  useEffect(() => {
+    console.log(dependentVariable);
+  }, []);
+
+  if (badConditionalHook",
+          },
+          "messageId": "consistentDestructuringSuggest",
+        },
+      ],
+    },
+  ],
+  "output": "import { useEffect } from 'react';
+
+export default function Example(properties) {
+  const { dependentVariable } = properties;
+  useEffect(() => {
+    console.log(dependentVariable);
+  }, []);
+
+  if (properties.badConditionalHook) {
+    useEffect(() => {});
+  }
+}
+
+function notAHook() {
+  useEffect(() => {});
+}
+",
+  "suppressedMessages": [],
+  "usedDeprecatedRules": [],
+  "warningCount": 0,
+}
+`;

@@ -1,5 +1,5 @@
 /* eslint-disable sort-keys-fix/sort-keys-fix */
-const { jsExtensions, tsExtensions, platformSubextensions, computeExpoExtensions } = require('./shared/extensions');
+const { jsExtensions, tsExtensions, platformSubextensions, computeExpoExtensions } = require('./utils/extensions');
 
 const allExtensions = computeExpoExtensions([...jsExtensions, ...tsExtensions], platformSubextensions);
 

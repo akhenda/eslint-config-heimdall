@@ -1,0 +1,4 @@
+{
+  "extends": "eslint-config-heimdall/strict.js",
+  "root": true
+}

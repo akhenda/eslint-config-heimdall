@@ -15,10 +15,7 @@ module.exports = async function checkPrettierRulesAsync(configFile, testName) {
     result = await spawnAsync('eslint-config-prettier', ['index.ts'], {
       cwd: testProjectPath,
     });
-
-    console.log({ result });
   } catch (e) {
-    console.log({ e });
     if (e.status === 2) {
       result = e;
     } else {
