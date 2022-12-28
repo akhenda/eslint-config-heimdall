@@ -15,7 +15,7 @@ module.exports = {
     module: false,
     require: false,
   },
-  plugins: ['import', 'node', 'sort-keys-fix', 'unused-imports', 'simple-import-sort'],
+  plugins: ['import', 'node', 'sort-class-members', 'sort-keys-fix', 'unused-imports', 'simple-import-sort'],
   settings: {
     'import/extensions': jsExtensions,
     'import/ignore': [
@@ -41,21 +41,6 @@ module.exports = {
       },
     ],
 
-    // Ensure correct ordering of imports
-    'import/order': [
-      2,
-      {
-        'newlines-between': 'ignore',
-        pathGroups: [
-          {
-            pattern: '@/**',
-            group: 'external',
-            position: 'after',
-          },
-        ],
-      },
-    ],
-
     // Configure imports
     'import/first': 'warn',
     'import/newline-after-import': 'warn',
@@ -65,6 +50,23 @@ module.exports = {
     // Configure simple sorting of imports
     'simple-import-sort/exports': 'warn',
     'simple-import-sort/imports': 'warn',
+
+    // Configure eslint-plugin-sort-class-members
+    'sort-class-members/sort-class-members': [
+      2,
+      {
+        order: [
+          '[static-properties]',
+          '[static-methods]',
+          '[properties]',
+          '[conventional-private-properties]',
+          'constructor',
+          '[methods]',
+          '[conventional-private-methods]',
+        ],
+        accessorPairPositioning: 'getThenSet',
+      },
+    ],
   },
   overrides: [
     {

@@ -15,8 +15,8 @@ function computeExpoExtensions(baseExtensions, platformSubextensions) {
 }
 
 module.exports = {
-  jsExtensions,
-  tsExtensions,
-  platformSubextensions,
   computeExpoExtensions,
+  jsExtensions,
+  platformSubextensions,
+  tsExtensions,
 };

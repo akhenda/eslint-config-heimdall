@@ -1,3 +1,5 @@
+/__tests__/fixtures/*
+**/fixtures/*
 /node_modules/**
 **/node_modules
 **/*.min.js
