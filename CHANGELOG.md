@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/akhenda/eslint-config-heimdall/compare/v1.1.0...v1.2.0) (2022-12-29)
+
+
+### Features
+
+* **shared:** 🎸 extend eslint & typescript recommended configs ([7dd8822](https://github.com/akhenda/eslint-config-heimdall/commit/7dd882212f2d445b9d59d0096fcd842d4fb1d4a3))
+
 # [1.1.0](https://github.com/akhenda/eslint-config-heimdall/compare/v1.0.2...v1.1.0) (2022-12-29)
 
 
