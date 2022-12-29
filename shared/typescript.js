@@ -4,6 +4,10 @@ const { jsExtensions, tsExtensions } = require('../utils/extensions');
 const allExtensions = [...jsExtensions, ...tsExtensions];
 
 module.exports = {
+  extends: ['airbnb-typescript/base'],
+  parserOptions: {
+    project: './tsconfig.base.json',
+  },
   overrides: [
     {
       files: ['*.js', '*.jsx'],

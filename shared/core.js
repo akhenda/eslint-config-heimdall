@@ -2,6 +2,7 @@
 const { jsExtensions } = require('../utils/extensions');
 
 module.exports = {
+  extends: ['airbnb-base'],
   env: { es2022: true, jest: true },
   parserOptions: {
     sourceType: 'module',
@@ -15,16 +16,7 @@ module.exports = {
     module: false,
     require: false,
   },
-  plugins: [
-    'import',
-    'node',
-    'airbnb-base',
-    'airbnb-typescript/base',
-    'sort-class-members',
-    'sort-keys-fix',
-    'unused-imports',
-    'simple-import-sort',
-  ],
+  plugins: ['import', 'node', 'sort-class-members', 'sort-keys-fix', 'unused-imports', 'simple-import-sort'],
   settings: {
     'import/extensions': jsExtensions,
     'import/ignore': [

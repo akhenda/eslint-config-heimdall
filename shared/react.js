@@ -1,6 +1,7 @@
 module.exports = {
+  extends: ['airbnb'],
   parserOptions: { ecmaFeatures: { jsx: true } },
-  plugins: ['react', 'react-hooks', 'airbnb', 'airbnb-typescript'],
+  plugins: ['react', 'react-hooks'],
   rules: {},
   settings: {
     react: { version: 'detect' },

@@ -9,11 +9,288 @@ exports[`doesn't conflict with Prettier: success 1`] = `true`;
 
 exports[`lints with the Node config: fixtures/all-00.js 1`] = `
 {
-  "errorCount": 0,
+  "errorCount": 26,
   "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
-  "messages": [],
+  "messages": [
+    {
+      "column": 15,
+      "endColumn": 18,
+      "endLine": 1,
+      "line": 1,
+      "message": "Unable to resolve path to module 'a'.",
+      "nodeType": "Literal",
+      "ruleId": "import/no-unresolved",
+      "severity": 2,
+    },
+    {
+      "column": 19,
+      "endColumn": 22,
+      "endLine": 2,
+      "line": 2,
+      "message": "Unable to resolve path to module 'b'.",
+      "nodeType": "Literal",
+      "ruleId": "import/no-unresolved",
+      "severity": 2,
+    },
+    {
+      "column": 23,
+      "endColumn": 26,
+      "endLine": 3,
+      "line": 3,
+      "message": "Unable to resolve path to module 'c'.",
+      "nodeType": "Literal",
+      "ruleId": "import/no-unresolved",
+      "severity": 2,
+    },
+    {
+      "column": 20,
+      "endColumn": 23,
+      "endLine": 4,
+      "line": 4,
+      "message": "Unable to resolve path to module 'd'.",
+      "nodeType": "Literal",
+      "ruleId": "import/no-unresolved",
+      "severity": 2,
+    },
+    {
+      "column": 8,
+      "endColumn": 12,
+      "endLine": 6,
+      "line": 6,
+      "message": "Unable to resolve path to module 'hi'.",
+      "nodeType": "Literal",
+      "ruleId": "import/no-unresolved",
+      "severity": 2,
+    },
+    {
+      "column": 15,
+      "endColumn": 20,
+      "endLine": 8,
+      "line": 8,
+      "message": "Missing file extension for "./e"",
+      "nodeType": "Literal",
+      "ruleId": "import/extensions",
+      "severity": 2,
+    },
+    {
+      "column": 15,
+      "endColumn": 20,
+      "endLine": 8,
+      "line": 8,
+      "message": "Unable to resolve path to module './e'.",
+      "nodeType": "Literal",
+      "ruleId": "import/no-unresolved",
+      "severity": 2,
+    },
+    {
+      "column": 20,
+      "endColumn": 25,
+      "endLine": 10,
+      "line": 10,
+      "message": "Missing file extension for "./f"",
+      "nodeType": "Literal",
+      "ruleId": "import/extensions",
+      "severity": 2,
+    },
+    {
+      "column": 20,
+      "endColumn": 25,
+      "endLine": 10,
+      "line": 10,
+      "message": "Unable to resolve path to module './f'.",
+      "nodeType": "Literal",
+      "ruleId": "import/no-unresolved",
+      "severity": 2,
+    },
+    {
+      "column": 5,
+      "endColumn": 8,
+      "endLine": 27,
+      "line": 27,
+      "message": "'_fn' was used before it was defined.",
+      "messageId": "noUseBeforeDefine",
+      "nodeType": "Identifier",
+      "ruleId": "@typescript-eslint/no-use-before-define",
+      "severity": 2,
+    },
+    {
+      "column": 5,
+      "endColumn": 30,
+      "endLine": 27,
+      "line": 27,
+      "message": "Expected an assignment or function call and instead saw an expression.",
+      "messageId": "unusedExpression",
+      "nodeType": "ExpressionStatement",
+      "ruleId": "@typescript-eslint/no-unused-expressions",
+      "severity": 2,
+    },
+    {
+      "column": 7,
+      "endColumn": 10,
+      "endLine": 32,
+      "line": 32,
+      "message": "'_fn' was used before it was defined.",
+      "messageId": "noUseBeforeDefine",
+      "nodeType": "Identifier",
+      "ruleId": "@typescript-eslint/no-use-before-define",
+      "severity": 2,
+    },
+    {
+      "column": 14,
+      "endColumn": 15,
+      "endLine": 33,
+      "line": 33,
+      "message": "'e' is already declared in the upper scope on line 8 column 8.",
+      "messageId": "noShadow",
+      "nodeType": "Identifier",
+      "ruleId": "@typescript-eslint/no-shadow",
+      "severity": 2,
+    },
+    {
+      "column": 7,
+      "endColumn": 10,
+      "endLine": 34,
+      "line": 34,
+      "message": "'_fn' was used before it was defined.",
+      "messageId": "noUseBeforeDefine",
+      "nodeType": "Identifier",
+      "ruleId": "@typescript-eslint/no-use-before-define",
+      "severity": 2,
+    },
+    {
+      "column": 7,
+      "endColumn": 10,
+      "endLine": 38,
+      "line": 38,
+      "message": "'_fn' was used before it was defined.",
+      "messageId": "noUseBeforeDefine",
+      "nodeType": "Identifier",
+      "ruleId": "@typescript-eslint/no-use-before-define",
+      "severity": 2,
+    },
+    {
+      "column": 7,
+      "endColumn": 10,
+      "endLine": 40,
+      "line": 40,
+      "message": "'_fn' was used before it was defined.",
+      "messageId": "noUseBeforeDefine",
+      "nodeType": "Identifier",
+      "ruleId": "@typescript-eslint/no-use-before-define",
+      "severity": 2,
+    },
+    {
+      "column": 3,
+      "endColumn": 17,
+      "endLine": 46,
+      "line": 46,
+      "message": "Expected 'this' to be used by class async method 'byeAsync'.",
+      "messageId": "missingThis",
+      "nodeType": "FunctionExpression",
+      "ruleId": "class-methods-use-this",
+      "severity": 2,
+    },
+    {
+      "column": 5,
+      "endColumn": 8,
+      "endLine": 48,
+      "line": 48,
+      "message": "'_fn' was used before it was defined.",
+      "messageId": "noUseBeforeDefine",
+      "nodeType": "Identifier",
+      "ruleId": "@typescript-eslint/no-use-before-define",
+      "severity": 2,
+    },
+    {
+      "column": 18,
+      "endColumn": 21,
+      "endLine": 50,
+      "line": 50,
+      "message": "Unable to resolve path to module 'z'.",
+      "nodeType": "Literal",
+      "ruleId": "import/no-unresolved",
+      "severity": 2,
+    },
+    {
+      "column": 5,
+      "endColumn": 6,
+      "endLine": 54,
+      "line": 52,
+      "message": "iterators/generators require regenerator-runtime, which is too heavyweight for this guide to allow them. Separately, loops should be avoided in favor of array iterations.",
+      "messageId": "restrictedSyntax",
+      "nodeType": "ForOfStatement",
+      "ruleId": "no-restricted-syntax",
+      "severity": 2,
+    },
+    {
+      "column": 27,
+      "endColumn": 30,
+      "endLine": 52,
+      "line": 52,
+      "message": "'gen' was used before it was defined.",
+      "messageId": "noUseBeforeDefine",
+      "nodeType": "Identifier",
+      "ruleId": "@typescript-eslint/no-use-before-define",
+      "severity": 2,
+    },
+    {
+      "column": 7,
+      "endColumn": 10,
+      "endLine": 53,
+      "line": 53,
+      "message": "'_fn' was used before it was defined.",
+      "messageId": "noUseBeforeDefine",
+      "nodeType": "Identifier",
+      "ruleId": "@typescript-eslint/no-use-before-define",
+      "severity": 2,
+    },
+    {
+      "column": 3,
+      "endColumn": 17,
+      "endLine": 57,
+      "line": 57,
+      "message": "Expected 'this' to be used by class private method #privateMethod.",
+      "messageId": "missingThis",
+      "nodeType": "FunctionExpression",
+      "ruleId": "class-methods-use-this",
+      "severity": 2,
+    },
+    {
+      "column": 1,
+      "endColumn": 18,
+      "endLine": 60,
+      "line": 60,
+      "message": "Unexpected dangling '_' in '_fn'.",
+      "messageId": "unexpectedUnderscore",
+      "nodeType": "FunctionDeclaration",
+      "ruleId": "no-underscore-dangle",
+      "severity": 2,
+    },
+    {
+      "column": 10,
+      "endColumn": 13,
+      "endLine": 60,
+      "line": 60,
+      "message": "Function name \`_fn\` must match one of the following formats: camelCase, PascalCase",
+      "messageId": "doesNotMatchFormat",
+      "nodeType": "Identifier",
+      "ruleId": "@typescript-eslint/naming-convention",
+      "severity": 2,
+    },
+    {
+      "column": 17,
+      "endColumn": 19,
+      "endLine": 62,
+      "line": 62,
+      "message": "Unexpected empty generator function 'gen'.",
+      "messageId": "unexpected",
+      "nodeType": "FunctionDeclaration",
+      "ruleId": "@typescript-eslint/no-empty-function",
+      "severity": 2,
+    },
+  ],
   "output": "import a from 'a';
 import { b } from 'b';
 import c, { c1 } from 'c';
@@ -32,8 +309,11 @@ export class Example {
   };
 
   m = {};
+
   #n = null;
+
   x = 1_000;
+
   y = 100n;
 
   hi() {
@@ -57,7 +337,7 @@ export class Example {
   }
 
   async byeAsync() {
-    let f = 1;
+    const f = 1;
     _fn(a, b, c, c1, d, e, f);
 
     await import('z');
@@ -75,23 +355,155 @@ function _fn() {}
 function* gen() {}
 ",
   "suppressedMessages": [],
-  "usedDeprecatedRules": [],
+  "usedDeprecatedRules": [
+    {
+      "replacedBy": [
+        "padding-line-between-statements",
+      ],
+      "ruleId": "lines-around-directive",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "global-require",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-buffer-constructor",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-new-require",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-path-concat",
+    },
+  ],
   "warningCount": 0,
 }
 `;
 
 exports[`lints with the Node config: fixtures/all-01.ts 1`] = `
 {
-  "errorCount": 1,
+  "errorCount": 11,
   "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
   "messages": [
     {
+      "column": 15,
+      "endColumn": 20,
+      "endLine": 8,
+      "line": 8,
+      "message": "Missing file extension for "./e"",
+      "nodeType": "Literal",
+      "ruleId": "import/extensions",
+      "severity": 2,
+    },
+    {
+      "column": 3,
+      "endColumn": 18,
+      "endLine": 19,
+      "line": 19,
+      "message": "Duplicate name 'm'.",
+      "messageId": "unexpected",
+      "nodeType": "PropertyDefinition",
+      "ruleId": "@typescript-eslint/no-dupe-class-members",
+      "severity": 2,
+    },
+    {
+      "column": 3,
+      "endColumn": 5,
+      "endLine": 21,
+      "line": 21,
+      "message": "Expected 'this' to be used by class method 'hi'.",
+      "messageId": "missingThis",
+      "nodeType": "FunctionExpression",
+      "ruleId": "class-methods-use-this",
+      "severity": 2,
+    },
+    {
+      "column": 5,
+      "endColumn": 8,
+      "endLine": 22,
+      "line": 22,
+      "message": "'_fn' was used before it was defined.",
+      "messageId": "noUseBeforeDefine",
+      "nodeType": "Identifier",
+      "ruleId": "@typescript-eslint/no-use-before-define",
+      "severity": 2,
+    },
+    {
+      "column": 7,
+      "endColumn": 10,
+      "endLine": 25,
+      "line": 25,
+      "message": "'_fn' was used before it was defined.",
+      "messageId": "noUseBeforeDefine",
+      "nodeType": "Identifier",
+      "ruleId": "@typescript-eslint/no-use-before-define",
+      "severity": 2,
+    },
+    {
+      "column": 7,
+      "endColumn": 10,
+      "endLine": 27,
+      "line": 27,
+      "message": "'_fn' was used before it was defined.",
+      "messageId": "noUseBeforeDefine",
+      "nodeType": "Identifier",
+      "ruleId": "@typescript-eslint/no-use-before-define",
+      "severity": 2,
+    },
+    {
+      "column": 3,
+      "endColumn": 17,
+      "endLine": 31,
+      "line": 31,
+      "message": "Expected 'this' to be used by class async method 'byeAsync'.",
+      "messageId": "missingThis",
+      "nodeType": "FunctionExpression",
+      "ruleId": "class-methods-use-this",
+      "severity": 2,
+    },
+    {
+      "column": 5,
+      "endColumn": 8,
+      "endLine": 32,
+      "line": 32,
+      "message": "'_fn' was used before it was defined.",
+      "messageId": "noUseBeforeDefine",
+      "nodeType": "Identifier",
+      "ruleId": "@typescript-eslint/no-use-before-define",
+      "severity": 2,
+    },
+    {
+      "column": 1,
+      "endColumn": 36,
+      "endLine": 36,
+      "line": 36,
+      "message": "Unexpected dangling '_' in '_fn'.",
+      "messageId": "unexpectedUnderscore",
+      "nodeType": "FunctionDeclaration",
+      "ruleId": "no-underscore-dangle",
+      "severity": 2,
+    },
+    {
+      "column": 10,
+      "endColumn": 13,
+      "endLine": 36,
+      "line": 36,
+      "message": "Function name \`_fn\` must match one of the following formats: camelCase, PascalCase",
+      "messageId": "doesNotMatchFormat",
+      "nodeType": "Identifier",
+      "ruleId": "@typescript-eslint/naming-convention",
+      "severity": 2,
+    },
+    {
       "column": 17,
       "endColumn": 21,
-      "endLine": 35,
-      "line": 35,
+      "endLine": 36,
+      "line": 36,
       "message": "'args' is defined but never used.",
       "messageId": "unusedVar",
       "nodeType": "Identifier",
@@ -101,8 +513,8 @@ exports[`lints with the Node config: fixtures/all-01.ts 1`] = `
     {
       "column": 17,
       "endColumn": 21,
-      "endLine": 35,
-      "line": 35,
+      "endLine": 36,
+      "line": 36,
       "message": "'args' is defined but never used. Allowed unused args must match /^_/u.",
       "messageId": "unusedVar",
       "nodeType": "Identifier",
@@ -127,6 +539,7 @@ export class Example {
   };
 
   m: object = {};
+
   m: object = {};
 
   hi(): void {
@@ -147,20 +560,106 @@ export class Example {
 function _fn(...args: any): void {}
 ",
   "suppressedMessages": [],
-  "usedDeprecatedRules": [],
+  "usedDeprecatedRules": [
+    {
+      "replacedBy": [
+        "padding-line-between-statements",
+      ],
+      "ruleId": "lines-around-directive",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "global-require",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-buffer-constructor",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-new-require",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-path-concat",
+    },
+  ],
   "warningCount": 1,
 }
 `;
 
 exports[`lints with the Node config: fixtures/all-02.js 1`] = `
 {
-  "errorCount": 0,
+  "errorCount": 3,
   "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
-  "messages": [],
+  "messages": [
+    {
+      "column": 7,
+      "endColumn": 14,
+      "endLine": 1,
+      "line": 1,
+      "message": "'unused1' is assigned a value but never used.",
+      "messageId": "unusedVar",
+      "nodeType": "Identifier",
+      "ruleId": "@typescript-eslint/no-unused-vars",
+      "severity": 2,
+    },
+    {
+      "column": 10,
+      "endColumn": 17,
+      "endLine": 3,
+      "line": 3,
+      "message": "'unused2' is defined but never used.",
+      "messageId": "unusedVar",
+      "nodeType": "Identifier",
+      "ruleId": "@typescript-eslint/no-unused-vars",
+      "severity": 2,
+    },
+    {
+      "column": 9,
+      "endColumn": 16,
+      "endLine": 4,
+      "line": 4,
+      "message": "'unused3' is assigned a value but never used.",
+      "messageId": "unusedVar",
+      "nodeType": "Identifier",
+      "ruleId": "@typescript-eslint/no-unused-vars",
+      "severity": 2,
+    },
+  ],
+  "source": "const unused1 = 0;
+
+function unused2() {
+  const unused3 = 'hi';
+}
+",
   "suppressedMessages": [],
-  "usedDeprecatedRules": [],
+  "usedDeprecatedRules": [
+    {
+      "replacedBy": [
+        "padding-line-between-statements",
+      ],
+      "ruleId": "lines-around-directive",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "global-require",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-buffer-constructor",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-new-require",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-path-concat",
+    },
+  ],
   "warningCount": 0,
 }
 `;
@@ -270,7 +769,30 @@ function tsUnused2() {
 }
 ",
   "suppressedMessages": [],
-  "usedDeprecatedRules": [],
+  "usedDeprecatedRules": [
+    {
+      "replacedBy": [
+        "padding-line-between-statements",
+      ],
+      "ruleId": "lines-around-directive",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "global-require",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-buffer-constructor",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-new-require",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-path-concat",
+    },
+  ],
   "warningCount": 4,
 }
 `;
@@ -283,7 +805,30 @@ exports[`lints with the Node config: fixtures/all-04.ts 1`] = `
   "fixableWarningCount": 0,
   "messages": [],
   "suppressedMessages": [],
-  "usedDeprecatedRules": [],
+  "usedDeprecatedRules": [
+    {
+      "replacedBy": [
+        "padding-line-between-statements",
+      ],
+      "ruleId": "lines-around-directive",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "global-require",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-buffer-constructor",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-new-require",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-path-concat",
+    },
+  ],
   "warningCount": 0,
 }
 `;
@@ -298,7 +843,30 @@ exports[`lints with the Node config: fixtures/all-05.ts 1`] = `
   "output": "export const blah = 3!!;
 ",
   "suppressedMessages": [],
-  "usedDeprecatedRules": [],
+  "usedDeprecatedRules": [
+    {
+      "replacedBy": [
+        "padding-line-between-statements",
+      ],
+      "ruleId": "lines-around-directive",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "global-require",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-buffer-constructor",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-new-require",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-path-concat",
+    },
+  ],
   "warningCount": 0,
 }
 `;
@@ -318,18 +886,102 @@ export const stringTest: string | null = null;
 export const objectShorthandTest: object | null = null;
 ",
   "suppressedMessages": [],
-  "usedDeprecatedRules": [],
+  "usedDeprecatedRules": [
+    {
+      "replacedBy": [
+        "padding-line-between-statements",
+      ],
+      "ruleId": "lines-around-directive",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "global-require",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-buffer-constructor",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-new-require",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-path-concat",
+    },
+  ],
   "warningCount": 0,
 }
 `;
 
 exports[`lints with the Node config: fixtures/all-07.js 1`] = `
 {
-  "errorCount": 0,
+  "errorCount": 6,
   "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
-  "messages": [],
+  "messages": [
+    {
+      "column": 15,
+      "endColumn": 18,
+      "endLine": 1,
+      "line": 1,
+      "message": "Unable to resolve path to module 'b'.",
+      "nodeType": "Literal",
+      "ruleId": "import/no-unresolved",
+      "severity": 2,
+    },
+    {
+      "column": 15,
+      "endColumn": 18,
+      "endLine": 2,
+      "line": 2,
+      "message": "Unable to resolve path to module 'c'.",
+      "nodeType": "Literal",
+      "ruleId": "import/no-unresolved",
+      "severity": 2,
+    },
+    {
+      "column": 15,
+      "endColumn": 20,
+      "endLine": 4,
+      "line": 4,
+      "message": "Missing file extension for "./d"",
+      "nodeType": "Literal",
+      "ruleId": "import/extensions",
+      "severity": 2,
+    },
+    {
+      "column": 15,
+      "endColumn": 20,
+      "endLine": 4,
+      "line": 4,
+      "message": "Unable to resolve path to module './d'.",
+      "nodeType": "Literal",
+      "ruleId": "import/no-unresolved",
+      "severity": 2,
+    },
+    {
+      "column": 19,
+      "endColumn": 22,
+      "endLine": 6,
+      "line": 6,
+      "message": "Unable to resolve path to module 'a'.",
+      "nodeType": "Literal",
+      "ruleId": "import/no-unresolved",
+      "severity": 2,
+    },
+    {
+      "column": 19,
+      "endColumn": 22,
+      "endLine": 7,
+      "line": 7,
+      "message": "Unable to resolve path to module 'e'.",
+      "nodeType": "Literal",
+      "ruleId": "import/no-unresolved",
+      "severity": 2,
+    },
+  ],
   "output": "import b from 'b';
 import c from 'c';
 
@@ -341,20 +993,91 @@ const e = require('e');
 export default a + b + c + d + e;
 ",
   "suppressedMessages": [],
-  "usedDeprecatedRules": [],
+  "usedDeprecatedRules": [
+    {
+      "replacedBy": [
+        "padding-line-between-statements",
+      ],
+      "ruleId": "lines-around-directive",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "global-require",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-buffer-constructor",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-new-require",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-path-concat",
+    },
+  ],
   "warningCount": 0,
 }
 `;
 
 exports[`lints with the Node config: fixtures/node-00.js 1`] = `
 {
-  "errorCount": 0,
+  "errorCount": 2,
   "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
-  "messages": [],
+  "messages": [
+    {
+      "column": 7,
+      "endColumn": 11,
+      "endLine": 1,
+      "line": 1,
+      "message": "'data' is assigned a value but never used.",
+      "messageId": "unusedVar",
+      "nodeType": "Identifier",
+      "ruleId": "@typescript-eslint/no-unused-vars",
+      "severity": 2,
+    },
+    {
+      "column": 14,
+      "endColumn": 28,
+      "endLine": 1,
+      "line": 1,
+      "message": "new Buffer() is deprecated. Use Buffer.from(), Buffer.alloc(), or Buffer.allocUnsafe() instead.",
+      "messageId": "deprecated",
+      "nodeType": "NewExpression",
+      "ruleId": "no-buffer-constructor",
+      "severity": 2,
+    },
+  ],
+  "source": "const data = new Buffer(16);
+",
   "suppressedMessages": [],
-  "usedDeprecatedRules": [],
+  "usedDeprecatedRules": [
+    {
+      "replacedBy": [
+        "padding-line-between-statements",
+      ],
+      "ruleId": "lines-around-directive",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "global-require",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-buffer-constructor",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-new-require",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-path-concat",
+    },
+  ],
   "warningCount": 0,
 }
 `;

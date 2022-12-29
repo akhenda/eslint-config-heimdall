@@ -39,6 +39,8 @@
   "scripts": {
     "gc": "git add . && git-cz",
     "test": "jest --coverage",
+    "test:update": "jest --coverage --updateSnapshot",
+    "test:watch:update": "jest --watch --coverage --updateSnapshot",
     "test:ci": "jest --ci --coverage",
     "lint": "eslint .",
     "lint:fix": "eslint --fix",
