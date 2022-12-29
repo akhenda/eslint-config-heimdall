@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/akhenda/eslint-config-heimdall/compare/v1.2.0...v1.2.1) (2022-12-29)
+
+
+### Bug Fixes
+
+* update typescript configs ([4231bbd](https://github.com/akhenda/eslint-config-heimdall/commit/4231bbddc2a66cd39fc3a68b96a3efd99ba9d391))
+
 # [1.2.0](https://github.com/akhenda/eslint-config-heimdall/compare/v1.1.0...v1.2.0) (2022-12-29)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-heimdall",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "ESLint and Prettier Config from Joseph Akhenda",
   "main": "default.js",
   "repository": {
