@@ -16,6 +16,7 @@ module.exports = async function checkPrettierRulesAsync(configFile, testName) {
       cwd: testProjectPath,
     });
   } catch (e) {
+    console.log({ e });
     if (e.status === 2) {
       result = e;
     } else {

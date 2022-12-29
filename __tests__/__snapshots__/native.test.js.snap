@@ -1138,7 +1138,7 @@ export default a + b + c + d + e;
 }
 `;
 
-exports[`lints with the React Native config: fixtures/web-native-00.js 1`] = `
+exports[`lints with the React Native config: fixtures/react-and-react-native-00.js 1`] = `
 {
   "errorCount": 10,
   "fatalErrorCount": 0,
@@ -1322,7 +1322,7 @@ export default class Example extends React.Component {
 }
 `;
 
-exports[`lints with the React Native config: fixtures/web-native-01.js 1`] = `
+exports[`lints with the React Native config: fixtures/react-and-react-native-01.js 1`] = `
 {
   "errorCount": 4,
   "fatalErrorCount": 0,
@@ -1428,9 +1428,9 @@ export default class Example extends React.Component {
 }
 `;
 
-exports[`lints with the React Native config: fixtures/web-native-02.js 1`] = `
+exports[`lints with the React Native config: fixtures/react-and-react-native-02.js 1`] = `
 {
-  "errorCount": 2,
+  "errorCount": 3,
   "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
@@ -1443,6 +1443,16 @@ exports[`lints with the React Native config: fixtures/web-native-02.js 1`] = `
       "message": "Unable to resolve path to module 'react'.",
       "nodeType": "Literal",
       "ruleId": "import/no-unresolved",
+      "severity": 2,
+    },
+    {
+      "column": 9,
+      "endColumn": 4,
+      "endLine": 10,
+      "line": 8,
+      "message": "Prefer _.constant over a function returning a literal",
+      "nodeType": "FunctionExpression",
+      "ruleId": "lodash/prefer-constant",
       "severity": 2,
     },
     {
@@ -1500,7 +1510,7 @@ export default class Example extends React.Component {
 }
 `;
 
-exports[`lints with the React Native config: fixtures/web-native-03.js 1`] = `
+exports[`lints with the React Native config: fixtures/react-and-react-native-03.js 1`] = `
 {
   "errorCount": 3,
   "fatalErrorCount": 0,
@@ -1575,9 +1585,9 @@ export default function Example() {
 }
 `;
 
-exports[`lints with the React Native config: fixtures/web-native-04.js 1`] = `
+exports[`lints with the React Native config: fixtures/react-and-react-native-04.js 1`] = `
 {
-  "errorCount": 2,
+  "errorCount": 4,
   "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
@@ -1604,6 +1614,16 @@ exports[`lints with the React Native config: fixtures/web-native-04.js 1`] = `
       "severity": 1,
     },
     {
+      "column": 15,
+      "endColumn": 23,
+      "endLine": 10,
+      "line": 10,
+      "message": "Prefer _.noop over an empty function",
+      "nodeType": "ArrowFunctionExpression",
+      "ruleId": "lodash/prefer-noop",
+      "severity": 2,
+    },
+    {
       "column": 10,
       "endColumn": 18,
       "endLine": 14,
@@ -1612,6 +1632,16 @@ exports[`lints with the React Native config: fixtures/web-native-04.js 1`] = `
       "messageId": "unusedVar",
       "nodeType": "Identifier",
       "ruleId": "@typescript-eslint/no-unused-vars",
+      "severity": 2,
+    },
+    {
+      "column": 13,
+      "endColumn": 21,
+      "endLine": 15,
+      "line": 15,
+      "message": "Prefer _.noop over an empty function",
+      "nodeType": "ArrowFunctionExpression",
+      "ruleId": "lodash/prefer-noop",
       "severity": 2,
     },
   ],

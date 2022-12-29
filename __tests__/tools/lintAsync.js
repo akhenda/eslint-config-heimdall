@@ -12,5 +12,6 @@ module.exports = async function lintAsync(eslintOptions, sourceFiles) {
     console.error(`[eslint]: ${data}`);
   });
   const result = await lintProcess;
+  // console.log(result);
   return JSON.parse(result.stdout);
 };

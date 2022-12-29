@@ -1,7 +1,7 @@
 /* eslint-disable sort-keys-fix/sort-keys-fix */
 module.exports = {
   plugins: [
-    'boundaries',
+    // 'boundaries',
     'no-secrets',
     'switch-case',
     'filenames',
@@ -12,10 +12,9 @@ module.exports = {
   ],
   extends: [
     'plugin:eslint-comments/recommended',
-    'plugin:boundaries/recommended',
+    // 'plugin:boundaries/recommended',
     'plugin:jsonc/base',
     'plugin:switch-case/recommended',
-    'optimize-regex/recommended',
     'plugin:array-func/recommended',
     'plugin:no-unsanitized/DOM',
     'plugin:promise/recommended',
@@ -31,5 +30,10 @@ module.exports = {
     'filenames/match-exported': [2, [null, 'kebab', 'camel']],
     'no-constructor-bind/no-constructor-bind': 'error',
     'no-constructor-bind/no-constructor-state': 'error',
+
+    // conflicts with Prettier
+    'unicorn/empty-brace-spaces': 'off',
+    'unicorn/no-nested-ternary': 'off',
+    'unicorn/number-literal-case': 'off',
   },
 };

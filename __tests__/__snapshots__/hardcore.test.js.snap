@@ -1,19 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`doesn't conflict with Prettier: message 1`] = `
-"The following rules are unnecessary or might conflict with Prettier:
-
-- unicorn/empty-brace-spaces
-- unicorn/no-nested-ternary
-- unicorn/number-literal-case
+"No rules that are unnecessary or conflict with Prettier were found.
 "
 `;
 
-exports[`doesn't conflict with Prettier: success 1`] = `false`;
+exports[`doesn't conflict with Prettier: success 1`] = `true`;
 
 exports[`lints with the Hardcore config: fixtures/all-00.js 1`] = `
 {
-  "errorCount": 2,
+  "errorCount": 26,
   "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
@@ -27,6 +23,17 @@ exports[`lints with the Hardcore config: fixtures/all-00.js 1`] = `
       "messageId": "suggestion",
       "nodeType": "Identifier",
       "ruleId": "unicorn/prevent-abbreviations",
+      "severity": 2,
+    },
+    {
+      "column": 8,
+      "endColumn": 2,
+      "endLine": 56,
+      "line": 12,
+      "message": "Unexpected class, use functions not classes.",
+      "messageId": "generic",
+      "nodeType": "ClassDeclaration",
+      "ruleId": "functional/no-class",
       "severity": 2,
     },
     {
@@ -53,6 +60,259 @@ exports[`lints with the Hardcore config: fixtures/all-00.js 1`] = `
           "messageId": "replace",
         },
       ],
+    },
+    {
+      "column": 5,
+      "endColumn": 4,
+      "endLine": 41,
+      "line": 23,
+      "message": "Functions must have at least one parameter.",
+      "messageId": "paramCountAtLeastOne",
+      "nodeType": "FunctionExpression",
+      "ruleId": "functional/functional-parameters",
+      "severity": 2,
+    },
+    {
+      "column": 5,
+      "endColumn": 36,
+      "endLine": 24,
+      "line": 24,
+      "message": "Using expressions to cause side-effects not allowed.",
+      "messageId": "generic",
+      "nodeType": "ExpressionStatement",
+      "ruleId": "functional/no-expression-statement",
+      "severity": 2,
+    },
+    {
+      "column": 20,
+      "endColumn": 24,
+      "endLine": 24,
+      "line": 24,
+      "message": "Unexpected this, use functions not classes.",
+      "messageId": "generic",
+      "nodeType": "ThisExpression",
+      "ruleId": "functional/no-this-expression",
+      "severity": 2,
+    },
+    {
+      "column": 5,
+      "endColumn": 19,
+      "endLine": 25,
+      "line": 25,
+      "message": "Using expressions to cause side-effects not allowed.",
+      "messageId": "generic",
+      "nodeType": "ExpressionStatement",
+      "ruleId": "functional/no-expression-statement",
+      "severity": 2,
+    },
+    {
+      "column": 5,
+      "endColumn": 18,
+      "endLine": 25,
+      "line": 25,
+      "message": "Modifying an existing object/array is not allowed.",
+      "messageId": "generic",
+      "nodeType": "AssignmentExpression",
+      "ruleId": "functional/immutable-data",
+      "severity": 2,
+    },
+    {
+      "column": 5,
+      "endColumn": 9,
+      "endLine": 25,
+      "line": 25,
+      "message": "Unexpected this, use functions not classes.",
+      "messageId": "generic",
+      "nodeType": "ThisExpression",
+      "ruleId": "functional/no-this-expression",
+      "severity": 2,
+    },
+    {
+      "column": 5,
+      "endColumn": 22,
+      "endLine": 26,
+      "line": 26,
+      "message": "Using expressions to cause side-effects not allowed.",
+      "messageId": "generic",
+      "nodeType": "ExpressionStatement",
+      "ruleId": "functional/no-expression-statement",
+      "severity": 2,
+    },
+    {
+      "column": 5,
+      "endColumn": 6,
+      "endLine": 32,
+      "line": 28,
+      "message": "Unexpected try-catch, this pattern is not functional.",
+      "messageId": "catch",
+      "nodeType": "TryStatement",
+      "ruleId": "functional/no-try-statement",
+      "severity": 2,
+    },
+    {
+      "column": 7,
+      "endColumn": 19,
+      "endLine": 29,
+      "line": 29,
+      "message": "Using expressions to cause side-effects not allowed.",
+      "messageId": "generic",
+      "nodeType": "ExpressionStatement",
+      "ruleId": "functional/no-expression-statement",
+      "severity": 2,
+    },
+    {
+      "column": 7,
+      "endColumn": 19,
+      "endLine": 31,
+      "line": 31,
+      "message": "Using expressions to cause side-effects not allowed.",
+      "messageId": "generic",
+      "nodeType": "ExpressionStatement",
+      "ruleId": "functional/no-expression-statement",
+      "severity": 2,
+    },
+    {
+      "column": 5,
+      "endColumn": 6,
+      "endLine": 38,
+      "line": 34,
+      "message": "Unexpected try-catch, this pattern is not functional.",
+      "messageId": "catch",
+      "nodeType": "TryStatement",
+      "ruleId": "functional/no-try-statement",
+      "severity": 2,
+    },
+    {
+      "column": 7,
+      "endColumn": 19,
+      "endLine": 35,
+      "line": 35,
+      "message": "Using expressions to cause side-effects not allowed.",
+      "messageId": "generic",
+      "nodeType": "ExpressionStatement",
+      "ruleId": "functional/no-expression-statement",
+      "severity": 2,
+    },
+    {
+      "column": 7,
+      "endColumn": 19,
+      "endLine": 37,
+      "line": 37,
+      "message": "Using expressions to cause side-effects not allowed.",
+      "messageId": "generic",
+      "nodeType": "ExpressionStatement",
+      "ruleId": "functional/no-expression-statement",
+      "severity": 2,
+    },
+    {
+      "column": 5,
+      "endColumn": 27,
+      "endLine": 40,
+      "line": 40,
+      "message": "Using expressions to cause side-effects not allowed.",
+      "messageId": "generic",
+      "nodeType": "ExpressionStatement",
+      "ruleId": "functional/no-expression-statement",
+      "severity": 2,
+    },
+    {
+      "column": 5,
+      "endColumn": 9,
+      "endLine": 40,
+      "line": 40,
+      "message": "Unexpected this, use functions not classes.",
+      "messageId": "generic",
+      "nodeType": "ThisExpression",
+      "ruleId": "functional/no-this-expression",
+      "severity": 2,
+    },
+    {
+      "column": 17,
+      "endColumn": 4,
+      "endLine": 53,
+      "line": 43,
+      "message": "Functions must have at least one parameter.",
+      "messageId": "paramCountAtLeastOne",
+      "nodeType": "FunctionExpression",
+      "ruleId": "functional/functional-parameters",
+      "severity": 2,
+    },
+    {
+      "column": 5,
+      "endColumn": 37,
+      "endLine": 45,
+      "line": 45,
+      "message": "Using expressions to cause side-effects not allowed.",
+      "messageId": "generic",
+      "nodeType": "ExpressionStatement",
+      "ruleId": "functional/no-expression-statement",
+      "severity": 2,
+    },
+    {
+      "column": 5,
+      "endColumn": 23,
+      "endLine": 48,
+      "line": 48,
+      "message": "Using expressions to cause side-effects not allowed.",
+      "messageId": "generic",
+      "nodeType": "ExpressionStatement",
+      "ruleId": "functional/no-expression-statement",
+      "severity": 2,
+    },
+    {
+      "column": 5,
+      "endColumn": 6,
+      "endLine": 52,
+      "line": 50,
+      "message": "Unexpected loop, use map or reduce instead.",
+      "messageId": "generic",
+      "nodeType": "ForOfStatement",
+      "ruleId": "functional/no-loop-statement",
+      "severity": 2,
+    },
+    {
+      "column": 7,
+      "endColumn": 20,
+      "endLine": 51,
+      "line": 51,
+      "message": "Using expressions to cause side-effects not allowed.",
+      "messageId": "generic",
+      "nodeType": "ExpressionStatement",
+      "ruleId": "functional/no-expression-statement",
+      "severity": 2,
+    },
+    {
+      "column": 17,
+      "endColumn": 22,
+      "endLine": 55,
+      "line": 55,
+      "message": "Functions must have at least one parameter.",
+      "messageId": "paramCountAtLeastOne",
+      "nodeType": "FunctionExpression",
+      "ruleId": "functional/functional-parameters",
+      "severity": 2,
+    },
+    {
+      "column": 1,
+      "endColumn": 24,
+      "endLine": 58,
+      "line": 58,
+      "message": "Functions must have at least one parameter.",
+      "messageId": "paramCountAtLeastOne",
+      "nodeType": "FunctionDeclaration",
+      "ruleId": "functional/functional-parameters",
+      "severity": 2,
+    },
+    {
+      "column": 1,
+      "endColumn": 19,
+      "endLine": 60,
+      "line": 60,
+      "message": "Functions must have at least one parameter.",
+      "messageId": "paramCountAtLeastOne",
+      "nodeType": "FunctionDeclaration",
+      "ruleId": "functional/functional-parameters",
+      "severity": 2,
     },
   ],
   "output": "import 'hi';
@@ -98,12 +358,12 @@ export class Example {
   }
 
   async byeAsync() {
-    let f = 1;
+    const f = 1;
     _function(a, b, c, c1, d, e, f);
 
 
     await import('z');
-
+    
     for await (const v of gen()) {
       _function(v);
     }
@@ -182,11 +442,29 @@ function _fn(...args: any): void {}
 
 exports[`lints with the Hardcore config: fixtures/all-02.js 1`] = `
 {
-  "errorCount": 0,
+  "errorCount": 1,
   "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
-  "messages": [],
+  "messages": [
+    {
+      "column": 1,
+      "endColumn": 2,
+      "endLine": 5,
+      "line": 3,
+      "message": "Functions must have at least one parameter.",
+      "messageId": "paramCountAtLeastOne",
+      "nodeType": "FunctionDeclaration",
+      "ruleId": "functional/functional-parameters",
+      "severity": 2,
+    },
+  ],
+  "source": "const unused1 = 0;
+
+function unused2() {
+  const unused3 = 'hi';
+}
+",
   "suppressedMessages": [],
   "usedDeprecatedRules": [],
   "warningCount": 0,
@@ -390,7 +668,7 @@ exports[`lints with the Hardcore config: fixtures/node-00.js 1`] = `
 }
 `;
 
-exports[`lints with the Hardcore config: fixtures/web-native-00.js 1`] = `
+exports[`lints with the Hardcore config: fixtures/react-and-react-native-00.js 1`] = `
 {
   "errorCount": 1,
   "fatalErrorCount": 1,
@@ -450,7 +728,7 @@ export default class Example extends React.Component {
 }
 `;
 
-exports[`lints with the Hardcore config: fixtures/web-native-01.js 1`] = `
+exports[`lints with the Hardcore config: fixtures/react-and-react-native-01.js 1`] = `
 {
   "errorCount": 1,
   "fatalErrorCount": 1,
@@ -487,13 +765,56 @@ export default class Example extends React.Component {
 }
 `;
 
-exports[`lints with the Hardcore config: fixtures/web-native-02.js 1`] = `
+exports[`lints with the Hardcore config: fixtures/react-and-react-native-02.js 1`] = `
 {
-  "errorCount": 1,
+  "errorCount": 7,
   "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
   "messages": [
+    {
+      "column": 1,
+      "endColumn": 2,
+      "endLine": 13,
+      "line": 1,
+      "message": "Filename 'react-and-react-native-02' must match any of the exported and transformed names 'Example', 'example', 'example'.",
+      "nodeType": "Program",
+      "ruleId": "filenames/match-exported",
+      "severity": 2,
+    },
+    {
+      "column": 16,
+      "endColumn": 2,
+      "endLine": 13,
+      "line": 3,
+      "message": "Unexpected class, use functions not classes.",
+      "messageId": "generic",
+      "nodeType": "ClassDeclaration",
+      "ruleId": "functional/no-class",
+      "severity": 2,
+    },
+    {
+      "column": 21,
+      "endColumn": 26,
+      "endLine": 4,
+      "line": 4,
+      "message": "Functions must have at least one parameter.",
+      "messageId": "paramCountAtLeastOne",
+      "nodeType": "FunctionExpression",
+      "ruleId": "functional/functional-parameters",
+      "severity": 2,
+    },
+    {
+      "column": 9,
+      "endColumn": 4,
+      "endLine": 8,
+      "line": 6,
+      "message": "Functions must have at least one parameter.",
+      "messageId": "paramCountAtLeastOne",
+      "nodeType": "FunctionExpression",
+      "ruleId": "functional/functional-parameters",
+      "severity": 2,
+    },
     {
       "column": 12,
       "endColumn": 16,
@@ -531,6 +852,28 @@ exports[`lints with the Hardcore config: fixtures/web-native-02.js 1`] = `
         },
       ],
     },
+    {
+      "column": 20,
+      "endColumn": 25,
+      "endLine": 10,
+      "line": 10,
+      "message": "Functions must have at least one parameter.",
+      "messageId": "paramCountAtLeastOne",
+      "nodeType": "FunctionExpression",
+      "ruleId": "functional/functional-parameters",
+      "severity": 2,
+    },
+    {
+      "column": 25,
+      "endColumn": 30,
+      "endLine": 12,
+      "line": 12,
+      "message": "Functions must have at least one parameter.",
+      "messageId": "paramCountAtLeastOne",
+      "nodeType": "FunctionExpression",
+      "ruleId": "functional/functional-parameters",
+      "severity": 2,
+    },
   ],
   "source": "import React from 'react';
 
@@ -552,7 +895,7 @@ export default class Example extends React.Component {
 }
 `;
 
-exports[`lints with the Hardcore config: fixtures/web-native-03.js 1`] = `
+exports[`lints with the Hardcore config: fixtures/react-and-react-native-03.js 1`] = `
 {
   "errorCount": 1,
   "fatalErrorCount": 1,
@@ -581,13 +924,67 @@ export default function Example() {
 }
 `;
 
-exports[`lints with the Hardcore config: fixtures/web-native-04.js 1`] = `
+exports[`lints with the Hardcore config: fixtures/react-and-react-native-04.js 1`] = `
 {
-  "errorCount": 1,
+  "errorCount": 11,
   "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
   "messages": [
+    {
+      "column": 1,
+      "endColumn": 2,
+      "endLine": 16,
+      "line": 1,
+      "message": "Filename 'react-and-react-native-04' must match any of the exported and transformed names 'Example', 'example', 'example'.",
+      "nodeType": "Program",
+      "ruleId": "filenames/match-exported",
+      "severity": 2,
+    },
+    {
+      "column": 3,
+      "endColumn": 10,
+      "endLine": 7,
+      "line": 5,
+      "message": "Using expressions to cause side-effects not allowed.",
+      "messageId": "generic",
+      "nodeType": "ExpressionStatement",
+      "ruleId": "functional/no-expression-statement",
+      "severity": 2,
+    },
+    {
+      "column": 13,
+      "endColumn": 4,
+      "endLine": 7,
+      "line": 5,
+      "message": "Functions must have at least one parameter.",
+      "messageId": "paramCountAtLeastOne",
+      "nodeType": "ArrowFunctionExpression",
+      "ruleId": "functional/functional-parameters",
+      "severity": 2,
+    },
+    {
+      "column": 5,
+      "endColumn": 36,
+      "endLine": 6,
+      "line": 6,
+      "message": "Using expressions to cause side-effects not allowed.",
+      "messageId": "generic",
+      "nodeType": "ExpressionStatement",
+      "ruleId": "functional/no-expression-statement",
+      "severity": 2,
+    },
+    {
+      "column": 3,
+      "endColumn": 4,
+      "endLine": 11,
+      "line": 9,
+      "message": "Unexpected if, use a conditional expression (ternary operator) instead.",
+      "messageId": "unexpectedIf",
+      "nodeType": "IfStatement",
+      "ruleId": "functional/no-conditional-statement",
+      "severity": 2,
+    },
     {
       "column": 7,
       "endColumn": 36,
@@ -620,6 +1017,61 @@ exports[`lints with the Hardcore config: fixtures/web-native-04.js 1`] = `
           "messageId": "consistentDestructuringSuggest",
         },
       ],
+    },
+    {
+      "column": 5,
+      "endColumn": 25,
+      "endLine": 10,
+      "line": 10,
+      "message": "Using expressions to cause side-effects not allowed.",
+      "messageId": "generic",
+      "nodeType": "ExpressionStatement",
+      "ruleId": "functional/no-expression-statement",
+      "severity": 2,
+    },
+    {
+      "column": 15,
+      "endColumn": 23,
+      "endLine": 10,
+      "line": 10,
+      "message": "Functions must have at least one parameter.",
+      "messageId": "paramCountAtLeastOne",
+      "nodeType": "ArrowFunctionExpression",
+      "ruleId": "functional/functional-parameters",
+      "severity": 2,
+    },
+    {
+      "column": 1,
+      "endColumn": 2,
+      "endLine": 16,
+      "line": 14,
+      "message": "Functions must have at least one parameter.",
+      "messageId": "paramCountAtLeastOne",
+      "nodeType": "FunctionDeclaration",
+      "ruleId": "functional/functional-parameters",
+      "severity": 2,
+    },
+    {
+      "column": 3,
+      "endColumn": 23,
+      "endLine": 15,
+      "line": 15,
+      "message": "Using expressions to cause side-effects not allowed.",
+      "messageId": "generic",
+      "nodeType": "ExpressionStatement",
+      "ruleId": "functional/no-expression-statement",
+      "severity": 2,
+    },
+    {
+      "column": 13,
+      "endColumn": 21,
+      "endLine": 15,
+      "line": 15,
+      "message": "Functions must have at least one parameter.",
+      "messageId": "paramCountAtLeastOne",
+      "nodeType": "ArrowFunctionExpression",
+      "ruleId": "functional/functional-parameters",
+      "severity": 2,
     },
   ],
   "output": "import { useEffect } from 'react';
