@@ -91,5 +91,5 @@ It's also designed to be a more lenient config for teams who are stronger at dec
 
 ## Reference
 
-[How to Create Your Own ESLint Config Package](https://www.freecodecamp.org/news/creating-your-own-eslint-config-package/)
-[Expo Eslint Config](https://github.com/expo/expo/tree/main/packages/eslint-config-universe)
+- [How to Create Your Own ESLint Config Package](https://www.freecodecamp.org/news/creating-your-own-eslint-config-package/)
+- [Expo Eslint Config](https://github.com/expo/expo/tree/main/packages/eslint-config-universe)
