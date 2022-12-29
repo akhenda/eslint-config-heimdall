@@ -1,3 +1,15 @@
+# [1.3.0](https://github.com/akhenda/eslint-config-heimdall/compare/v1.2.1...v1.3.0) (2022-12-29)
+
+
+### Bug Fixes
+
+* **hardcore:** 🐛 remove boundary plugin and fix tests ([1c361eb](https://github.com/akhenda/eslint-config-heimdall/commit/1c361eb59990cc294861a571d62d1d70847f29f6))
+
+
+### Features
+
+* 🎸 add several useful eslint plugins ([7787c23](https://github.com/akhenda/eslint-config-heimdall/commit/7787c237289927f0cd2cd3363899e579ec27e3f8))
+
 ## [1.2.1](https://github.com/akhenda/eslint-config-heimdall/compare/v1.2.0...v1.2.1) (2022-12-29)
 
 
