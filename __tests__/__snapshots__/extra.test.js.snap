@@ -11,23 +11,13 @@ exports[`doesn't conflict with Prettier: message 1`] = `
 
 exports[`doesn't conflict with Prettier: success 1`] = `false`;
 
-exports[`lints with the Strict config: fixtures/all-00.js 1`] = `
+exports[`lints with the Extra config: fixtures/all-00.js 1`] = `
 {
-  "errorCount": 3,
+  "errorCount": 2,
   "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
   "messages": [
-    {
-      "column": 1,
-      "endColumn": 2,
-      "endLine": 1,
-      "line": 1,
-      "message": "Definition for rule 'expires' was not found.",
-      "nodeType": null,
-      "ruleId": "expires",
-      "severity": 2,
-    },
     {
       "column": 8,
       "endColumn": 9,
@@ -132,7 +122,7 @@ function *gen() {}
 }
 `;
 
-exports[`lints with the Strict config: fixtures/all-01.ts 1`] = `
+exports[`lints with the Extra config: fixtures/all-01.ts 1`] = `
 {
   "errorCount": 1,
   "fatalErrorCount": 1,
@@ -190,37 +180,20 @@ function _fn(...args: any): void {}
 }
 `;
 
-exports[`lints with the Strict config: fixtures/all-02.js 1`] = `
+exports[`lints with the Extra config: fixtures/all-02.js 1`] = `
 {
-  "errorCount": 1,
+  "errorCount": 0,
   "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
-  "messages": [
-    {
-      "column": 1,
-      "endColumn": 2,
-      "endLine": 1,
-      "line": 1,
-      "message": "Definition for rule 'expires' was not found.",
-      "nodeType": null,
-      "ruleId": "expires",
-      "severity": 2,
-    },
-  ],
-  "source": "const unused1 = 0;
-
-function unused2() {
-  const unused3 = 'hi';
-}
-",
+  "messages": [],
   "suppressedMessages": [],
   "usedDeprecatedRules": [],
   "warningCount": 0,
 }
 `;
 
-exports[`lints with the Strict config: fixtures/all-03.ts 1`] = `
+exports[`lints with the Extra config: fixtures/all-03.ts 1`] = `
 {
   "errorCount": 1,
   "fatalErrorCount": 1,
@@ -250,7 +223,7 @@ function tsUnused2() {
 }
 `;
 
-exports[`lints with the Strict config: fixtures/all-04.ts 1`] = `
+exports[`lints with the Extra config: fixtures/all-04.ts 1`] = `
 {
   "errorCount": 1,
   "fatalErrorCount": 1,
@@ -276,7 +249,7 @@ exports[`lints with the Strict config: fixtures/all-04.ts 1`] = `
 }
 `;
 
-exports[`lints with the Strict config: fixtures/all-05.ts 1`] = `
+exports[`lints with the Extra config: fixtures/all-05.ts 1`] = `
 {
   "errorCount": 1,
   "fatalErrorCount": 1,
@@ -299,7 +272,7 @@ exports[`lints with the Strict config: fixtures/all-05.ts 1`] = `
 }
 `;
 
-exports[`lints with the Strict config: fixtures/all-06.ts 1`] = `
+exports[`lints with the Extra config: fixtures/all-06.ts 1`] = `
 {
   "errorCount": 1,
   "fatalErrorCount": 1,
@@ -327,23 +300,13 @@ export const objectShorthandTest: {} | null = null;",
 }
 `;
 
-exports[`lints with the Strict config: fixtures/all-07.js 1`] = `
+exports[`lints with the Extra config: fixtures/all-07.js 1`] = `
 {
-  "errorCount": 3,
+  "errorCount": 2,
   "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
   "messages": [
-    {
-      "column": 1,
-      "endColumn": 2,
-      "endLine": 1,
-      "line": 1,
-      "message": "Definition for rule 'expires' was not found.",
-      "nodeType": null,
-      "ruleId": "expires",
-      "severity": 2,
-    },
     {
       "column": 11,
       "endColumn": 18,
@@ -412,24 +375,13 @@ export default a + b + c + d + e;",
 }
 `;
 
-exports[`lints with the Strict config: fixtures/node-00.js 1`] = `
+exports[`lints with the Extra config: fixtures/node-00.js 1`] = `
 {
-  "errorCount": 1,
+  "errorCount": 0,
   "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
-  "messages": [
-    {
-      "column": 1,
-      "endColumn": 2,
-      "endLine": 1,
-      "line": 1,
-      "message": "Definition for rule 'expires' was not found.",
-      "nodeType": null,
-      "ruleId": "expires",
-      "severity": 2,
-    },
-  ],
+  "messages": [],
   "output": "const data = Buffer.alloc(16);
 ",
   "suppressedMessages": [],
@@ -438,7 +390,7 @@ exports[`lints with the Strict config: fixtures/node-00.js 1`] = `
 }
 `;
 
-exports[`lints with the Strict config: fixtures/web-native-00.js 1`] = `
+exports[`lints with the Extra config: fixtures/web-native-00.js 1`] = `
 {
   "errorCount": 1,
   "fatalErrorCount": 1,
@@ -498,7 +450,7 @@ export default class Example extends React.Component {
 }
 `;
 
-exports[`lints with the Strict config: fixtures/web-native-01.js 1`] = `
+exports[`lints with the Extra config: fixtures/web-native-01.js 1`] = `
 {
   "errorCount": 1,
   "fatalErrorCount": 1,
@@ -535,23 +487,13 @@ export default class Example extends React.Component {
 }
 `;
 
-exports[`lints with the Strict config: fixtures/web-native-02.js 1`] = `
+exports[`lints with the Extra config: fixtures/web-native-02.js 1`] = `
 {
-  "errorCount": 2,
+  "errorCount": 1,
   "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
   "messages": [
-    {
-      "column": 1,
-      "endColumn": 2,
-      "endLine": 1,
-      "line": 1,
-      "message": "Definition for rule 'expires' was not found.",
-      "nodeType": null,
-      "ruleId": "expires",
-      "severity": 2,
-    },
     {
       "column": 12,
       "endColumn": 16,
@@ -610,7 +552,7 @@ export default class Example extends React.Component {
 }
 `;
 
-exports[`lints with the Strict config: fixtures/web-native-03.js 1`] = `
+exports[`lints with the Extra config: fixtures/web-native-03.js 1`] = `
 {
   "errorCount": 1,
   "fatalErrorCount": 1,
@@ -639,23 +581,13 @@ export default function Example() {
 }
 `;
 
-exports[`lints with the Strict config: fixtures/web-native-04.js 1`] = `
+exports[`lints with the Extra config: fixtures/web-native-04.js 1`] = `
 {
-  "errorCount": 2,
+  "errorCount": 1,
   "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
   "messages": [
-    {
-      "column": 1,
-      "endColumn": 2,
-      "endLine": 1,
-      "line": 1,
-      "message": "Definition for rule 'expires' was not found.",
-      "nodeType": null,
-      "ruleId": "expires",
-      "severity": 2,
-    },
     {
       "column": 7,
       "endColumn": 36,

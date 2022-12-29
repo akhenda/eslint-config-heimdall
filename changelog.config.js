@@ -5,7 +5,7 @@ module.exports = {
   maxMessageLength: 64,
   minMessageLength: 3,
   questions: ['type', 'scope', 'subject', 'body', 'breaking', 'issues', 'lerna'],
-  scopes: ['native', 'node', 'default', 'web', 'strict', ''],
+  scopes: ['', 'native', 'node', 'default', 'web', 'extra', 'shared', 'utils', 'config'],
   types: {
     chore: {
       description: 'Build process or auxiliary tool changes',

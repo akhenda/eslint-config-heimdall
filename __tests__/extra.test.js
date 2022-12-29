@@ -5,9 +5,9 @@ const checkPrettierRulesAsync = require('./tools/checkPrettierRulesAsync');
 const getBaseConfig = require('./tools/getBaseConfig');
 const lintAsync = require('./tools/lintAsync');
 
-const configFile = path.resolve(__dirname, '../strict.js');
+const configFile = path.resolve(__dirname, '../extra.js');
 
-it(`has a Strict config`, () => {
+it(`has a Extra config`, () => {
   expect(
     () =>
       new eslint.ESLint({
@@ -18,7 +18,7 @@ it(`has a Strict config`, () => {
   ).not.toThrow();
 });
 
-it(`lints with the Strict config`, async () => {
+it(`lints with the Extra config`, async () => {
   const results = await lintAsync(
     {
       baseConfig: getBaseConfig(),
@@ -42,7 +42,7 @@ it(`lints with the Strict config`, async () => {
 }, 20000);
 
 it(`doesn't conflict with Prettier`, async () => {
-  const { success, message } = await checkPrettierRulesAsync(configFile, 'strict');
+  const { success, message } = await checkPrettierRulesAsync(configFile, 'extra');
   expect(success).toMatchSnapshot('success');
   expect(message).toMatchSnapshot('message');
 }, 10000);

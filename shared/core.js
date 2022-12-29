@@ -2,7 +2,7 @@
 const { jsExtensions } = require('../utils/extensions');
 
 module.exports = {
-  extends: ['airbnb-base'],
+  extends: ['eslint:recommended', 'airbnb-base'],
   env: { es2022: true, jest: true },
   parserOptions: {
     sourceType: 'module',

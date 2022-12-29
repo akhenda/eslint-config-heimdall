@@ -4,9 +4,12 @@ const { jsExtensions, tsExtensions } = require('../utils/extensions');
 const allExtensions = [...jsExtensions, ...tsExtensions];
 
 module.exports = {
-  extends: ['airbnb-typescript/base'],
+  extends: ['plugin:import/typescript', 'plugin:@typescript-eslint/recommended', 'airbnb-typescript/base'],
   parserOptions: {
     project: './tsconfig.base.json',
+  },
+  rules: {
+    '@typescript-eslint/no-var-requires': 'off',
   },
   overrides: [
     {

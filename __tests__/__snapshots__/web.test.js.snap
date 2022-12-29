@@ -531,6 +531,41 @@ exports[`lints with the web config: fixtures/all-01.ts 1`] = `
       "ruleId": "unused-imports/no-unused-vars",
       "severity": 1,
     },
+    {
+      "column": 23,
+      "endColumn": 26,
+      "endLine": 36,
+      "line": 36,
+      "message": "Unexpected any. Specify a different type.",
+      "messageId": "unexpectedAny",
+      "nodeType": "TSAnyKeyword",
+      "ruleId": "@typescript-eslint/no-explicit-any",
+      "severity": 1,
+      "suggestions": [
+        {
+          "desc": "Use \`unknown\` instead, this will force you to explicitly, and safely assert the type is correct.",
+          "fix": {
+            "range": [
+              424,
+              427,
+            ],
+            "text": "unknown",
+          },
+          "messageId": "suggestUnknown",
+        },
+        {
+          "desc": "Use \`never\` instead, this is useful when instantiating generic type parameters that you don't need to know the type of.",
+          "fix": {
+            "range": [
+              424,
+              427,
+            ],
+            "text": "never",
+          },
+          "messageId": "suggestNever",
+        },
+      ],
+    },
   ],
   "output": "import a from 'a';
 import { b } from 'b';
@@ -594,7 +629,7 @@ function _fn(...args: any): void {}
       "ruleId": "no-path-concat",
     },
   ],
-  "warningCount": 1,
+  "warningCount": 2,
 }
 `;
 
@@ -726,6 +761,41 @@ exports[`lints with the web config: fixtures/all-03.ts 1`] = `
       "severity": 1,
     },
     {
+      "column": 12,
+      "endColumn": 15,
+      "endLine": 4,
+      "line": 4,
+      "message": "Unexpected any. Specify a different type.",
+      "messageId": "unexpectedAny",
+      "nodeType": "TSAnyKeyword",
+      "ruleId": "@typescript-eslint/no-explicit-any",
+      "severity": 1,
+      "suggestions": [
+        {
+          "desc": "Use \`unknown\` instead, this will force you to explicitly, and safely assert the type is correct.",
+          "fix": {
+            "range": [
+              56,
+              59,
+            ],
+            "text": "unknown",
+          },
+          "messageId": "suggestUnknown",
+        },
+        {
+          "desc": "Use \`never\` instead, this is useful when instantiating generic type parameters that you don't need to know the type of.",
+          "fix": {
+            "range": [
+              56,
+              59,
+            ],
+            "text": "never",
+          },
+          "messageId": "suggestNever",
+        },
+      ],
+    },
+    {
       "column": 9,
       "endColumn": 15,
       "endLine": 5,
@@ -803,7 +873,7 @@ function tsUnused2() {
       "ruleId": "no-path-concat",
     },
   ],
-  "warningCount": 4,
+  "warningCount": 5,
 }
 `;
 
@@ -867,7 +937,7 @@ exports[`lints with the web config: fixtures/all-05.ts 1`] = `
   "messages": [
     {
       "column": 1,
-      "endColumn": 25,
+      "endColumn": 24,
       "endLine": 1,
       "line": 1,
       "message": "Prefer default export.",
@@ -875,8 +945,19 @@ exports[`lints with the web config: fixtures/all-05.ts 1`] = `
       "ruleId": "import/prefer-default-export",
       "severity": 2,
     },
+    {
+      "column": 21,
+      "endColumn": 23,
+      "endLine": 1,
+      "line": 1,
+      "message": "Forbidden non-null assertion.",
+      "messageId": "noNonNull",
+      "nodeType": "TSNonNullExpression",
+      "ruleId": "@typescript-eslint/no-non-null-assertion",
+      "severity": 1,
+    },
   ],
-  "output": "export const blah = 3!!;
+  "output": "export const blah = 3!;
 ",
   "suppressedMessages": [],
   "usedDeprecatedRules": [
@@ -903,7 +984,7 @@ exports[`lints with the web config: fixtures/all-05.ts 1`] = `
       "ruleId": "no-path-concat",
     },
   ],
-  "warningCount": 0,
+  "warningCount": 1,
 }
 `;
 
