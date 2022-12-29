@@ -17,6 +17,17 @@ module.exports = {
       settings: {
         'import/parsers': {
           '@typescript-eslint/parser': tsExtensions,
+
+          // Don"t explicitly add .js/.jsx/.tsx/.ts extensions
+          'import/extensions': [
+            2,
+            {
+              js: 'never',
+              jsx: 'never',
+              ts: 'never',
+              tsx: 'never',
+            },
+          ],
         },
       },
     },
