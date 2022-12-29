@@ -2,7 +2,7 @@
 const { jsExtensions } = require('../utils/extensions');
 
 module.exports = {
-  extends: ['eslint:recommended', 'airbnb-base'],
+  extends: ['eslint:recommended', 'plugin:import/recommended', 'airbnb-base', 'plugin:lodash/recommended'], // consider replacing Airbnb with Shopify's config
   env: { es2022: true, jest: true },
   parserOptions: {
     sourceType: 'module',
@@ -16,12 +16,21 @@ module.exports = {
     module: false,
     require: false,
   },
-  plugins: ['import', 'node', 'sort-class-members', 'sort-keys-fix', 'unused-imports', 'simple-import-sort'],
+  plugins: [
+    'import',
+    'sort-class-members',
+    'sort-keys-fix',
+    'unused-imports',
+    'simple-import-sort',
+    'write-good-comments',
+    'deprecate',
+    'lodash',
+  ],
   settings: {
     'import/extensions': jsExtensions,
     'import/ignore': [
-      // react-native's main module is Flow, not JavaScript, and raises parse errors. Additionally,
-      // several other react-native-related packages still publish Flow code as their main source.
+      // react-native's main module is Flow, not JavaScript, and raises parse errors.
+      // Other react-native-related packages still publish Flow code as their main source.
       '/node_modules/@?react-native',
     ],
     'import/resolver': {
@@ -67,6 +76,18 @@ module.exports = {
         ],
         accessorPairPositioning: 'getThenSet',
       },
+    ],
+
+    // Write good comments
+    'write-good-comments/write-good-comments': 'warn',
+
+    // Support deprecate rules
+    'deprecate/function': ['error', { name: 'legacyFunc', use: 'newFunc from this package' }],
+    'deprecate/member-expression': ['error', { name: 'React.createClass', use: 'native es6 classes' }],
+    'deprecate/import': [
+      'error',
+      { name: 'path/to/legacyModule', use: 'newModule' },
+      { nameRegExp: '\\.sss', use: 'css imports' },
     ],
   },
   overrides: [

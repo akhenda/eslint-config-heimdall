@@ -1,8 +1,8 @@
 # eslint-config-heimdall
 
-Shared ESLint configs for Node, Web, and universal Expo projects.
+[![Test, Release & Publish](https://github.com/akhenda/eslint-config-heimdall/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/akhenda/eslint-config-heimdall/actions/workflows/main.yml) ![npm](https://img.shields.io/npm/v/eslint-config-heimdall) ![Branches](./badges/coverage-branches.svg) ![Functions](./badges/coverage-functions.svg) ![Lines](./badges/coverage-lines.svg) ![Statements](./badges/coverage-statements.svg) ![Jest coverage](./badges/coverage-jest%20coverage.svg) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
-[![Test, Release & Publish](https://github.com/akhenda/eslint-config-heimdall/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/akhenda/eslint-config-heimdall/actions/workflows/main.yml) ![npm](https://img.shields.io/npm/v/eslint-config-heimdall) ![Branches](./badges/coverage-branches.svg) ![Functions](./badges/coverage-functions.svg) ![Lines](./badges/coverage-lines.svg) ![Statements](./badges/coverage-statements.svg) ![Jest coverage](./badges/coverage-jest%20coverage.svg)
+> Shared ESLint configs for Node, React, and universal Expo projects.
 
 ## Installation
 
@@ -25,7 +25,7 @@ Import this config into your own ESLint configuration using the `extends` option
 ```js
 {
   "eslintConfig": {
-    // Choose from heimdall/native, heimdall/node, heimdall/web
+    // Choose from heimdall/native, heimdall/node, heimdall/react
     "extends": "heimdall"
   }
 }
@@ -64,7 +64,7 @@ There are several configs for different platforms. They are:
 
 - `heimdall`: the basic config for JavaScript projects for which there isn't a more specific config,
 - `heimdall/native`: the config for React Native projects, including Expo projects, with support for React and JSX,
-- `heimdall/web`: the config for code that runs in web browsers, with support for React and JSX,
+- `heimdall/react`: the config for code that runs in web browsers, with support for React and JSX,
 - `heimdall/node`: the config for code that runs in Node.
 
 For an Expo project, your configuration might look like this:
@@ -79,7 +79,7 @@ You also can extend multiple configs, which is useful for projects that span sev
 
 ```js
 "eslintConfig": {
-  "extends": ["heimdall/node", "heimdall/web"]
+  "extends": ["heimdall/node", "heimdall/react"]
 }
 ```
 

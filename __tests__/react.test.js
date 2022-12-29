@@ -5,9 +5,9 @@ const checkPrettierRulesAsync = require('./tools/checkPrettierRulesAsync');
 const getBaseConfig = require('./tools/getBaseConfig');
 const lintAsync = require('./tools/lintAsync');
 
-const configFile = path.resolve(__dirname, '../extra.js');
+const configFile = path.resolve(__dirname, '../react.js');
 
-it(`has a Extra config`, () => {
+it(`has a react config`, () => {
   expect(
     () =>
       new eslint.ESLint({
@@ -18,7 +18,7 @@ it(`has a Extra config`, () => {
   ).not.toThrow();
 });
 
-it(`lints with the Extra config`, async () => {
+it(`lints with the react config`, async () => {
   const results = await lintAsync(
     {
       baseConfig: getBaseConfig(),
@@ -27,12 +27,7 @@ it(`lints with the Extra config`, async () => {
       overrideConfigFile: configFile,
       useEslintrc: false,
     },
-    [
-      '__tests__/fixtures/*all*',
-      '__tests__/fixtures/*native*',
-      '__tests__/fixtures/*node*',
-      '__tests__/fixtures/*web*',
-    ],
+    ['__tests__/fixtures/*all*', '__tests__/fixtures/*react*'],
   );
   for (const result of results) {
     const relativeFilePath = path.relative(__dirname, result.filePath);
@@ -42,7 +37,7 @@ it(`lints with the Extra config`, async () => {
 }, 20000);
 
 it(`doesn't conflict with Prettier`, async () => {
-  const { success, message } = await checkPrettierRulesAsync(configFile, 'extra');
+  const { success, message } = await checkPrettierRulesAsync(configFile, 'react');
   expect(success).toMatchSnapshot('success');
   expect(message).toMatchSnapshot('message');
 }, 10000);

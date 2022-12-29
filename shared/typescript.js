@@ -4,7 +4,7 @@ const { jsExtensions, tsExtensions } = require('../utils/extensions');
 const allExtensions = [...jsExtensions, ...tsExtensions];
 
 module.exports = {
-  extends: ['plugin:import/typescript', 'plugin:@typescript-eslint/recommended', 'airbnb-typescript/base'],
+  extends: ['plugin:@typescript-eslint/recommended', 'plugin:import/typescript', 'airbnb-typescript/base'],
   parserOptions: {
     project: './tsconfig.base.json',
   },
@@ -67,6 +67,47 @@ module.exports = {
               },
             },
             extendDefaults: false,
+          },
+        ],
+        '@typescript-eslint/naming-convention': [
+          'error',
+          {
+            selector: 'default',
+            format: ['camelCase'],
+          },
+          {
+            selector: 'variable',
+            format: ['PascalCase', 'UPPER_CASE'],
+            types: ['boolean'],
+            prefix: ['is', 'should', 'has', 'can', 'did', 'will'],
+          },
+          {
+            selector: 'variableLike',
+            format: ['camelCase', 'UPPER_CASE', 'PascalCase'],
+          },
+
+          {
+            selector: 'parameter',
+            format: ['camelCase'],
+          },
+          {
+            selector: 'memberLike',
+            modifiers: ['private'],
+            format: ['camelCase'],
+            leadingUnderscore: 'forbid',
+          },
+          {
+            selector: 'typeLike',
+            format: ['PascalCase'],
+          },
+          {
+            selector: 'property',
+            modifiers: ['readonly'],
+            format: ['PascalCase'],
+          },
+          {
+            selector: 'enumMember',
+            format: ['UPPER_CASE'],
           },
         ],
 
