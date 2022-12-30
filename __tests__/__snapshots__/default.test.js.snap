@@ -493,7 +493,7 @@ exports[`lints with the default config: fixtures/all-01.ts 1`] = `
       "endColumn": 13,
       "endLine": 36,
       "line": 36,
-      "message": "Function name \`_fn\` must match one of the following formats: camelCase, UPPER_CASE, PascalCase",
+      "message": "Function name \`_fn\` must match one of the following formats: camelCase, PascalCase",
       "messageId": "doesNotMatchFormat",
       "nodeType": "Identifier",
       "ruleId": "@typescript-eslint/naming-convention",
@@ -955,23 +955,11 @@ exports[`lints with the default config: fixtures/all-05.ts 1`] = `
 
 exports[`lints with the default config: fixtures/all-06.ts 1`] = `
 {
-  "errorCount": 1,
+  "errorCount": 0,
   "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
-  "messages": [
-    {
-      "column": 14,
-      "endColumn": 41,
-      "endLine": 2,
-      "line": 2,
-      "message": "Variable name \`booleanTest\` must have one of the following prefixes: is, should, has, can, did, will",
-      "messageId": "missingAffix",
-      "nodeType": "Identifier",
-      "ruleId": "@typescript-eslint/naming-convention",
-      "severity": 2,
-    },
-  ],
+  "messages": [],
   "output": "export const numberTest: number | null = null;
 export const booleanTest: boolean | null = null;
 export const symbolTest: symbol | null = null;

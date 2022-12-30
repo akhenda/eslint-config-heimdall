@@ -580,73 +580,11 @@ export const objectShorthandTest: {} | null = null;",
 
 exports[`lints with the Hardcore config: fixtures/all-07.js 1`] = `
 {
-  "errorCount": 2,
+  "errorCount": 0,
   "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
-  "messages": [
-    {
-      "column": 11,
-      "endColumn": 18,
-      "endLine": 1,
-      "line": 1,
-      "message": "Do not use "require".",
-      "messageId": "error/identifier",
-      "nodeType": "Identifier",
-      "ruleId": "unicorn/prefer-module",
-      "severity": 2,
-      "suggestions": [
-        {
-          "data": {
-            "name": "require",
-          },
-          "desc": "Switch to \`import\`.",
-          "fix": {
-            "range": [
-              0,
-              22,
-            ],
-            "text": "import a from 'a'",
-          },
-          "messageId": "suggestion/import",
-        },
-      ],
-    },
-    {
-      "column": 11,
-      "endColumn": 18,
-      "endLine": 3,
-      "line": 3,
-      "message": "Do not use "require".",
-      "messageId": "error/identifier",
-      "nodeType": "Identifier",
-      "ruleId": "unicorn/prefer-module",
-      "severity": 2,
-      "suggestions": [
-        {
-          "data": {
-            "name": "require",
-          },
-          "desc": "Switch to \`import\`.",
-          "fix": {
-            "range": [
-              45,
-              67,
-            ],
-            "text": "import e from 'e'",
-          },
-          "messageId": "suggestion/import",
-        },
-      ],
-    },
-  ],
-  "source": "const a = require('a');
-import d from './d';
-const e = require('e');
-import c from 'c';
-import b from 'b';
-
-export default a + b + c + d + e;",
+  "messages": [],
   "suppressedMessages": [],
   "usedDeprecatedRules": [],
   "warningCount": 0,
