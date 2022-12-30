@@ -56,9 +56,6 @@
   "config": {
     "commitizen": {
       "path": "git-cz"
-    },
-    "cz-customizable": {
-      "config": ".cz-config.js"
     }
   },
   "commitlint": {
@@ -125,7 +122,6 @@
     "@semantic-release/github": "8.0.7",
     "@semantic-release/npm": "9.0.1",
     "commitizen": "4.2.6",
-    "cz-customizable": "7.0.0",
     "eslint": "8.30.0",
     "eslint-config-heimdall": "file:./",
     "git-cz": "4.9.0",

@@ -69,47 +69,47 @@ module.exports = {
             extendDefaults: false,
           },
         ],
-        '@typescript-eslint/naming-convention': [
-          'error',
-          {
-            selector: 'default',
-            format: ['camelCase'],
-          },
-          {
-            selector: 'variable',
-            format: ['PascalCase', 'UPPER_CASE'],
-            types: ['boolean'],
-            prefix: ['is', 'should', 'has', 'can', 'did', 'will'],
-          },
-          {
-            selector: 'variableLike',
-            format: ['camelCase', 'UPPER_CASE', 'PascalCase'],
-          },
+        // '@typescript-eslint/naming-convention': [
+        //   'error',
+        //   {
+        //     selector: 'default',
+        //     format: ['camelCase'],
+        //   },
+        //   {
+        //     selector: 'variable',
+        //     format: ['PascalCase', 'UPPER_CASE'],
+        //     types: ['boolean'],
+        //     prefix: ['is', 'should', 'has', 'can', 'did', 'will'],
+        //   },
+        //   {
+        //     selector: 'variableLike',
+        //     format: ['camelCase', 'UPPER_CASE', 'PascalCase'],
+        //   },
 
-          {
-            selector: 'parameter',
-            format: ['camelCase'],
-          },
-          {
-            selector: 'memberLike',
-            modifiers: ['private'],
-            format: ['camelCase'],
-            leadingUnderscore: 'forbid',
-          },
-          {
-            selector: 'typeLike',
-            format: ['PascalCase'],
-          },
-          {
-            selector: 'property',
-            modifiers: ['readonly'],
-            format: ['PascalCase'],
-          },
-          {
-            selector: 'enumMember',
-            format: ['UPPER_CASE'],
-          },
-        ],
+        //   {
+        //     selector: 'parameter',
+        //     format: ['camelCase'],
+        //   },
+        //   {
+        //     selector: 'memberLike',
+        //     modifiers: ['private'],
+        //     format: ['camelCase'],
+        //     leadingUnderscore: 'forbid',
+        //   },
+        //   {
+        //     selector: 'typeLike',
+        //     format: ['PascalCase'],
+        //   },
+        //   {
+        //     selector: 'property',
+        //     modifiers: ['readonly'],
+        //     format: ['PascalCase'],
+        //   },
+        //   {
+        //     selector: 'enumMember',
+        //     format: ['UPPER_CASE'],
+        //   },
+        // ],
 
         // The typescript-eslint FAQ recommends turning off "no-undef" in favor of letting tsc check for
         // undefined variables, including types

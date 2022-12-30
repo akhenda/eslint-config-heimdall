@@ -26,7 +26,7 @@ module.exports = {
   ],
   rules: {
     'eslint-comments/no-unused-disable': 'error',
-    'no-secrets/no-secrets': ['error', { tolerance: 3.2 }],
+    'no-secrets/no-secrets': 'error',
     'filenames/match-exported': [2, [null, 'kebab', 'camel']],
     'no-constructor-bind/no-constructor-bind': 'error',
     'no-constructor-bind/no-constructor-state': 'error',
@@ -35,5 +35,46 @@ module.exports = {
     'unicorn/empty-brace-spaces': 'off',
     'unicorn/no-nested-ternary': 'off',
     'unicorn/number-literal-case': 'off',
+
+    'unicorn/prefer-module': 'off',
+
+    // Functional Programming
+    'functional/immutable-data': [
+      'error',
+      {
+        ignorePattern: ['^module.exports$'],
+      },
+    ],
+    'functional/functional-parameters': [
+      'error',
+      {
+        ignorePattern: [
+          '^mounted$',
+          '^created$',
+          '^unmount$',
+          '^unmounted$',
+          '^beforeDestroy$',
+          '^destroy$',
+          '^updated$',
+          '^beforeUpdate$',
+          '^onBeforeUpdate$',
+          '^onUpdated$',
+          '^onMounted$',
+        ],
+      },
+    ],
+    'functional/no-expression-statement': [
+      'error',
+      {
+        ignoreVoid: true,
+      },
+    ],
   },
+  overrides: [
+    // Top level files (config files).
+    {
+      files: ['./*'],
+      extends: ['plugin:functional/off'],
+    },
+  ],
 };

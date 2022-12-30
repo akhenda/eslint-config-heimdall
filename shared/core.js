@@ -3,7 +3,7 @@ const { jsExtensions } = require('../utils/extensions');
 
 module.exports = {
   extends: ['eslint:recommended', 'plugin:import/recommended', 'airbnb-base', 'plugin:lodash/recommended'], // consider replacing Airbnb with Shopify's config
-  env: { es2022: true, jest: true },
+  env: { es2022: true },
   parserOptions: {
     sourceType: 'module',
     ecmaVersion: 2022,
@@ -89,6 +89,8 @@ module.exports = {
       { name: 'path/to/legacyModule', use: 'newModule' },
       { nameRegExp: '\\.sss', use: 'css imports' },
     ],
+
+    'lodash/prefer-lodash-method': 'off',
   },
   overrides: [
     {
