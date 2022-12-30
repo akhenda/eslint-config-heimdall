@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/akhenda/eslint-config-heimdall/compare/v1.3.0...v1.4.0) (2022-12-30)
+
+
+### Features
+
+* **tests:** 🎸 add jest, mocha & cypress plugins ([f135f8e](https://github.com/akhenda/eslint-config-heimdall/commit/f135f8e84ac662a97e1448a9e64d091219e128fa))
+
 # [1.3.0](https://github.com/akhenda/eslint-config-heimdall/compare/v1.2.1...v1.3.0) (2022-12-29)
 
 
