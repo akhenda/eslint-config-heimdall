@@ -22,7 +22,7 @@ module.exports = {
     'sort-keys-fix',
     'unused-imports',
     'simple-import-sort',
-    'write-good-comments',
+    // 'write-good-comments',
     'deprecate',
     'lodash',
   ],
@@ -65,21 +65,21 @@ module.exports = {
     'sort-class-members/sort-class-members': [
       2,
       {
+        accessorPairPositioning: 'getThenSet',
         order: [
           '[static-properties]',
+          'constructor',
           '[static-methods]',
           '[properties]',
           '[conventional-private-properties]',
-          'constructor',
           '[methods]',
           '[conventional-private-methods]',
         ],
-        accessorPairPositioning: 'getThenSet',
       },
     ],
 
     // Write good comments
-    'write-good-comments/write-good-comments': 'warn',
+    // 'write-good-comments/write-good-comments': 'warn',
 
     // Support deprecate rules
     'deprecate/function': ['error', { name: 'legacyFunc', use: 'newFunc from this package' }],
