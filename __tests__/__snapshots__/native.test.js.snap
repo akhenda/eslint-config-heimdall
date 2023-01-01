@@ -1140,7 +1140,7 @@ export default a + b + c + d + e;
 
 exports[`lints with the React Native config: fixtures/react-and-react-native-00.js 1`] = `
 {
-  "errorCount": 10,
+  "errorCount": 11,
   "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
@@ -1157,9 +1157,31 @@ exports[`lints with the React Native config: fixtures/react-and-react-native-00.
     },
     {
       "column": 3,
+      "endColumn": 4,
+      "endLine": 10,
+      "line": 4,
+      "message": "constructor should be placed after props",
+      "messageId": "unsortedProps",
+      "nodeType": "MethodDefinition",
+      "ruleId": "react/sort-comp",
+      "severity": 2,
+    },
+    {
+      "column": 16,
+      "endColumn": 17,
+      "endLine": 8,
+      "line": 8,
+      "message": "'x' is missing in props validation",
+      "messageId": "missingPropType",
+      "nodeType": "Identifier",
+      "ruleId": "react/prop-types",
+      "severity": 2,
+    },
+    {
+      "column": 3,
       "endColumn": 5,
-      "endLine": 11,
-      "line": 6,
+      "endLine": 19,
+      "line": 14,
       "message": "State initialization should be in a constructor",
       "messageId": "stateInitConstructor",
       "nodeType": "PropertyDefinition",
@@ -1169,23 +1191,12 @@ exports[`lints with the React Native config: fixtures/react-and-react-native-00.
     {
       "column": 3,
       "endColumn": 8,
-      "endLine": 13,
-      "line": 13,
+      "endLine": 21,
+      "line": 21,
       "message": "Unused method or property "props" of class "Example"",
       "messageId": "unusedWithClass",
       "nodeType": "Identifier",
       "ruleId": "react/no-unused-class-component-methods",
-      "severity": 2,
-    },
-    {
-      "column": 16,
-      "endColumn": 17,
-      "endLine": 19,
-      "line": 19,
-      "message": "'x' is missing in props validation",
-      "messageId": "missingPropType",
-      "nodeType": "Identifier",
-      "ruleId": "react/prop-types",
       "severity": 2,
     },
     {
@@ -1258,6 +1269,14 @@ exports[`lints with the React Native config: fixtures/react-and-react-native-00.
   "output": "import React from 'react';
 
 export default class Example extends React.Component {
+  constructor(props, context) {
+    super(props, context);
+    this.state = {
+      ...this.state,
+      x: props.x,
+    };
+  }
+
   static getInitialProps() {}
 
   state = {
@@ -1268,14 +1287,6 @@ export default class Example extends React.Component {
   };
 
   props;
-
-  constructor(props, context) {
-    super(props, context);
-    this.state = {
-      ...this.state,
-      x: props.x,
-    };
-  }
 
   componentDidMount() {
     fetch('http://example.com');
