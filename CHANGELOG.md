@@ -1,3 +1,13 @@
+## [1.4.1](https://github.com/akhenda/eslint-config-heimdall/compare/v1.4.0...v1.4.1) (2023-01-01)
+
+
+### Bug Fixes
+
+* **deps:** pin dependencies ([857c1d6](https://github.com/akhenda/eslint-config-heimdall/commit/857c1d6df8a0abadb98216fcb9541cc9b1293f2a))
+* **deps:** update dependency eslint-plugin-jest to v27.2.0 ([7d33207](https://github.com/akhenda/eslint-config-heimdall/commit/7d332073957ed6eb34237e1d48b8fac70b29e53c))
+* remove mocha plugin ([74cb5ff](https://github.com/akhenda/eslint-config-heimdall/commit/74cb5ff0ac3aa322342decf777e51b39b9ddb009))
+* **tests:** 🐛 update snapshots after mocha plugin removal ([4b9e879](https://github.com/akhenda/eslint-config-heimdall/commit/4b9e879fca19903c531f385d53eee3ee3ea934de))
+
 # [1.4.0](https://github.com/akhenda/eslint-config-heimdall/compare/v1.3.0...v1.4.0) (2022-12-30)
 
 
