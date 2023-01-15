@@ -68,9 +68,9 @@ module.exports = {
         accessorPairPositioning: 'getThenSet',
         order: [
           '[static-properties]',
-          'constructor',
           '[static-methods]',
           '[properties]',
+          'constructor',
           '[conventional-private-properties]',
           '[methods]',
           '[conventional-private-methods]',
