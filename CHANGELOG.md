@@ -1,3 +1,15 @@
+# [1.5.0](https://github.com/akhenda/eslint-config-heimdall/compare/v1.4.3...v1.5.0) (2023-02-16)
+
+
+### Bug Fixes
+
+* **deps:** 🐛 remove postcss ([7c03d56](https://github.com/akhenda/eslint-config-heimdall/commit/7c03d566ba3da644571920f3e0755099f95c665c))
+
+
+### Features
+
+* **react:** 🎸 remove tailwind plugin ([d1af82e](https://github.com/akhenda/eslint-config-heimdall/commit/d1af82e6e51db544122ae09d92cbbc7ec85defa5))
+
 ## [1.4.3](https://github.com/akhenda/eslint-config-heimdall/compare/v1.4.2...v1.4.3) (2023-02-16)
 
 
