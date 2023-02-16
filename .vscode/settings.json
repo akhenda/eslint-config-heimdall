@@ -5,6 +5,11 @@
   "files.eol": "\n",
   "editor.tabSize": 2,
 
+  "search.exclude": {
+    "yarn.lock": true,
+    "pnpm-lock.yaml": true
+  },
+
   // Format all filetypes on save
   "editor.formatOnSave": true,
 
@@ -16,6 +21,7 @@
 
   // run eslint --fix on save
   "editor.codeActionsOnSave": {
+    "source.addMissingImports": true,
     "source.fixAll.eslint": true
   },
 
