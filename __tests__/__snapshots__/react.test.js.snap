@@ -385,7 +385,7 @@ function* gen() {}
 
 exports[`lints with the react config: fixtures/all-01.ts 1`] = `
 {
-  "errorCount": 12,
+  "errorCount": 11,
   "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
@@ -398,16 +398,6 @@ exports[`lints with the react config: fixtures/all-01.ts 1`] = `
       "message": "Missing file extension for "./e"",
       "nodeType": "Literal",
       "ruleId": "import/extensions",
-      "severity": 2,
-    },
-    {
-      "column": 1,
-      "endColumn": 2,
-      "endLine": 34,
-      "line": 11,
-      "message": "Prefer default export on a file with single export.",
-      "nodeType": "ExportNamedDeclaration",
-      "ruleId": "import/prefer-default-export",
       "severity": 2,
     },
     {
@@ -879,26 +869,11 @@ function tsUnused2() {
 
 exports[`lints with the react config: fixtures/all-04.ts 1`] = `
 {
-  "errorCount": 1,
+  "errorCount": 0,
   "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
-  "messages": [
-    {
-      "column": 1,
-      "endColumn": 3,
-      "endLine": 3,
-      "line": 1,
-      "message": "Prefer default export on a file with single export.",
-      "nodeType": "ExportNamedDeclaration",
-      "ruleId": "import/prefer-default-export",
-      "severity": 2,
-    },
-  ],
-  "source": "export const blah = (): Array<string> => {
-  return ['1'];
-};
-",
+  "messages": [],
   "suppressedMessages": [],
   "usedDeprecatedRules": [
     {
@@ -930,21 +905,11 @@ exports[`lints with the react config: fixtures/all-04.ts 1`] = `
 
 exports[`lints with the react config: fixtures/all-05.ts 1`] = `
 {
-  "errorCount": 1,
+  "errorCount": 0,
   "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
   "messages": [
-    {
-      "column": 1,
-      "endColumn": 24,
-      "endLine": 1,
-      "line": 1,
-      "message": "Prefer default export on a file with single export.",
-      "nodeType": "ExportNamedDeclaration",
-      "ruleId": "import/prefer-default-export",
-      "severity": 2,
-    },
     {
       "column": 21,
       "endColumn": 23,
@@ -1512,11 +1477,22 @@ export default class Example extends React.Component {
 
 exports[`lints with the react config: fixtures/react-and-react-native-03.js 1`] = `
 {
-  "errorCount": 3,
+  "errorCount": 4,
   "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
   "messages": [
+    {
+      "column": 8,
+      "endColumn": 13,
+      "endLine": 1,
+      "line": 1,
+      "message": "'React' is defined but never used.",
+      "messageId": "unusedVar",
+      "nodeType": "Identifier",
+      "ruleId": "@typescript-eslint/no-unused-vars",
+      "severity": 2,
+    },
     {
       "column": 19,
       "endColumn": 26,

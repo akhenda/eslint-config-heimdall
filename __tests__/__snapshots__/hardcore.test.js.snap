@@ -9,11 +9,21 @@ exports[`doesn't conflict with Prettier: success 1`] = `true`;
 
 exports[`lints with the Hardcore config: fixtures/all-00.js 1`] = `
 {
-  "errorCount": 26,
+  "errorCount": 22,
   "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
   "messages": [
+    {
+      "column": 1,
+      "endColumn": 2,
+      "endLine": 1,
+      "line": 1,
+      "message": "Definition for rule 'functional/no-expression-statement' was not found.",
+      "nodeType": null,
+      "ruleId": "functional/no-expression-statement",
+      "severity": 2,
+    },
     {
       "column": 8,
       "endColumn": 9,
@@ -33,7 +43,7 @@ exports[`lints with the Hardcore config: fixtures/all-00.js 1`] = `
       "message": "Unexpected class, use functions not classes.",
       "messageId": "generic",
       "nodeType": "ClassDeclaration",
-      "ruleId": "functional/no-class",
+      "ruleId": "functional/no-classes",
       "severity": 2,
     },
     {
@@ -80,18 +90,7 @@ exports[`lints with the Hardcore config: fixtures/all-00.js 1`] = `
       "message": "Using expressions to cause side-effects not allowed.",
       "messageId": "generic",
       "nodeType": "ExpressionStatement",
-      "ruleId": "functional/no-expression-statement",
-      "severity": 2,
-    },
-    {
-      "column": 20,
-      "endColumn": 24,
-      "endLine": 24,
-      "line": 24,
-      "message": "Unexpected this, use functions not classes.",
-      "messageId": "generic",
-      "nodeType": "ThisExpression",
-      "ruleId": "functional/no-this-expression",
+      "ruleId": "functional/no-expression-statements",
       "severity": 2,
     },
     {
@@ -102,7 +101,7 @@ exports[`lints with the Hardcore config: fixtures/all-00.js 1`] = `
       "message": "Using expressions to cause side-effects not allowed.",
       "messageId": "generic",
       "nodeType": "ExpressionStatement",
-      "ruleId": "functional/no-expression-statement",
+      "ruleId": "functional/no-expression-statements",
       "severity": 2,
     },
     {
@@ -118,35 +117,13 @@ exports[`lints with the Hardcore config: fixtures/all-00.js 1`] = `
     },
     {
       "column": 5,
-      "endColumn": 9,
-      "endLine": 25,
-      "line": 25,
-      "message": "Unexpected this, use functions not classes.",
-      "messageId": "generic",
-      "nodeType": "ThisExpression",
-      "ruleId": "functional/no-this-expression",
-      "severity": 2,
-    },
-    {
-      "column": 5,
       "endColumn": 22,
       "endLine": 26,
       "line": 26,
       "message": "Using expressions to cause side-effects not allowed.",
       "messageId": "generic",
       "nodeType": "ExpressionStatement",
-      "ruleId": "functional/no-expression-statement",
-      "severity": 2,
-    },
-    {
-      "column": 5,
-      "endColumn": 6,
-      "endLine": 32,
-      "line": 28,
-      "message": "Unexpected try-catch, this pattern is not functional.",
-      "messageId": "catch",
-      "nodeType": "TryStatement",
-      "ruleId": "functional/no-try-statement",
+      "ruleId": "functional/no-expression-statements",
       "severity": 2,
     },
     {
@@ -157,7 +134,7 @@ exports[`lints with the Hardcore config: fixtures/all-00.js 1`] = `
       "message": "Using expressions to cause side-effects not allowed.",
       "messageId": "generic",
       "nodeType": "ExpressionStatement",
-      "ruleId": "functional/no-expression-statement",
+      "ruleId": "functional/no-expression-statements",
       "severity": 2,
     },
     {
@@ -168,18 +145,7 @@ exports[`lints with the Hardcore config: fixtures/all-00.js 1`] = `
       "message": "Using expressions to cause side-effects not allowed.",
       "messageId": "generic",
       "nodeType": "ExpressionStatement",
-      "ruleId": "functional/no-expression-statement",
-      "severity": 2,
-    },
-    {
-      "column": 5,
-      "endColumn": 6,
-      "endLine": 38,
-      "line": 34,
-      "message": "Unexpected try-catch, this pattern is not functional.",
-      "messageId": "catch",
-      "nodeType": "TryStatement",
-      "ruleId": "functional/no-try-statement",
+      "ruleId": "functional/no-expression-statements",
       "severity": 2,
     },
     {
@@ -190,7 +156,7 @@ exports[`lints with the Hardcore config: fixtures/all-00.js 1`] = `
       "message": "Using expressions to cause side-effects not allowed.",
       "messageId": "generic",
       "nodeType": "ExpressionStatement",
-      "ruleId": "functional/no-expression-statement",
+      "ruleId": "functional/no-expression-statements",
       "severity": 2,
     },
     {
@@ -201,7 +167,7 @@ exports[`lints with the Hardcore config: fixtures/all-00.js 1`] = `
       "message": "Using expressions to cause side-effects not allowed.",
       "messageId": "generic",
       "nodeType": "ExpressionStatement",
-      "ruleId": "functional/no-expression-statement",
+      "ruleId": "functional/no-expression-statements",
       "severity": 2,
     },
     {
@@ -212,18 +178,7 @@ exports[`lints with the Hardcore config: fixtures/all-00.js 1`] = `
       "message": "Using expressions to cause side-effects not allowed.",
       "messageId": "generic",
       "nodeType": "ExpressionStatement",
-      "ruleId": "functional/no-expression-statement",
-      "severity": 2,
-    },
-    {
-      "column": 5,
-      "endColumn": 9,
-      "endLine": 40,
-      "line": 40,
-      "message": "Unexpected this, use functions not classes.",
-      "messageId": "generic",
-      "nodeType": "ThisExpression",
-      "ruleId": "functional/no-this-expression",
+      "ruleId": "functional/no-expression-statements",
       "severity": 2,
     },
     {
@@ -245,7 +200,7 @@ exports[`lints with the Hardcore config: fixtures/all-00.js 1`] = `
       "message": "Using expressions to cause side-effects not allowed.",
       "messageId": "generic",
       "nodeType": "ExpressionStatement",
-      "ruleId": "functional/no-expression-statement",
+      "ruleId": "functional/no-expression-statements",
       "severity": 2,
     },
     {
@@ -256,7 +211,7 @@ exports[`lints with the Hardcore config: fixtures/all-00.js 1`] = `
       "message": "Using expressions to cause side-effects not allowed.",
       "messageId": "generic",
       "nodeType": "ExpressionStatement",
-      "ruleId": "functional/no-expression-statement",
+      "ruleId": "functional/no-expression-statements",
       "severity": 2,
     },
     {
@@ -267,7 +222,7 @@ exports[`lints with the Hardcore config: fixtures/all-00.js 1`] = `
       "message": "Unexpected loop, use map or reduce instead.",
       "messageId": "generic",
       "nodeType": "ForOfStatement",
-      "ruleId": "functional/no-loop-statement",
+      "ruleId": "functional/no-loop-statements",
       "severity": 2,
     },
     {
@@ -278,7 +233,7 @@ exports[`lints with the Hardcore config: fixtures/all-00.js 1`] = `
       "message": "Using expressions to cause side-effects not allowed.",
       "messageId": "generic",
       "nodeType": "ExpressionStatement",
-      "ruleId": "functional/no-expression-statement",
+      "ruleId": "functional/no-expression-statements",
       "severity": 2,
     },
     {
@@ -442,11 +397,21 @@ function _fn(...args: any): void {}
 
 exports[`lints with the Hardcore config: fixtures/all-02.js 1`] = `
 {
-  "errorCount": 1,
+  "errorCount": 2,
   "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
   "messages": [
+    {
+      "column": 1,
+      "endColumn": 2,
+      "endLine": 1,
+      "line": 1,
+      "message": "Definition for rule 'functional/no-expression-statement' was not found.",
+      "nodeType": null,
+      "ruleId": "functional/no-expression-statement",
+      "severity": 2,
+    },
     {
       "column": 1,
       "endColumn": 2,
@@ -580,11 +545,29 @@ export const objectShorthandTest: {} | null = null;",
 
 exports[`lints with the Hardcore config: fixtures/all-07.js 1`] = `
 {
-  "errorCount": 0,
+  "errorCount": 1,
   "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
-  "messages": [],
+  "messages": [
+    {
+      "column": 1,
+      "endColumn": 2,
+      "endLine": 1,
+      "line": 1,
+      "message": "Definition for rule 'functional/no-expression-statement' was not found.",
+      "nodeType": null,
+      "ruleId": "functional/no-expression-statement",
+      "severity": 2,
+    },
+  ],
+  "source": "const a = require('a');
+import d from './d';
+const e = require('e');
+import c from 'c';
+import b from 'b';
+
+export default a + b + c + d + e;",
   "suppressedMessages": [],
   "usedDeprecatedRules": [],
   "warningCount": 0,
@@ -593,11 +576,22 @@ exports[`lints with the Hardcore config: fixtures/all-07.js 1`] = `
 
 exports[`lints with the Hardcore config: fixtures/node-00.js 1`] = `
 {
-  "errorCount": 0,
+  "errorCount": 1,
   "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
-  "messages": [],
+  "messages": [
+    {
+      "column": 1,
+      "endColumn": 2,
+      "endLine": 1,
+      "line": 1,
+      "message": "Definition for rule 'functional/no-expression-statement' was not found.",
+      "nodeType": null,
+      "ruleId": "functional/no-expression-statement",
+      "severity": 2,
+    },
+  ],
   "output": "const data = Buffer.alloc(16);
 ",
   "suppressedMessages": [],
@@ -705,11 +699,21 @@ export default class Example extends React.Component {
 
 exports[`lints with the Hardcore config: fixtures/react-and-react-native-02.js 1`] = `
 {
-  "errorCount": 7,
+  "errorCount": 8,
   "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
   "messages": [
+    {
+      "column": 1,
+      "endColumn": 2,
+      "endLine": 1,
+      "line": 1,
+      "message": "Definition for rule 'functional/no-expression-statement' was not found.",
+      "nodeType": null,
+      "ruleId": "functional/no-expression-statement",
+      "severity": 2,
+    },
     {
       "column": 1,
       "endColumn": 2,
@@ -728,7 +732,7 @@ exports[`lints with the Hardcore config: fixtures/react-and-react-native-02.js 1
       "message": "Unexpected class, use functions not classes.",
       "messageId": "generic",
       "nodeType": "ClassDeclaration",
-      "ruleId": "functional/no-class",
+      "ruleId": "functional/no-classes",
       "severity": 2,
     },
     {
@@ -864,11 +868,21 @@ export default function Example() {
 
 exports[`lints with the Hardcore config: fixtures/react-and-react-native-04.js 1`] = `
 {
-  "errorCount": 11,
+  "errorCount": 12,
   "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
   "messages": [
+    {
+      "column": 1,
+      "endColumn": 2,
+      "endLine": 1,
+      "line": 1,
+      "message": "Definition for rule 'functional/no-expression-statement' was not found.",
+      "nodeType": null,
+      "ruleId": "functional/no-expression-statement",
+      "severity": 2,
+    },
     {
       "column": 1,
       "endColumn": 2,
@@ -887,7 +901,7 @@ exports[`lints with the Hardcore config: fixtures/react-and-react-native-04.js 1
       "message": "Using expressions to cause side-effects not allowed.",
       "messageId": "generic",
       "nodeType": "ExpressionStatement",
-      "ruleId": "functional/no-expression-statement",
+      "ruleId": "functional/no-expression-statements",
       "severity": 2,
     },
     {
@@ -909,18 +923,7 @@ exports[`lints with the Hardcore config: fixtures/react-and-react-native-04.js 1
       "message": "Using expressions to cause side-effects not allowed.",
       "messageId": "generic",
       "nodeType": "ExpressionStatement",
-      "ruleId": "functional/no-expression-statement",
-      "severity": 2,
-    },
-    {
-      "column": 3,
-      "endColumn": 4,
-      "endLine": 11,
-      "line": 9,
-      "message": "Unexpected if, use a conditional expression (ternary operator) instead.",
-      "messageId": "unexpectedIf",
-      "nodeType": "IfStatement",
-      "ruleId": "functional/no-conditional-statement",
+      "ruleId": "functional/no-expression-statements",
       "severity": 2,
     },
     {
@@ -957,6 +960,17 @@ exports[`lints with the Hardcore config: fixtures/react-and-react-native-04.js 1
       ],
     },
     {
+      "column": 38,
+      "endColumn": 4,
+      "endLine": 11,
+      "line": 9,
+      "message": "Incomplete branch, every branch in a conditional statement must contain a return statement.",
+      "messageId": "incompleteBranch",
+      "nodeType": "BlockStatement",
+      "ruleId": "functional/no-conditional-statements",
+      "severity": 2,
+    },
+    {
       "column": 5,
       "endColumn": 25,
       "endLine": 10,
@@ -964,7 +978,7 @@ exports[`lints with the Hardcore config: fixtures/react-and-react-native-04.js 1
       "message": "Using expressions to cause side-effects not allowed.",
       "messageId": "generic",
       "nodeType": "ExpressionStatement",
-      "ruleId": "functional/no-expression-statement",
+      "ruleId": "functional/no-expression-statements",
       "severity": 2,
     },
     {
@@ -997,7 +1011,7 @@ exports[`lints with the Hardcore config: fixtures/react-and-react-native-04.js 1
       "message": "Using expressions to cause side-effects not allowed.",
       "messageId": "generic",
       "nodeType": "ExpressionStatement",
-      "ruleId": "functional/no-expression-statement",
+      "ruleId": "functional/no-expression-statements",
       "severity": 2,
     },
     {

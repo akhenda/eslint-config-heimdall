@@ -20,8 +20,8 @@ module.exports = {
     'plugin:promise/recommended',
     'plugin:sonarjs/recommended',
     'plugin:unicorn/recommended',
-    'plugin:functional/external-recommended',
     'plugin:functional/recommended',
+    'plugin:functional/external-vanilla-recommended',
     'plugin:functional/stylistic',
   ],
   rules: {
@@ -75,6 +75,10 @@ module.exports = {
     {
       files: ['./*'],
       extends: ['plugin:functional/off'],
+    },
+    {
+      files: ['*.ts', '*.tsx'],
+      extends: ['plugin:functional/external-typescript-recommended'],
     },
   ],
 };
