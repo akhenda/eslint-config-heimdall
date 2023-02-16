@@ -31,7 +31,7 @@
     "yarn": "Please Use PNPM instead of Yarn"
   },
   "volta": {
-    "node": "16.19.0",
+    "node": "16.19.1",
     "pnpm": "7.21.0"
   },
   "packageManager": "pnpm@7.27.0",
