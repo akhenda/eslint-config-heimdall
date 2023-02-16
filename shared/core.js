@@ -91,6 +91,15 @@ module.exports = {
     ],
 
     'lodash/prefer-lodash-method': 'off',
+
+    'no-use-before-define': ['off', { functions: false, classes: false }],
+
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        devDependencies: true,
+      },
+    ],
   },
   overrides: [
     {
@@ -136,7 +145,7 @@ module.exports = {
               ['^\\u0000'],
               // Internal packages.
               [
-                '^(~|@|@root|@src|@types|@assets|@config|@components|@hooks|@screens|@pages|@services|@store|@state|@utils|@theme|@navigation|@redux|@helpers|@api|@models|@controllers|@middleware|@workers|@HOCs|@containers|@models)(/.*|$)',
+                '^(~|@|@root|@src|@types|@assets|@config|@components|@hooks|@screens|@pages|@services|@store|@state|@utils|@theme|@navigation|@redux|@helpers|@api|@models|@controllers|@middleware|@workers|@HOCs|@containers|@models|@providers)(/.*|$)',
               ],
               // Parent imports. Put `..` last.
               ['^\\.\\.(?!/?$)', '^\\.\\./?$'],
