@@ -34,7 +34,7 @@
     "node": "16.19.1",
     "pnpm": "7.21.0"
   },
-  "packageManager": "pnpm@7.27.1",
+  "packageManager": "pnpm@7.28.0",
   "scripts": {
     "gc": "git add . && git-cz",
     "test": "jest --coverage",
