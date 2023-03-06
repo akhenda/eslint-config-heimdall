@@ -14,7 +14,7 @@ specifiers:
   eslint-config-airbnb-base: 15.0.0
   eslint-config-airbnb-typescript: 17.0.0
   eslint-config-heimdall: file:./
-  eslint-config-prettier: 8.6.0
+  eslint-config-prettier: 8.7.0
   eslint-plugin-array-func: 3.1.8
   eslint-plugin-boundaries: 3.1.0
   eslint-plugin-cypress: 2.12.1
@@ -61,7 +61,7 @@ dependencies:
   eslint-config-airbnb: 19.0.4_hbw3smywoiafix46yjc35xsaqq
   eslint-config-airbnb-base: 15.0.0_mvgyw3chnqkp6sgfmmtihyjpnm
   eslint-config-airbnb-typescript: 17.0.0_ru7pmdr5nmuq5lm5i5feanlfeq
-  eslint-config-prettier: 8.6.0_eslint@8.34.0
+  eslint-config-prettier: 8.7.0_eslint@8.34.0
   eslint-plugin-array-func: 3.1.8_eslint@8.34.0
   eslint-plugin-boundaries: 3.1.0_2oq6i45ocbf3r4e4j3ozzlltne
   eslint-plugin-cypress: 2.12.1_eslint@8.34.0
@@ -80,12 +80,12 @@ dependencies:
   eslint-plugin-mongodb: 1.0.0
   eslint-plugin-n: 15.6.1_eslint@8.36.0
   eslint-plugin-no-constructor-bind: 2.0.4
-  eslint-plugin-no-secrets: 0.8.9_eslint@8.36.0
-  eslint-plugin-no-unsanitized: 4.0.2_eslint@8.36.0
-  eslint-plugin-prettier: 4.2.1_ovhg4hbmpryd7jmw2dmp54yjza
-  eslint-plugin-promise: 6.1.1_eslint@8.36.0
-  eslint-plugin-react: 7.32.2_eslint@8.36.0
-  eslint-plugin-react-hooks: 4.6.0_eslint@8.36.0
+  eslint-plugin-no-secrets: 0.8.9_eslint@8.34.0
+  eslint-plugin-no-unsanitized: 4.0.2_eslint@8.34.0
+  eslint-plugin-prettier: 4.2.1_7jzsb7wuazl7m5c3iddxzssojq
+  eslint-plugin-promise: 6.1.1_eslint@8.34.0
+  eslint-plugin-react: 7.32.2_eslint@8.34.0
+  eslint-plugin-react-hooks: 4.6.0_eslint@8.34.0
   eslint-plugin-security: 1.7.1
   eslint-plugin-simple-import-sort: 10.0.0_eslint@8.36.0
   eslint-plugin-sonarjs: 0.18.0_eslint@8.36.0
@@ -2535,8 +2535,8 @@ packages:
       object.assign: 4.1.4
       object.entries: 1.1.6
 
-  /eslint-config-prettier/8.6.0_eslint@8.36.0:
-    resolution: {integrity: sha512-bAF0eLpLVqP5oEVUFKpMA+NnRFICwn9X8B5jrR9FcqnYBuPbqWEjTEspPWMj5ye6czoSLDweCzSo3Ko7gGrZaA==}
+  /eslint-config-prettier/8.7.0_eslint@8.34.0:
+    resolution: {integrity: sha512-HHVXLSlVUhMSmyW4ZzEuvjpwqamgmlfkutD53cYXLikh4pt/modINRcCIApJ84czDxM4GZInwUrromsDdTImTA==}
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
@@ -2896,7 +2896,7 @@ packages:
     dependencies:
       eslint: 8.36.0
 
-  /eslint-plugin-prettier/4.2.1_ovhg4hbmpryd7jmw2dmp54yjza:
+  /eslint-plugin-prettier/4.2.1_7jzsb7wuazl7m5c3iddxzssojq:
     resolution: {integrity: sha512-f/0rXLXUt0oFYs8ra4w49wYZBG5GKZpAYsJSm6rnYL5uVDjd+zowwMwVZHnAjf4edNrKpCDYfXDgmRE/Ak7QyQ==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -2907,8 +2907,8 @@ packages:
       eslint-config-prettier:
         optional: true
     dependencies:
-      eslint: 8.36.0
-      eslint-config-prettier: 8.6.0_eslint@8.36.0
+      eslint: 8.34.0
+      eslint-config-prettier: 8.7.0_eslint@8.34.0
       prettier: 2.8.4
       prettier-linter-helpers: 1.0.0
 
@@ -6341,7 +6341,7 @@ packages:
       eslint-config-airbnb: 19.0.4_hbw3smywoiafix46yjc35xsaqq
       eslint-config-airbnb-base: 15.0.0_mvgyw3chnqkp6sgfmmtihyjpnm
       eslint-config-airbnb-typescript: 17.0.0_ru7pmdr5nmuq5lm5i5feanlfeq
-      eslint-config-prettier: 8.6.0_eslint@8.34.0
+      eslint-config-prettier: 8.7.0_eslint@8.34.0
       eslint-plugin-array-func: 3.1.8_eslint@8.34.0
       eslint-plugin-boundaries: 3.1.0_2oq6i45ocbf3r4e4j3ozzlltne
       eslint-plugin-cypress: 2.12.1_eslint@8.34.0
@@ -6360,12 +6360,12 @@ packages:
       eslint-plugin-mongodb: 1.0.0
       eslint-plugin-n: 15.6.1_eslint@8.36.0
       eslint-plugin-no-constructor-bind: 2.0.4
-      eslint-plugin-no-secrets: 0.8.9_eslint@8.36.0
-      eslint-plugin-no-unsanitized: 4.0.2_eslint@8.36.0
-      eslint-plugin-prettier: 4.2.1_ovhg4hbmpryd7jmw2dmp54yjza
-      eslint-plugin-promise: 6.1.1_eslint@8.36.0
-      eslint-plugin-react: 7.32.2_eslint@8.36.0
-      eslint-plugin-react-hooks: 4.6.0_eslint@8.36.0
+      eslint-plugin-no-secrets: 0.8.9_eslint@8.34.0
+      eslint-plugin-no-unsanitized: 4.0.2_eslint@8.34.0
+      eslint-plugin-prettier: 4.2.1_7jzsb7wuazl7m5c3iddxzssojq
+      eslint-plugin-promise: 6.1.1_eslint@8.34.0
+      eslint-plugin-react: 7.32.2_eslint@8.34.0
+      eslint-plugin-react-hooks: 4.6.0_eslint@8.34.0
       eslint-plugin-security: 1.7.1
       eslint-plugin-simple-import-sort: 10.0.0_eslint@8.36.0
       eslint-plugin-sonarjs: 0.18.0_eslint@8.36.0
