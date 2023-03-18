@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@expo/spawn-async': 1.7.0
+  '@expo/spawn-async': 1.7.2
   '@semantic-release/changelog': 6.0.2
   '@semantic-release/git': 10.0.1
   '@semantic-release/github': 8.0.7
@@ -98,7 +98,7 @@ dependencies:
   eslint-plugin-write-good-comments: 0.1.4_mbtr3ald3hcqvtwfvnckguo3q4
 
 devDependencies:
-  '@expo/spawn-async': 1.7.0
+  '@expo/spawn-async': 1.7.2
   '@semantic-release/changelog': 6.0.2_semantic-release@19.0.5
   '@semantic-release/git': 10.0.1_semantic-release@19.0.5
   '@semantic-release/github': 8.0.7_semantic-release@19.0.5
@@ -536,8 +536,8 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /@expo/spawn-async/1.7.0:
-    resolution: {integrity: sha512-sqPAjOEFTrjaTybrh9SnPFLInDXcoMC06psEFmH68jLTmoipSQCq8GCEfIoHhxRDALWB+DsiwXJSbXlE/iVIIQ==}
+  /@expo/spawn-async/1.7.2:
+    resolution: {integrity: sha512-QdWi16+CHB9JYP7gma19OVVg0BFkvU8zNj9GjWorYI8Iv8FUxjOCcYRuAmX4s/h91e4e7BPsskc8cSrZYho9Ew==}
     engines: {node: '>=12'}
     dependencies:
       cross-spawn: 7.0.3
