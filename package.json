@@ -101,7 +101,7 @@
     "eslint-plugin-sort-keys-fix": "1.1.2",
     "eslint-plugin-switch-case": "1.1.2",
     "eslint-plugin-testing-library": "^5.10.2",
-    "eslint-plugin-unicorn": "45.0.2",
+    "eslint-plugin-unicorn": "46.0.0",
     "eslint-plugin-unused-imports": "2.0.0",
     "eslint-plugin-write-good-comments": "0.1.4"
   },
