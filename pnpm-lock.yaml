@@ -9,7 +9,7 @@ specifiers:
   '@typescript-eslint/eslint-plugin': 5.56.0
   '@typescript-eslint/parser': 5.56.0
   commitizen: 4.3.0
-  eslint: '>=8.36'
+  eslint: 8.36.0
   eslint-config-airbnb: 19.0.4
   eslint-config-airbnb-base: 15.0.0
   eslint-config-airbnb-typescript: 17.0.0
@@ -6427,7 +6427,7 @@ packages:
     version: 2.0.0
     engines: {node: '18', npm: Please Use PNPM instead of NPM, yarn: Please Use PNPM instead of Yarn}
     peerDependencies:
-      eslint: '>=8.30'
+      eslint: '>=8.36'
       jest: '>=29'
       prettier: '>=2.8'
     peerDependenciesMeta:
