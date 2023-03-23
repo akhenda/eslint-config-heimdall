@@ -11,7 +11,6 @@ module.exports = {
         semi: true,
         tabWidth: 2,
         printWidth: 120,
-        jsxBracketSameLine: false,
         arrowParens: 'always',
 
         // below line is for windows users facing CLRF and eslint/prettier error
