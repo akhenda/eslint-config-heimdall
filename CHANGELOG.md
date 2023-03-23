@@ -1,3 +1,19 @@
+## [2.0.1](https://github.com/akhenda/eslint-config-heimdall/compare/v2.0.0...v2.0.1) (2023-03-23)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([91f4616](https://github.com/akhenda/eslint-config-heimdall/commit/91f461605af68d6e50439c6a336b511f5bc5eed4))
+* **deps:** update all non-major dependencies ([21e734b](https://github.com/akhenda/eslint-config-heimdall/commit/21e734bd5cfc8649c22835b0f0c48dbd329803e5))
+* **deps:** update all non-major dependencies ([d5e8701](https://github.com/akhenda/eslint-config-heimdall/commit/d5e8701afe981c1db4463b9e6999c9160b4e9f70))
+* **deps:** update all non-major dependencies ([876c609](https://github.com/akhenda/eslint-config-heimdall/commit/876c60929ba76f224ccd406a046d954a4b2dd8cd))
+* **deps:** update all non-major dependencies to v5.53.0 ([9e02b62](https://github.com/akhenda/eslint-config-heimdall/commit/9e02b625e9f8081906d31531fbbeed4a55d87d28))
+* **deps:** update all non-major dependencies to v5.54.0 ([fd3f29b](https://github.com/akhenda/eslint-config-heimdall/commit/fd3f29bd27e79d389913443d4af851285b386335))
+* **deps:** update all non-major dependencies to v5.55.0 ([8479276](https://github.com/akhenda/eslint-config-heimdall/commit/8479276c7e097f3da4394fd9b1c2249728487aef))
+* **deps:** update dependency eslint-config-prettier to v8.7.0 ([c7ab60c](https://github.com/akhenda/eslint-config-heimdall/commit/c7ab60c5843b05b79b98afe40f8e682e9548811d))
+* **deps:** update dependency eslint-plugin-functional to v5.0.6 ([1b02271](https://github.com/akhenda/eslint-config-heimdall/commit/1b02271a9d3b9636622616aac593668582c9fd22))
+* **deps:** update dependency eslint-plugin-jsonc to v2.7.0 ([cecabe7](https://github.com/akhenda/eslint-config-heimdall/commit/cecabe7d35d7de6a17283abd8f17a92835917a8b))
+
 # [2.0.0](https://github.com/akhenda/eslint-config-heimdall/compare/v1.6.0...v2.0.0) (2023-03-23)
 
 
