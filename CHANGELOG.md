@@ -1,3 +1,20 @@
+# [2.0.0](https://github.com/akhenda/eslint-config-heimdall/compare/v1.6.0...v2.0.0) (2023-03-23)
+
+
+### Bug Fixes
+
+* **react:** 🐛 update parser options ([8f96929](https://github.com/akhenda/eslint-config-heimdall/commit/8f9692949e864d8a13f5d01e2dc47d5895d0d64d))
+
+
+### chore
+
+* **deps:** 🤖 bump required node version to 18 ([d18b045](https://github.com/akhenda/eslint-config-heimdall/commit/d18b04507b28ad2c17065f55f66dbda9121c9b71))
+
+
+### BREAKING CHANGES
+
+* **deps:** 🧨 bump node to v18
+
 # [1.6.0](https://github.com/akhenda/eslint-config-heimdall/compare/v1.5.0...v1.6.0) (2023-02-19)
 
 
