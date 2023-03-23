@@ -4,7 +4,7 @@ const { jsExtensions, tsExtensions, platformSubextensions, computeExpoExtensions
 const allExtensions = computeExpoExtensions([...jsExtensions, ...tsExtensions], platformSubextensions);
 
 module.exports = {
-  extends: ['./shared/core.js', './shared/typescript.js', './shared/react-ts.js', './shared/prettier.js'],
+  extends: ['./shared/core.js', './shared/react.js', './shared/prettier.js'],
   globals: {
     Atomics: false,
     ErrorUtils: false,
@@ -32,6 +32,12 @@ module.exports = {
     {
       env: { browser: true },
       files: ['*.web.*'],
+    },
+    {
+      files: ['*.ts', '*.tsx'],
+      parserOptions: {
+        project: './tsconfig.base.json',
+      },
     },
   ],
   settings: {

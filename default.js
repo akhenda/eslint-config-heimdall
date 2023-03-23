@@ -1,3 +1,11 @@
 module.exports = {
-  extends: ['./shared/core.js', './shared/typescript.js', './shared/prettier.js'],
+  extends: ['./shared/core.js', './shared/prettier.js'],
+  overrides: [
+    {
+      files: ['*.ts', '*.tsx'],
+      parserOptions: {
+        project: './tsconfig.base.json',
+      },
+    },
+  ],
 };

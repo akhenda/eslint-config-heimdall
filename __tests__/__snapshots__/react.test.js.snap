@@ -9,294 +9,26 @@ exports[`doesn't conflict with Prettier: success 1`] = `true`;
 
 exports[`lints with the react config: fixtures/all-00.js 1`] = `
 {
-  "errorCount": 26,
-  "fatalErrorCount": 0,
+  "errorCount": 1,
+  "fatalErrorCount": 1,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
   "messages": [
     {
-      "column": 15,
-      "endColumn": 18,
-      "endLine": 1,
-      "line": 1,
-      "message": "Unable to resolve path to module 'a'.",
-      "nodeType": "Literal",
-      "ruleId": "import/no-unresolved",
-      "severity": 2,
-    },
-    {
-      "column": 19,
-      "endColumn": 22,
-      "endLine": 2,
-      "line": 2,
-      "message": "Unable to resolve path to module 'b'.",
-      "nodeType": "Literal",
-      "ruleId": "import/no-unresolved",
-      "severity": 2,
-    },
-    {
-      "column": 23,
-      "endColumn": 26,
-      "endLine": 3,
-      "line": 3,
-      "message": "Unable to resolve path to module 'c'.",
-      "nodeType": "Literal",
-      "ruleId": "import/no-unresolved",
-      "severity": 2,
-    },
-    {
-      "column": 20,
-      "endColumn": 23,
-      "endLine": 4,
-      "line": 4,
-      "message": "Unable to resolve path to module 'd'.",
-      "nodeType": "Literal",
-      "ruleId": "import/no-unresolved",
-      "severity": 2,
-    },
-    {
-      "column": 8,
-      "endColumn": 12,
-      "endLine": 6,
-      "line": 6,
-      "message": "Unable to resolve path to module 'hi'.",
-      "nodeType": "Literal",
-      "ruleId": "import/no-unresolved",
-      "severity": 2,
-    },
-    {
-      "column": 15,
-      "endColumn": 20,
-      "endLine": 8,
-      "line": 8,
-      "message": "Missing file extension for "./e"",
-      "nodeType": "Literal",
-      "ruleId": "import/extensions",
-      "severity": 2,
-    },
-    {
-      "column": 15,
-      "endColumn": 20,
-      "endLine": 8,
-      "line": 8,
-      "message": "Unable to resolve path to module './e'.",
-      "nodeType": "Literal",
-      "ruleId": "import/no-unresolved",
-      "severity": 2,
-    },
-    {
-      "column": 20,
-      "endColumn": 25,
-      "endLine": 10,
-      "line": 10,
-      "message": "Missing file extension for "./f"",
-      "nodeType": "Literal",
-      "ruleId": "import/extensions",
-      "severity": 2,
-    },
-    {
-      "column": 20,
-      "endColumn": 25,
-      "endLine": 10,
-      "line": 10,
-      "message": "Unable to resolve path to module './f'.",
-      "nodeType": "Literal",
-      "ruleId": "import/no-unresolved",
-      "severity": 2,
-    },
-    {
-      "column": 5,
-      "endColumn": 8,
-      "endLine": 27,
-      "line": 27,
-      "message": "'_fn' was used before it was defined.",
-      "messageId": "noUseBeforeDefine",
-      "nodeType": "Identifier",
-      "ruleId": "@typescript-eslint/no-use-before-define",
-      "severity": 2,
-    },
-    {
-      "column": 5,
-      "endColumn": 30,
-      "endLine": 27,
-      "line": 27,
-      "message": "Expected an assignment or function call and instead saw an expression.",
-      "messageId": "unusedExpression",
-      "nodeType": "ExpressionStatement",
-      "ruleId": "@typescript-eslint/no-unused-expressions",
-      "severity": 2,
-    },
-    {
-      "column": 7,
-      "endColumn": 10,
-      "endLine": 32,
-      "line": 32,
-      "message": "'_fn' was used before it was defined.",
-      "messageId": "noUseBeforeDefine",
-      "nodeType": "Identifier",
-      "ruleId": "@typescript-eslint/no-use-before-define",
-      "severity": 2,
-    },
-    {
-      "column": 14,
-      "endColumn": 15,
-      "endLine": 33,
-      "line": 33,
-      "message": "'e' is already declared in the upper scope on line 8 column 8.",
-      "messageId": "noShadow",
-      "nodeType": "Identifier",
-      "ruleId": "@typescript-eslint/no-shadow",
-      "severity": 2,
-    },
-    {
-      "column": 7,
-      "endColumn": 10,
-      "endLine": 34,
-      "line": 34,
-      "message": "'_fn' was used before it was defined.",
-      "messageId": "noUseBeforeDefine",
-      "nodeType": "Identifier",
-      "ruleId": "@typescript-eslint/no-use-before-define",
-      "severity": 2,
-    },
-    {
-      "column": 7,
-      "endColumn": 10,
-      "endLine": 38,
-      "line": 38,
-      "message": "'_fn' was used before it was defined.",
-      "messageId": "noUseBeforeDefine",
-      "nodeType": "Identifier",
-      "ruleId": "@typescript-eslint/no-use-before-define",
-      "severity": 2,
-    },
-    {
-      "column": 7,
-      "endColumn": 10,
-      "endLine": 40,
-      "line": 40,
-      "message": "'_fn' was used before it was defined.",
-      "messageId": "noUseBeforeDefine",
-      "nodeType": "Identifier",
-      "ruleId": "@typescript-eslint/no-use-before-define",
-      "severity": 2,
-    },
-    {
-      "column": 3,
-      "endColumn": 17,
-      "endLine": 46,
-      "line": 46,
-      "message": "Expected 'this' to be used by class async method 'byeAsync'.",
-      "messageId": "missingThis",
-      "nodeType": "FunctionExpression",
-      "ruleId": "class-methods-use-this",
-      "severity": 2,
-    },
-    {
-      "column": 5,
-      "endColumn": 8,
-      "endLine": 48,
-      "line": 48,
-      "message": "'_fn' was used before it was defined.",
-      "messageId": "noUseBeforeDefine",
-      "nodeType": "Identifier",
-      "ruleId": "@typescript-eslint/no-use-before-define",
-      "severity": 2,
-    },
-    {
-      "column": 18,
-      "endColumn": 21,
-      "endLine": 50,
-      "line": 50,
-      "message": "Unable to resolve path to module 'z'.",
-      "nodeType": "Literal",
-      "ruleId": "import/no-unresolved",
-      "severity": 2,
-    },
-    {
-      "column": 5,
-      "endColumn": 6,
-      "endLine": 54,
-      "line": 52,
-      "message": "iterators/generators require regenerator-runtime, which is too heavyweight for this guide to allow them. Separately, loops should be avoided in favor of array iterations.",
-      "messageId": "restrictedSyntax",
-      "nodeType": "ForOfStatement",
-      "ruleId": "no-restricted-syntax",
-      "severity": 2,
-    },
-    {
-      "column": 27,
-      "endColumn": 30,
-      "endLine": 52,
-      "line": 52,
-      "message": "'gen' was used before it was defined.",
-      "messageId": "noUseBeforeDefine",
-      "nodeType": "Identifier",
-      "ruleId": "@typescript-eslint/no-use-before-define",
-      "severity": 2,
-    },
-    {
-      "column": 7,
-      "endColumn": 10,
-      "endLine": 53,
-      "line": 53,
-      "message": "'_fn' was used before it was defined.",
-      "messageId": "noUseBeforeDefine",
-      "nodeType": "Identifier",
-      "ruleId": "@typescript-eslint/no-use-before-define",
-      "severity": 2,
-    },
-    {
-      "column": 3,
-      "endColumn": 17,
-      "endLine": 57,
-      "line": 57,
-      "message": "Expected 'this' to be used by class private method #privateMethod.",
-      "messageId": "missingThis",
-      "nodeType": "FunctionExpression",
-      "ruleId": "class-methods-use-this",
-      "severity": 2,
-    },
-    {
-      "column": 1,
-      "endColumn": 18,
-      "endLine": 60,
-      "line": 60,
-      "message": "Unexpected dangling '_' in '_fn'.",
-      "messageId": "unexpectedUnderscore",
-      "nodeType": "FunctionDeclaration",
-      "ruleId": "no-underscore-dangle",
-      "severity": 2,
-    },
-    {
       "column": 10,
-      "endColumn": 13,
-      "endLine": 60,
-      "line": 60,
-      "message": "Function name \`_fn\` must match one of the following formats: camelCase, PascalCase",
-      "messageId": "doesNotMatchFormat",
-      "nodeType": "Identifier",
-      "ruleId": "@typescript-eslint/naming-convention",
-      "severity": 2,
-    },
-    {
-      "column": 17,
-      "endColumn": 19,
-      "endLine": 62,
-      "line": 62,
-      "message": "Unexpected empty generator function 'gen'.",
-      "messageId": "unexpected",
-      "nodeType": "FunctionDeclaration",
-      "ruleId": "@typescript-eslint/no-empty-function",
+      "fatal": true,
+      "line": 10,
+      "message": "Parsing error: Unexpected token as",
+      "ruleId": null,
       "severity": 2,
     },
   ],
-  "output": "import a from 'a';
+  "source": "import 'hi';
+
+import a from 'a';
 import { b } from 'b';
 import c, { c1 } from 'c';
 import * as d from 'd';
-
-import 'hi';
 
 import e from './e';
 
@@ -309,11 +41,8 @@ export class Example {
   };
 
   m = {};
-
   #n = null;
-
   x = 1_000;
-
   y = 100n;
 
   hi() {
@@ -337,11 +66,12 @@ export class Example {
   }
 
   async byeAsync() {
-    const f = 1;
+    let f = 1;
     _fn(a, b, c, c1, d, e, f);
 
-    await import('z');
 
+    await import('z');
+    
     for await (const v of gen()) {
       _fn(v);
     }
@@ -352,7 +82,7 @@ export class Example {
 
 function _fn() {}
 
-function* gen() {}
+function *gen() {}
 ",
   "suppressedMessages": [],
   "usedDeprecatedRules": [
@@ -638,7 +368,7 @@ exports[`lints with the react config: fixtures/all-02.js 1`] = `
       "message": "'unused1' is assigned a value but never used.",
       "messageId": "unusedVar",
       "nodeType": "Identifier",
-      "ruleId": "@typescript-eslint/no-unused-vars",
+      "ruleId": "no-unused-vars",
       "severity": 2,
     },
     {
@@ -649,7 +379,7 @@ exports[`lints with the react config: fixtures/all-02.js 1`] = `
       "message": "'unused2' is defined but never used.",
       "messageId": "unusedVar",
       "nodeType": "Identifier",
-      "ruleId": "@typescript-eslint/no-unused-vars",
+      "ruleId": "no-unused-vars",
       "severity": 2,
     },
     {
@@ -660,7 +390,7 @@ exports[`lints with the react config: fixtures/all-02.js 1`] = `
       "message": "'unused3' is assigned a value but never used.",
       "messageId": "unusedVar",
       "nodeType": "Identifier",
-      "ruleId": "@typescript-eslint/no-unused-vars",
+      "ruleId": "no-unused-vars",
       "severity": 2,
     },
   ],
@@ -1028,9 +758,9 @@ exports[`lints with the react config: fixtures/all-07.js 1`] = `
       "endColumn": 20,
       "endLine": 4,
       "line": 4,
-      "message": "Missing file extension for "./d"",
+      "message": "Unable to resolve path to module './d'.",
       "nodeType": "Literal",
-      "ruleId": "import/extensions",
+      "ruleId": "import/no-unresolved",
       "severity": 2,
     },
     {
@@ -1038,9 +768,9 @@ exports[`lints with the react config: fixtures/all-07.js 1`] = `
       "endColumn": 20,
       "endLine": 4,
       "line": 4,
-      "message": "Unable to resolve path to module './d'.",
+      "message": "Missing file extension for "./d"",
       "nodeType": "Literal",
-      "ruleId": "import/no-unresolved",
+      "ruleId": "import/extensions",
       "severity": 2,
     },
     {
@@ -1105,126 +835,23 @@ export default a + b + c + d + e;
 
 exports[`lints with the react config: fixtures/react-and-react-native-00.js 1`] = `
 {
-  "errorCount": 10,
-  "fatalErrorCount": 0,
+  "errorCount": 1,
+  "fatalErrorCount": 1,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
   "messages": [
     {
-      "column": 19,
-      "endColumn": 26,
-      "endLine": 1,
-      "line": 1,
-      "message": "Unable to resolve path to module 'react'.",
-      "nodeType": "Literal",
-      "ruleId": "import/no-unresolved",
-      "severity": 2,
-    },
-    {
-      "column": 3,
-      "endColumn": 5,
-      "endLine": 11,
-      "line": 6,
-      "message": "State initialization should be in a constructor",
-      "messageId": "stateInitConstructor",
-      "nodeType": "PropertyDefinition",
-      "ruleId": "react/state-in-constructor",
-      "severity": 2,
-    },
-    {
-      "column": 3,
-      "endColumn": 8,
-      "endLine": 13,
-      "line": 13,
-      "message": "Unused method or property "props" of class "Example"",
-      "messageId": "unusedWithClass",
-      "nodeType": "Identifier",
-      "ruleId": "react/no-unused-class-component-methods",
-      "severity": 2,
-    },
-    {
-      "column": 16,
-      "endColumn": 17,
-      "endLine": 19,
-      "line": 19,
-      "message": "'x' is missing in props validation",
-      "messageId": "missingPropType",
-      "nodeType": "Identifier",
-      "ruleId": "react/prop-types",
-      "severity": 2,
-    },
-    {
-      "column": 3,
-      "endColumn": 4,
-      "endLine": 34,
-      "line": 32,
-      "message": "render should be placed after _handleWhatever",
-      "messageId": "unsortedProps",
-      "nodeType": "MethodDefinition",
-      "ruleId": "react/sort-comp",
-      "severity": 2,
-    },
-    {
-      "column": 12,
-      "endColumn": 37,
-      "endLine": 33,
-      "line": 33,
-      "message": "JSX not allowed in files with extension '.js'",
-      "messageId": "noJSXWithExtension",
-      "nodeType": "JSXElement",
-      "ruleId": "react/jsx-filename-extension",
-      "severity": 2,
-    },
-    {
-      "column": 18,
-      "endColumn": 30,
-      "endLine": 33,
-      "line": 33,
-      "message": "Must use destructuring state assignment",
-      "messageId": "useDestructAssignment",
-      "nodeType": "MemberExpression",
-      "ruleId": "react/destructuring-assignment",
-      "severity": 2,
-    },
-    {
-      "column": 3,
-      "endColumn": 23,
-      "endLine": 36,
-      "line": 36,
-      "message": "Unexpected dangling '_' in '_handleWhatever'.",
-      "messageId": "unexpectedUnderscore",
-      "nodeType": "MethodDefinition",
-      "ruleId": "no-underscore-dangle",
-      "severity": 2,
-    },
-    {
-      "column": 3,
-      "endColumn": 18,
-      "endLine": 36,
-      "line": 36,
-      "message": "Expected 'this' to be used by class method '_handleWhatever'.",
-      "messageId": "missingThis",
-      "nodeType": "FunctionExpression",
-      "ruleId": "class-methods-use-this",
-      "severity": 2,
-    },
-    {
-      "column": 3,
-      "endColumn": 18,
-      "endLine": 36,
-      "line": 36,
-      "message": "Unused method or property "_handleWhatever" of class "Example"",
-      "messageId": "unusedWithClass",
-      "nodeType": "Identifier",
-      "ruleId": "react/no-unused-class-component-methods",
+      "column": 9,
+      "fatal": true,
+      "line": 4,
+      "message": "Parsing error: Unexpected token =",
+      "ruleId": null,
       "severity": 2,
     },
   ],
-  "output": "import React from 'react';
+  "source": "import React from 'react';
 
 export default class Example extends React.Component {
-  static getInitialProps() {}
-
   state = {
     x: 'x',
     ...{
@@ -1233,6 +860,8 @@ export default class Example extends React.Component {
   };
 
   props;
+
+  static getInitialProps() {}
 
   constructor(props, context) {
     super(props, context);
@@ -1289,63 +918,17 @@ export default class Example extends React.Component {
 
 exports[`lints with the react config: fixtures/react-and-react-native-01.js 1`] = `
 {
-  "errorCount": 4,
-  "fatalErrorCount": 0,
+  "errorCount": 1,
+  "fatalErrorCount": 1,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
   "messages": [
     {
-      "column": 19,
-      "endColumn": 26,
-      "endLine": 1,
-      "line": 1,
-      "message": "Unable to resolve path to module 'react'.",
-      "nodeType": "Literal",
-      "ruleId": "import/no-unresolved",
-      "severity": 2,
-    },
-    {
-      "column": 5,
-      "endColumn": 19,
-      "endLine": 7,
-      "line": 7,
-      "message": "Unexpected alert.",
-      "messageId": "unexpected",
-      "nodeType": "CallExpression",
-      "ruleId": "no-alert",
-      "severity": 1,
-    },
-    {
-      "column": 12,
-      "endColumn": 37,
-      "endLine": 12,
-      "line": 12,
-      "message": "JSX not allowed in files with extension '.js'",
-      "messageId": "noJSXWithExtension",
-      "nodeType": "JSXElement",
-      "ruleId": "react/jsx-filename-extension",
-      "severity": 2,
-    },
-    {
-      "column": 18,
-      "endColumn": 30,
-      "endLine": 12,
-      "line": 12,
-      "message": "Must use destructuring props assignment",
-      "messageId": "useDestructAssignment",
-      "nodeType": "MemberExpression",
-      "ruleId": "react/destructuring-assignment",
-      "severity": 2,
-    },
-    {
-      "column": 29,
-      "endColumn": 30,
-      "endLine": 12,
-      "line": 12,
-      "message": "'x' is missing in props validation",
-      "messageId": "missingPropType",
-      "nodeType": "Identifier",
-      "ruleId": "react/prop-types",
+      "column": 9,
+      "fatal": true,
+      "line": 4,
+      "message": "Parsing error: Unexpected token =",
+      "ruleId": null,
       "severity": 2,
     },
   ],
@@ -1389,7 +972,7 @@ export default class Example extends React.Component {
       "ruleId": "no-path-concat",
     },
   ],
-  "warningCount": 1,
+  "warningCount": 0,
 }
 `;
 
@@ -1490,7 +1073,7 @@ exports[`lints with the react config: fixtures/react-and-react-native-03.js 1`] 
       "message": "'React' is defined but never used.",
       "messageId": "unusedVar",
       "nodeType": "Identifier",
-      "ruleId": "@typescript-eslint/no-unused-vars",
+      "ruleId": "no-unused-vars",
       "severity": 2,
     },
     {
@@ -1607,7 +1190,7 @@ exports[`lints with the react config: fixtures/react-and-react-native-04.js 1`] 
       "message": "'notAHook' is defined but never used.",
       "messageId": "unusedVar",
       "nodeType": "Identifier",
-      "ruleId": "@typescript-eslint/no-unused-vars",
+      "ruleId": "no-unused-vars",
       "severity": 2,
     },
     {

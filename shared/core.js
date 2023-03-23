@@ -1,5 +1,7 @@
 /* eslint-disable sort-keys-fix/sort-keys-fix */
-const { jsExtensions } = require('../utils/extensions');
+const { jsExtensions, tsExtensions } = require('../utils/extensions');
+
+const allExtensions = [...jsExtensions, ...tsExtensions];
 
 module.exports = {
   extends: ['eslint:recommended', 'plugin:import/recommended', 'airbnb-base', 'plugin:lodash/recommended'], // consider replacing Airbnb with Shopify's config
@@ -110,8 +112,89 @@ module.exports = {
     },
     {
       files: ['*.ts', '*.tsx'],
+      extends: ['plugin:@typescript-eslint/recommended', 'plugin:import/typescript', 'airbnb-typescript/base'],
+      parser: '@typescript-eslint/parser',
+      plugins: ['@typescript-eslint'],
       rules: {
+        '@typescript-eslint/ban-types': [
+          'error',
+          {
+            types: {
+              Number: {
+                message: 'Use `number` instead.',
+                fixWith: 'number',
+              },
+              Boolean: {
+                message: 'Use `boolean` instead.',
+                fixWith: 'boolean',
+              },
+              Symbol: {
+                message: 'Use `symbol` instead.',
+                fixWith: 'symbol',
+              },
+              Object: {
+                message: 'Use `object` instead.',
+                fixWith: 'object',
+              },
+              String: {
+                message: 'Use `string` instead.',
+                fixWith: 'string',
+              },
+              '{}': {
+                message: 'Use `object` instead.',
+                fixWith: 'object',
+              },
+            },
+            extendDefaults: false,
+          },
+        ],
+        // '@typescript-eslint/naming-convention': [
+        //   'error',
+        //   {
+        //     selector: 'default',
+        //     format: ['camelCase'],
+        //   },
+        //   {
+        //     selector: 'variable',
+        //     format: ['PascalCase', 'UPPER_CASE'],
+        //     types: ['boolean'],
+        //     prefix: ['is', 'should', 'has', 'can', 'did', 'will'],
+        //   },
+        //   {
+        //     selector: 'variableLike',
+        //     format: ['camelCase', 'UPPER_CASE', 'PascalCase'],
+        //   },
+
+        //   {
+        //     selector: 'parameter',
+        //     format: ['camelCase'],
+        //   },
+        //   {
+        //     selector: 'memberLike',
+        //     modifiers: ['private'],
+        //     format: ['camelCase'],
+        //     leadingUnderscore: 'forbid',
+        //   },
+        //   {
+        //     selector: 'typeLike',
+        //     format: ['PascalCase'],
+        //   },
+        //   {
+        //     selector: 'property',
+        //     modifiers: ['readonly'],
+        //     format: ['PascalCase'],
+        //   },
+        //   {
+        //     selector: 'enumMember',
+        //     format: ['UPPER_CASE'],
+        //   },
+        // ],
+
+        // The typescript-eslint FAQ recommends turning off "no-undef" in favor of letting tsc check for
+        // undefined variables, including types
+        'no-undef': 'off',
         'no-shadow': 'off',
+        '@typescript-eslint/no-var-requires': 'off',
         '@typescript-eslint/no-shadow': 'error',
         'no-unused-vars': 'off',
         '@typescript-eslint/no-unused-vars': 'error',
@@ -125,6 +208,15 @@ module.exports = {
             argsIgnorePattern: '^_',
           },
         ],
+      },
+      settings: {
+        'import/extensions': allExtensions,
+        'import/parsers': {
+          '@typescript-eslint/parser': tsExtensions,
+        },
+        'import/resolver': {
+          node: { extensions: allExtensions },
+        },
       },
     },
     {
@@ -157,6 +249,18 @@ module.exports = {
           },
         ],
       },
+    },
+    {
+      env: { es2022: true, jest: true, node: true, 'jest/globals': true },
+      files: [
+        '**/test/**/*.[jt]s?(x)',
+        '**/tests/**/*.[jt]s?(x)',
+        '**/__tests__/**/*.[jt]s?(x)',
+        '**/?(*.)+(spec|test).[jt]s?(x)',
+      ],
+      plugins: ['jest', 'jest-formatting'],
+      extends: ['plugin:jest/recommended', 'plugin:jest-formatting/recommended'],
+      rules: {},
     },
   ],
 };

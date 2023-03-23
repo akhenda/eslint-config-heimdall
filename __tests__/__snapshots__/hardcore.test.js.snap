@@ -9,7 +9,7 @@ exports[`doesn't conflict with Prettier: success 1`] = `true`;
 
 exports[`lints with the Hardcore config: fixtures/all-00.js 1`] = `
 {
-  "errorCount": 22,
+  "errorCount": 36,
   "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
@@ -25,6 +25,56 @@ exports[`lints with the Hardcore config: fixtures/all-00.js 1`] = `
       "severity": 2,
     },
     {
+      "column": 15,
+      "endColumn": 18,
+      "endLine": 1,
+      "line": 1,
+      "message": "Unable to resolve path to module 'a'.",
+      "nodeType": "Literal",
+      "ruleId": "import/no-unresolved",
+      "severity": 2,
+    },
+    {
+      "column": 19,
+      "endColumn": 22,
+      "endLine": 2,
+      "line": 2,
+      "message": "Unable to resolve path to module 'b'.",
+      "nodeType": "Literal",
+      "ruleId": "import/no-unresolved",
+      "severity": 2,
+    },
+    {
+      "column": 23,
+      "endColumn": 26,
+      "endLine": 3,
+      "line": 3,
+      "message": "Unable to resolve path to module 'c'.",
+      "nodeType": "Literal",
+      "ruleId": "import/no-unresolved",
+      "severity": 2,
+    },
+    {
+      "column": 20,
+      "endColumn": 23,
+      "endLine": 4,
+      "line": 4,
+      "message": "Unable to resolve path to module 'd'.",
+      "nodeType": "Literal",
+      "ruleId": "import/no-unresolved",
+      "severity": 2,
+    },
+    {
+      "column": 8,
+      "endColumn": 12,
+      "endLine": 6,
+      "line": 6,
+      "message": "Unable to resolve path to module 'hi'.",
+      "nodeType": "Literal",
+      "ruleId": "import/no-unresolved",
+      "severity": 2,
+    },
+    {
       "column": 8,
       "endColumn": 9,
       "endLine": 8,
@@ -36,9 +86,29 @@ exports[`lints with the Hardcore config: fixtures/all-00.js 1`] = `
       "severity": 2,
     },
     {
+      "column": 15,
+      "endColumn": 20,
+      "endLine": 8,
+      "line": 8,
+      "message": "Unable to resolve path to module './e'.",
+      "nodeType": "Literal",
+      "ruleId": "import/no-unresolved",
+      "severity": 2,
+    },
+    {
+      "column": 20,
+      "endColumn": 25,
+      "endLine": 10,
+      "line": 10,
+      "message": "Unable to resolve path to module './f'.",
+      "nodeType": "Literal",
+      "ruleId": "import/no-unresolved",
+      "severity": 2,
+    },
+    {
       "column": 8,
       "endColumn": 2,
-      "endLine": 56,
+      "endLine": 58,
       "line": 12,
       "message": "Unexpected class, use functions not classes.",
       "messageId": "generic",
@@ -49,8 +119,8 @@ exports[`lints with the Hardcore config: fixtures/all-00.js 1`] = `
     {
       "column": 8,
       "endColumn": 12,
-      "endLine": 19,
-      "line": 19,
+      "endLine": 20,
+      "line": 20,
       "message": "Use \`undefined\` instead of \`null\`.",
       "messageId": "error",
       "nodeType": "Literal",
@@ -62,8 +132,8 @@ exports[`lints with the Hardcore config: fixtures/all-00.js 1`] = `
           "desc": "Replace \`null\` with \`undefined\`.",
           "fix": {
             "range": [
-              232,
-              236,
+              233,
+              237,
             ],
             "text": "undefined",
           },
@@ -74,8 +144,8 @@ exports[`lints with the Hardcore config: fixtures/all-00.js 1`] = `
     {
       "column": 5,
       "endColumn": 4,
-      "endLine": 41,
-      "line": 23,
+      "endLine": 44,
+      "line": 26,
       "message": "Functions must have at least one parameter.",
       "messageId": "paramCountAtLeastOne",
       "nodeType": "FunctionExpression",
@@ -85,8 +155,8 @@ exports[`lints with the Hardcore config: fixtures/all-00.js 1`] = `
     {
       "column": 5,
       "endColumn": 36,
-      "endLine": 24,
-      "line": 24,
+      "endLine": 27,
+      "line": 27,
       "message": "Using expressions to cause side-effects not allowed.",
       "messageId": "generic",
       "nodeType": "ExpressionStatement",
@@ -95,9 +165,20 @@ exports[`lints with the Hardcore config: fixtures/all-00.js 1`] = `
     },
     {
       "column": 5,
+      "endColumn": 36,
+      "endLine": 27,
+      "line": 27,
+      "message": "Expected an assignment or function call and instead saw an expression.",
+      "messageId": "unusedExpression",
+      "nodeType": "ExpressionStatement",
+      "ruleId": "no-unused-expressions",
+      "severity": 2,
+    },
+    {
+      "column": 5,
       "endColumn": 19,
-      "endLine": 25,
-      "line": 25,
+      "endLine": 28,
+      "line": 28,
       "message": "Using expressions to cause side-effects not allowed.",
       "messageId": "generic",
       "nodeType": "ExpressionStatement",
@@ -107,8 +188,8 @@ exports[`lints with the Hardcore config: fixtures/all-00.js 1`] = `
     {
       "column": 5,
       "endColumn": 18,
-      "endLine": 25,
-      "line": 25,
+      "endLine": 28,
+      "line": 28,
       "message": "Modifying an existing object/array is not allowed.",
       "messageId": "generic",
       "nodeType": "AssignmentExpression",
@@ -118,17 +199,6 @@ exports[`lints with the Hardcore config: fixtures/all-00.js 1`] = `
     {
       "column": 5,
       "endColumn": 22,
-      "endLine": 26,
-      "line": 26,
-      "message": "Using expressions to cause side-effects not allowed.",
-      "messageId": "generic",
-      "nodeType": "ExpressionStatement",
-      "ruleId": "functional/no-expression-statements",
-      "severity": 2,
-    },
-    {
-      "column": 7,
-      "endColumn": 19,
       "endLine": 29,
       "line": 29,
       "message": "Using expressions to cause side-effects not allowed.",
@@ -140,8 +210,8 @@ exports[`lints with the Hardcore config: fixtures/all-00.js 1`] = `
     {
       "column": 7,
       "endColumn": 19,
-      "endLine": 31,
-      "line": 31,
+      "endLine": 32,
+      "line": 32,
       "message": "Using expressions to cause side-effects not allowed.",
       "messageId": "generic",
       "nodeType": "ExpressionStatement",
@@ -151,8 +221,8 @@ exports[`lints with the Hardcore config: fixtures/all-00.js 1`] = `
     {
       "column": 7,
       "endColumn": 19,
-      "endLine": 35,
-      "line": 35,
+      "endLine": 34,
+      "line": 34,
       "message": "Using expressions to cause side-effects not allowed.",
       "messageId": "generic",
       "nodeType": "ExpressionStatement",
@@ -162,8 +232,8 @@ exports[`lints with the Hardcore config: fixtures/all-00.js 1`] = `
     {
       "column": 7,
       "endColumn": 19,
-      "endLine": 37,
-      "line": 37,
+      "endLine": 38,
+      "line": 38,
       "message": "Using expressions to cause side-effects not allowed.",
       "messageId": "generic",
       "nodeType": "ExpressionStatement",
@@ -171,8 +241,8 @@ exports[`lints with the Hardcore config: fixtures/all-00.js 1`] = `
       "severity": 2,
     },
     {
-      "column": 5,
-      "endColumn": 27,
+      "column": 7,
+      "endColumn": 19,
       "endLine": 40,
       "line": 40,
       "message": "Using expressions to cause side-effects not allowed.",
@@ -182,10 +252,32 @@ exports[`lints with the Hardcore config: fixtures/all-00.js 1`] = `
       "severity": 2,
     },
     {
+      "column": 5,
+      "endColumn": 27,
+      "endLine": 43,
+      "line": 43,
+      "message": "Using expressions to cause side-effects not allowed.",
+      "messageId": "generic",
+      "nodeType": "ExpressionStatement",
+      "ruleId": "functional/no-expression-statements",
+      "severity": 2,
+    },
+    {
+      "column": 3,
+      "endColumn": 17,
+      "endLine": 46,
+      "line": 46,
+      "message": "Expected 'this' to be used by class async method 'byeAsync'.",
+      "messageId": "missingThis",
+      "nodeType": "FunctionExpression",
+      "ruleId": "class-methods-use-this",
+      "severity": 2,
+    },
+    {
       "column": 17,
       "endColumn": 4,
-      "endLine": 53,
-      "line": 43,
+      "endLine": 55,
+      "line": 46,
       "message": "Functions must have at least one parameter.",
       "messageId": "paramCountAtLeastOne",
       "nodeType": "FunctionExpression",
@@ -195,17 +287,6 @@ exports[`lints with the Hardcore config: fixtures/all-00.js 1`] = `
     {
       "column": 5,
       "endColumn": 37,
-      "endLine": 45,
-      "line": 45,
-      "message": "Using expressions to cause side-effects not allowed.",
-      "messageId": "generic",
-      "nodeType": "ExpressionStatement",
-      "ruleId": "functional/no-expression-statements",
-      "severity": 2,
-    },
-    {
-      "column": 5,
-      "endColumn": 23,
       "endLine": 48,
       "line": 48,
       "message": "Using expressions to cause side-effects not allowed.",
@@ -216,20 +297,9 @@ exports[`lints with the Hardcore config: fixtures/all-00.js 1`] = `
     },
     {
       "column": 5,
-      "endColumn": 6,
-      "endLine": 52,
+      "endColumn": 23,
+      "endLine": 50,
       "line": 50,
-      "message": "Unexpected loop, use map or reduce instead.",
-      "messageId": "generic",
-      "nodeType": "ForOfStatement",
-      "ruleId": "functional/no-loop-statements",
-      "severity": 2,
-    },
-    {
-      "column": 7,
-      "endColumn": 20,
-      "endLine": 51,
-      "line": 51,
       "message": "Using expressions to cause side-effects not allowed.",
       "messageId": "generic",
       "nodeType": "ExpressionStatement",
@@ -237,10 +307,64 @@ exports[`lints with the Hardcore config: fixtures/all-00.js 1`] = `
       "severity": 2,
     },
     {
+      "column": 18,
+      "endColumn": 21,
+      "endLine": 50,
+      "line": 50,
+      "message": "Unable to resolve path to module 'z'.",
+      "nodeType": "Literal",
+      "ruleId": "import/no-unresolved",
+      "severity": 2,
+    },
+    {
+      "column": 5,
+      "endColumn": 6,
+      "endLine": 54,
+      "line": 52,
+      "message": "Unexpected loop, use map or reduce instead.",
+      "messageId": "generic",
+      "nodeType": "ForOfStatement",
+      "ruleId": "functional/no-loop-statements",
+      "severity": 2,
+    },
+    {
+      "column": 5,
+      "endColumn": 6,
+      "endLine": 54,
+      "line": 52,
+      "message": "iterators/generators require regenerator-runtime, which is too heavyweight for this guide to allow them. Separately, loops should be avoided in favor of array iterations.",
+      "messageId": "restrictedSyntax",
+      "nodeType": "ForOfStatement",
+      "ruleId": "no-restricted-syntax",
+      "severity": 2,
+    },
+    {
+      "column": 7,
+      "endColumn": 20,
+      "endLine": 53,
+      "line": 53,
+      "message": "Using expressions to cause side-effects not allowed.",
+      "messageId": "generic",
+      "nodeType": "ExpressionStatement",
+      "ruleId": "functional/no-expression-statements",
+      "severity": 2,
+    },
+    {
+      "column": 3,
+      "endColumn": 17,
+      "endLine": 57,
+      "line": 57,
+      "message": "Expected 'this' to be used by class private method #privateMethod.",
+      "messageId": "missingThis",
+      "nodeType": "FunctionExpression",
+      "ruleId": "class-methods-use-this",
+      "severity": 2,
+    },
+    {
       "column": 17,
       "endColumn": 22,
-      "endLine": 55,
-      "line": 55,
+      "endLine": 57,
+      "line": 57,
       "message": "Functions must have at least one parameter.",
       "messageId": "paramCountAtLeastOne",
       "nodeType": "FunctionExpression",
@@ -250,17 +374,6 @@ exports[`lints with the Hardcore config: fixtures/all-00.js 1`] = `
     {
       "column": 1,
       "endColumn": 24,
-      "endLine": 58,
-      "line": 58,
-      "message": "Functions must have at least one parameter.",
-      "messageId": "paramCountAtLeastOne",
-      "nodeType": "FunctionDeclaration",
-      "ruleId": "functional/functional-parameters",
-      "severity": 2,
-    },
-    {
-      "column": 1,
-      "endColumn": 19,
       "endLine": 60,
       "line": 60,
       "message": "Functions must have at least one parameter.",
@@ -269,13 +382,46 @@ exports[`lints with the Hardcore config: fixtures/all-00.js 1`] = `
       "ruleId": "functional/functional-parameters",
       "severity": 2,
     },
+    {
+      "column": 1,
+      "endColumn": 24,
+      "endLine": 60,
+      "line": 60,
+      "message": "Unexpected dangling '_' in '_function'.",
+      "messageId": "unexpectedUnderscore",
+      "nodeType": "FunctionDeclaration",
+      "ruleId": "no-underscore-dangle",
+      "severity": 2,
+    },
+    {
+      "column": 1,
+      "endColumn": 19,
+      "endLine": 62,
+      "line": 62,
+      "message": "Functions must have at least one parameter.",
+      "messageId": "paramCountAtLeastOne",
+      "nodeType": "FunctionDeclaration",
+      "ruleId": "functional/functional-parameters",
+      "severity": 2,
+    },
+    {
+      "column": 17,
+      "endColumn": 19,
+      "endLine": 62,
+      "line": 62,
+      "message": "Unexpected empty generator function 'gen'.",
+      "messageId": "unexpected",
+      "nodeType": "FunctionDeclaration",
+      "ruleId": "no-empty-function",
+      "severity": 2,
+    },
   ],
-  "output": "import 'hi';
-
-import a from 'a';
+  "output": "import a from 'a';
 import { b } from 'b';
 import c, { c1 } from 'c';
 import * as d from 'd';
+
+import 'hi';
 
 import e from './e';
 
@@ -288,8 +434,11 @@ export class Example {
   };
 
   m = {};
+
   #n = null;
+
   x = 1000;
+
   y = 100n;
 
   hi() {
@@ -316,9 +465,8 @@ export class Example {
     const f = 1;
     _function(a, b, c, c1, d, e, f);
 
-
     await import('z');
-    
+
     for await (const v of gen()) {
       _function(v);
     }
@@ -329,36 +477,348 @@ export class Example {
 
 function _function() {}
 
-function *gen() {}
+function* gen() {}
 ",
   "suppressedMessages": [],
-  "usedDeprecatedRules": [],
+  "usedDeprecatedRules": [
+    {
+      "replacedBy": [
+        "padding-line-between-statements",
+      ],
+      "ruleId": "lines-around-directive",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "global-require",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-buffer-constructor",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-new-require",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-path-concat",
+    },
+  ],
   "warningCount": 0,
 }
 `;
 
 exports[`lints with the Hardcore config: fixtures/all-01.ts 1`] = `
 {
-  "errorCount": 1,
-  "fatalErrorCount": 1,
+  "errorCount": 23,
+  "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
   "messages": [
     {
       "column": 1,
-      "fatal": true,
-      "line": 10,
-      "message": "Parsing error: Unexpected character '@'",
-      "ruleId": null,
+      "endColumn": 2,
+      "endLine": 1,
+      "line": 1,
+      "message": "Definition for rule 'functional/no-expression-statement' was not found.",
+      "nodeType": null,
+      "ruleId": "functional/no-expression-statement",
+      "severity": 2,
+    },
+    {
+      "column": 8,
+      "endColumn": 9,
+      "endLine": 8,
+      "line": 8,
+      "message": "Please rename the variable \`e\`. Suggested names are: \`error\`, \`event\`. A more descriptive name will do too.",
+      "messageId": "suggestion",
+      "nodeType": "Identifier",
+      "ruleId": "unicorn/prevent-abbreviations",
+      "severity": 2,
+    },
+    {
+      "column": 15,
+      "endColumn": 20,
+      "endLine": 8,
+      "line": 8,
+      "message": "Missing file extension for "./e"",
+      "nodeType": "Literal",
+      "ruleId": "import/extensions",
+      "severity": 2,
+    },
+    {
+      "column": 8,
+      "endColumn": 2,
+      "endLine": 34,
+      "line": 11,
+      "message": "Unexpected class, use functions not classes.",
+      "messageId": "generic",
+      "nodeType": "ClassDeclaration",
+      "ruleId": "functional/no-classes",
+      "severity": 2,
+    },
+    {
+      "column": 3,
+      "endColumn": 18,
+      "endLine": 19,
+      "line": 19,
+      "message": "Duplicate name 'm'.",
+      "messageId": "unexpected",
+      "nodeType": "PropertyDefinition",
+      "ruleId": "@typescript-eslint/no-dupe-class-members",
+      "severity": 2,
+    },
+    {
+      "column": 3,
+      "endColumn": 5,
+      "endLine": 21,
+      "line": 21,
+      "message": "Expected 'this' to be used by class method 'hi'.",
+      "messageId": "missingThis",
+      "nodeType": "FunctionExpression",
+      "ruleId": "class-methods-use-this",
+      "severity": 2,
+    },
+    {
+      "column": 5,
+      "endColumn": 4,
+      "endLine": 29,
+      "line": 21,
+      "message": "Functions must have at least one parameter.",
+      "messageId": "paramCountAtLeastOne",
+      "nodeType": "FunctionExpression",
+      "ruleId": "functional/functional-parameters",
+      "severity": 2,
+    },
+    {
+      "column": 7,
+      "endColumn": 13,
+      "endLine": 21,
+      "line": 21,
+      "message": "Function must return a value.",
+      "messageId": "generic",
+      "nodeType": "TSTypeAnnotation",
+      "ruleId": "functional/no-return-void",
+      "severity": 2,
+    },
+    {
+      "column": 5,
+      "endColumn": 14,
+      "endLine": 22,
+      "line": 22,
+      "message": "'_function' was used before it was defined.",
+      "messageId": "noUseBeforeDefine",
+      "nodeType": "Identifier",
+      "ruleId": "@typescript-eslint/no-use-before-define",
+      "severity": 2,
+    },
+    {
+      "column": 5,
+      "endColumn": 17,
+      "endLine": 22,
+      "line": 22,
+      "message": "Using expressions to cause side-effects not allowed.",
+      "messageId": "generic",
+      "nodeType": "ExpressionStatement",
+      "ruleId": "functional/no-expression-statements",
+      "severity": 2,
+    },
+    {
+      "column": 7,
+      "endColumn": 16,
+      "endLine": 25,
+      "line": 25,
+      "message": "'_function' was used before it was defined.",
+      "messageId": "noUseBeforeDefine",
+      "nodeType": "Identifier",
+      "ruleId": "@typescript-eslint/no-use-before-define",
+      "severity": 2,
+    },
+    {
+      "column": 7,
+      "endColumn": 19,
+      "endLine": 25,
+      "line": 25,
+      "message": "Using expressions to cause side-effects not allowed.",
+      "messageId": "generic",
+      "nodeType": "ExpressionStatement",
+      "ruleId": "functional/no-expression-statements",
+      "severity": 2,
+    },
+    {
+      "column": 7,
+      "endColumn": 16,
+      "endLine": 27,
+      "line": 27,
+      "message": "'_function' was used before it was defined.",
+      "messageId": "noUseBeforeDefine",
+      "nodeType": "Identifier",
+      "ruleId": "@typescript-eslint/no-use-before-define",
+      "severity": 2,
+    },
+    {
+      "column": 7,
+      "endColumn": 19,
+      "endLine": 27,
+      "line": 27,
+      "message": "Using expressions to cause side-effects not allowed.",
+      "messageId": "generic",
+      "nodeType": "ExpressionStatement",
+      "ruleId": "functional/no-expression-statements",
+      "severity": 2,
+    },
+    {
+      "column": 3,
+      "endColumn": 17,
+      "endLine": 31,
+      "line": 31,
+      "message": "Expected 'this' to be used by class async method 'byeAsync'.",
+      "messageId": "missingThis",
+      "nodeType": "FunctionExpression",
+      "ruleId": "class-methods-use-this",
+      "severity": 2,
+    },
+    {
+      "column": 17,
+      "endColumn": 4,
+      "endLine": 33,
+      "line": 31,
+      "message": "Functions must have at least one parameter.",
+      "messageId": "paramCountAtLeastOne",
+      "nodeType": "FunctionExpression",
+      "ruleId": "functional/functional-parameters",
+      "severity": 2,
+    },
+    {
+      "column": 5,
+      "endColumn": 14,
+      "endLine": 32,
+      "line": 32,
+      "message": "'_function' was used before it was defined.",
+      "messageId": "noUseBeforeDefine",
+      "nodeType": "Identifier",
+      "ruleId": "@typescript-eslint/no-use-before-define",
+      "severity": 2,
+    },
+    {
+      "column": 5,
+      "endColumn": 34,
+      "endLine": 32,
+      "line": 32,
+      "message": "Using expressions to cause side-effects not allowed.",
+      "messageId": "generic",
+      "nodeType": "ExpressionStatement",
+      "ruleId": "functional/no-expression-statements",
+      "severity": 2,
+    },
+    {
+      "column": 1,
+      "endColumn": 48,
+      "endLine": 36,
+      "line": 36,
+      "message": "Unexpected dangling '_' in '_function'.",
+      "messageId": "unexpectedUnderscore",
+      "nodeType": "FunctionDeclaration",
+      "ruleId": "no-underscore-dangle",
+      "severity": 2,
+    },
+    {
+      "column": 10,
+      "endColumn": 19,
+      "endLine": 36,
+      "line": 36,
+      "message": "Function name \`_function\` must match one of the following formats: camelCase, PascalCase",
+      "messageId": "doesNotMatchFormat",
+      "nodeType": "Identifier",
+      "ruleId": "@typescript-eslint/naming-convention",
+      "severity": 2,
+    },
+    {
+      "column": 20,
+      "endColumn": 38,
+      "endLine": 36,
+      "line": 36,
+      "message": "Unexpected rest parameter. Use a regular parameter of type array instead.",
+      "messageId": "restParam",
+      "nodeType": "RestElement",
+      "ruleId": "functional/functional-parameters",
+      "severity": 2,
+    },
+    {
+      "column": 23,
+      "endColumn": 33,
+      "endLine": 36,
+      "line": 36,
+      "message": "'arguments_' is defined but never used.",
+      "messageId": "unusedVar",
+      "nodeType": "Identifier",
+      "ruleId": "@typescript-eslint/no-unused-vars",
+      "severity": 2,
+    },
+    {
+      "column": 23,
+      "endColumn": 33,
+      "endLine": 36,
+      "line": 36,
+      "message": "'arguments_' is defined but never used. Allowed unused args must match /^_/u.",
+      "messageId": "unusedVar",
+      "nodeType": "Identifier",
+      "ruleId": "unused-imports/no-unused-vars",
+      "severity": 1,
+    },
+    {
+      "column": 35,
+      "endColumn": 38,
+      "endLine": 36,
+      "line": 36,
+      "message": "Unexpected any. Specify a different type.",
+      "messageId": "unexpectedAny",
+      "nodeType": "TSAnyKeyword",
+      "ruleId": "@typescript-eslint/no-explicit-any",
+      "severity": 1,
+      "suggestions": [
+        {
+          "desc": "Use \`unknown\` instead, this will force you to explicitly, and safely assert the type is correct.",
+          "fix": {
+            "range": [
+              446,
+              449,
+            ],
+            "text": "unknown",
+          },
+          "messageId": "suggestUnknown",
+        },
+        {
+          "desc": "Use \`never\` instead, this is useful when instantiating generic type parameters that you don't need to know the type of.",
+          "fix": {
+            "range": [
+              446,
+              449,
+            ],
+            "text": "never",
+          },
+          "messageId": "suggestNever",
+        },
+      ],
+    },
+    {
+      "column": 39,
+      "endColumn": 45,
+      "endLine": 36,
+      "line": 36,
+      "message": "Function must return a value.",
+      "messageId": "generic",
+      "nodeType": "TSTypeAnnotation",
+      "ruleId": "functional/no-return-void",
       "severity": 2,
     },
   ],
-  "source": "import 'hi';
-
-import a from 'a';
+  "output": "import a from 'a';
 import { b } from 'b';
 import c, { c1 } from 'c';
 import * as d from 'd';
+
+import 'hi';
 
 import e from './e';
 
@@ -370,32 +830,353 @@ export class Example {
   };
 
   m: object = {};
+
   m: object = {};
 
   hi(): void {
-    _fn();
+    _function();
 
     try {
-      _fn();
-    } catch (_notIgnored) {
-      _fn();
+      _function();
+    } catch {
+      _function();
     }
   }
 
   async byeAsync(): Promise<void> {
-    _fn(a, b, c, c1, d, e);
+    _function(a, b, c, c1, d, e);
   }
 }
 
-function _fn(...args: any): void {}
+function _function(...arguments_: any): void {}
 ",
   "suppressedMessages": [],
-  "usedDeprecatedRules": [],
-  "warningCount": 0,
+  "usedDeprecatedRules": [
+    {
+      "replacedBy": [
+        "padding-line-between-statements",
+      ],
+      "ruleId": "lines-around-directive",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "global-require",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-buffer-constructor",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-new-require",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-path-concat",
+    },
+  ],
+  "warningCount": 2,
 }
 `;
 
 exports[`lints with the Hardcore config: fixtures/all-02.js 1`] = `
+{
+  "errorCount": 5,
+  "fatalErrorCount": 0,
+  "fixableErrorCount": 0,
+  "fixableWarningCount": 0,
+  "messages": [
+    {
+      "column": 1,
+      "endColumn": 2,
+      "endLine": 1,
+      "line": 1,
+      "message": "Definition for rule 'functional/no-expression-statement' was not found.",
+      "nodeType": null,
+      "ruleId": "functional/no-expression-statement",
+      "severity": 2,
+    },
+    {
+      "column": 7,
+      "endColumn": 14,
+      "endLine": 1,
+      "line": 1,
+      "message": "'unused1' is assigned a value but never used.",
+      "messageId": "unusedVar",
+      "nodeType": "Identifier",
+      "ruleId": "no-unused-vars",
+      "severity": 2,
+    },
+    {
+      "column": 1,
+      "endColumn": 2,
+      "endLine": 5,
+      "line": 3,
+      "message": "Functions must have at least one parameter.",
+      "messageId": "paramCountAtLeastOne",
+      "nodeType": "FunctionDeclaration",
+      "ruleId": "functional/functional-parameters",
+      "severity": 2,
+    },
+    {
+      "column": 10,
+      "endColumn": 17,
+      "endLine": 3,
+      "line": 3,
+      "message": "'unused2' is defined but never used.",
+      "messageId": "unusedVar",
+      "nodeType": "Identifier",
+      "ruleId": "no-unused-vars",
+      "severity": 2,
+    },
+    {
+      "column": 9,
+      "endColumn": 16,
+      "endLine": 4,
+      "line": 4,
+      "message": "'unused3' is assigned a value but never used.",
+      "messageId": "unusedVar",
+      "nodeType": "Identifier",
+      "ruleId": "no-unused-vars",
+      "severity": 2,
+    },
+  ],
+  "source": "const unused1 = 0;
+
+function unused2() {
+  const unused3 = 'hi';
+}
+",
+  "suppressedMessages": [],
+  "usedDeprecatedRules": [
+    {
+      "replacedBy": [
+        "padding-line-between-statements",
+      ],
+      "ruleId": "lines-around-directive",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "global-require",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-buffer-constructor",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-new-require",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-path-concat",
+    },
+  ],
+  "warningCount": 0,
+}
+`;
+
+exports[`lints with the Hardcore config: fixtures/all-03.ts 1`] = `
+{
+  "errorCount": 7,
+  "fatalErrorCount": 0,
+  "fixableErrorCount": 0,
+  "fixableWarningCount": 0,
+  "messages": [
+    {
+      "column": 1,
+      "endColumn": 2,
+      "endLine": 1,
+      "line": 1,
+      "message": "Definition for rule 'functional/no-expression-statement' was not found.",
+      "nodeType": null,
+      "ruleId": "functional/no-expression-statement",
+      "severity": 2,
+    },
+    {
+      "column": 7,
+      "endColumn": 16,
+      "endLine": 1,
+      "line": 1,
+      "message": "'tsUnused1' is assigned a value but never used.",
+      "messageId": "unusedVar",
+      "nodeType": "Identifier",
+      "ruleId": "@typescript-eslint/no-unused-vars",
+      "severity": 2,
+    },
+    {
+      "column": 7,
+      "endColumn": 16,
+      "endLine": 1,
+      "line": 1,
+      "message": "'tsUnused1' is assigned a value but never used. Allowed unused vars must match /^_/u.",
+      "messageId": "unusedVar",
+      "nodeType": "Identifier",
+      "ruleId": "unused-imports/no-unused-vars",
+      "severity": 1,
+    },
+    {
+      "column": 1,
+      "endColumn": 2,
+      "endLine": 7,
+      "line": 3,
+      "message": "Functions must have at least one parameter.",
+      "messageId": "paramCountAtLeastOne",
+      "nodeType": "FunctionDeclaration",
+      "ruleId": "functional/functional-parameters",
+      "severity": 2,
+    },
+    {
+      "column": 1,
+      "endColumn": 2,
+      "endLine": 7,
+      "line": 3,
+      "message": "Function must return a value.",
+      "messageId": "generic",
+      "nodeType": "FunctionDeclaration",
+      "ruleId": "functional/no-return-void",
+      "severity": 2,
+    },
+    {
+      "column": 10,
+      "endColumn": 19,
+      "endLine": 3,
+      "line": 3,
+      "message": "'tsUnused2' is defined but never used.",
+      "messageId": "unusedVar",
+      "nodeType": "Identifier",
+      "ruleId": "@typescript-eslint/no-unused-vars",
+      "severity": 2,
+    },
+    {
+      "column": 10,
+      "endColumn": 19,
+      "endLine": 3,
+      "line": 3,
+      "message": "'tsUnused2' is defined but never used. Allowed unused vars must match /^_/u.",
+      "messageId": "unusedVar",
+      "nodeType": "Identifier",
+      "ruleId": "unused-imports/no-unused-vars",
+      "severity": 1,
+    },
+    {
+      "column": 12,
+      "endColumn": 15,
+      "endLine": 4,
+      "line": 4,
+      "message": "Unexpected any. Specify a different type.",
+      "messageId": "unexpectedAny",
+      "nodeType": "TSAnyKeyword",
+      "ruleId": "@typescript-eslint/no-explicit-any",
+      "severity": 1,
+      "suggestions": [
+        {
+          "desc": "Use \`unknown\` instead, this will force you to explicitly, and safely assert the type is correct.",
+          "fix": {
+            "range": [
+              56,
+              59,
+            ],
+            "text": "unknown",
+          },
+          "messageId": "suggestUnknown",
+        },
+        {
+          "desc": "Use \`never\` instead, this is useful when instantiating generic type parameters that you don't need to know the type of.",
+          "fix": {
+            "range": [
+              56,
+              59,
+            ],
+            "text": "never",
+          },
+          "messageId": "suggestNever",
+        },
+      ],
+    },
+    {
+      "column": 9,
+      "endColumn": 15,
+      "endLine": 5,
+      "line": 5,
+      "message": "'asCast' is assigned a value but never used.",
+      "messageId": "unusedVar",
+      "nodeType": "Identifier",
+      "ruleId": "@typescript-eslint/no-unused-vars",
+      "severity": 2,
+    },
+    {
+      "column": 9,
+      "endColumn": 15,
+      "endLine": 5,
+      "line": 5,
+      "message": "'asCast' is assigned a value but never used. Allowed unused vars must match /^_/u.",
+      "messageId": "unusedVar",
+      "nodeType": "Identifier",
+      "ruleId": "unused-imports/no-unused-vars",
+      "severity": 1,
+    },
+    {
+      "column": 9,
+      "endColumn": 25,
+      "endLine": 6,
+      "line": 6,
+      "message": "'angleBracketCast' is assigned a value but never used.",
+      "messageId": "unusedVar",
+      "nodeType": "Identifier",
+      "ruleId": "@typescript-eslint/no-unused-vars",
+      "severity": 2,
+    },
+    {
+      "column": 9,
+      "endColumn": 25,
+      "endLine": 6,
+      "line": 6,
+      "message": "'angleBracketCast' is assigned a value but never used. Allowed unused vars must match /^_/u.",
+      "messageId": "unusedVar",
+      "nodeType": "Identifier",
+      "ruleId": "unused-imports/no-unused-vars",
+      "severity": 1,
+    },
+  ],
+  "source": "const tsUnused1 = 0;
+
+function tsUnused2() {
+  const x: any = 'hi';
+  const asCast = x as string;
+  const angleBracketCast = <string>x;
+}
+",
+  "suppressedMessages": [],
+  "usedDeprecatedRules": [
+    {
+      "replacedBy": [
+        "padding-line-between-statements",
+      ],
+      "ruleId": "lines-around-directive",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "global-require",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-buffer-constructor",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-new-require",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-path-concat",
+    },
+  ],
+  "warningCount": 5,
+}
+`;
+
+exports[`lints with the Hardcore config: fixtures/all-04.ts 1`] = `
 {
   "errorCount": 2,
   "fatalErrorCount": 0,
@@ -413,72 +1194,14 @@ exports[`lints with the Hardcore config: fixtures/all-02.js 1`] = `
       "severity": 2,
     },
     {
-      "column": 1,
+      "column": 21,
       "endColumn": 2,
-      "endLine": 5,
-      "line": 3,
+      "endLine": 3,
+      "line": 1,
       "message": "Functions must have at least one parameter.",
       "messageId": "paramCountAtLeastOne",
-      "nodeType": "FunctionDeclaration",
+      "nodeType": "ArrowFunctionExpression",
       "ruleId": "functional/functional-parameters",
-      "severity": 2,
-    },
-  ],
-  "source": "const unused1 = 0;
-
-function unused2() {
-  const unused3 = 'hi';
-}
-",
-  "suppressedMessages": [],
-  "usedDeprecatedRules": [],
-  "warningCount": 0,
-}
-`;
-
-exports[`lints with the Hardcore config: fixtures/all-03.ts 1`] = `
-{
-  "errorCount": 1,
-  "fatalErrorCount": 1,
-  "fixableErrorCount": 0,
-  "fixableWarningCount": 0,
-  "messages": [
-    {
-      "column": 10,
-      "fatal": true,
-      "line": 4,
-      "message": "Parsing error: Unexpected token :",
-      "ruleId": null,
-      "severity": 2,
-    },
-  ],
-  "source": "const tsUnused1 = 0;
-
-function tsUnused2() {
-  const x: any = 'hi';
-  const asCast = x as string;
-  const angleBracketCast = <string>x;
-}
-",
-  "suppressedMessages": [],
-  "usedDeprecatedRules": [],
-  "warningCount": 0,
-}
-`;
-
-exports[`lints with the Hardcore config: fixtures/all-04.ts 1`] = `
-{
-  "errorCount": 1,
-  "fatalErrorCount": 1,
-  "fixableErrorCount": 0,
-  "fixableWarningCount": 0,
-  "messages": [
-    {
-      "column": 22,
-      "fatal": true,
-      "line": 1,
-      "message": "Parsing error: Unexpected token )",
-      "ruleId": null,
       "severity": 2,
     },
   ],
@@ -487,7 +1210,30 @@ exports[`lints with the Hardcore config: fixtures/all-04.ts 1`] = `
 };
 ",
   "suppressedMessages": [],
-  "usedDeprecatedRules": [],
+  "usedDeprecatedRules": [
+    {
+      "replacedBy": [
+        "padding-line-between-statements",
+      ],
+      "ruleId": "lines-around-directive",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "global-require",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-buffer-constructor",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-new-require",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-path-concat",
+    },
+  ],
   "warningCount": 0,
 }
 `;
@@ -495,57 +1241,270 @@ exports[`lints with the Hardcore config: fixtures/all-04.ts 1`] = `
 exports[`lints with the Hardcore config: fixtures/all-05.ts 1`] = `
 {
   "errorCount": 1,
-  "fatalErrorCount": 1,
+  "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
   "messages": [
     {
-      "column": 22,
-      "fatal": true,
+      "column": 1,
+      "endColumn": 2,
+      "endLine": 1,
       "line": 1,
-      "message": "Parsing error: Unexpected token !",
-      "ruleId": null,
+      "message": "Definition for rule 'functional/no-expression-statement' was not found.",
+      "nodeType": null,
+      "ruleId": "functional/no-expression-statement",
       "severity": 2,
     },
+    {
+      "column": 21,
+      "endColumn": 23,
+      "endLine": 1,
+      "line": 1,
+      "message": "Forbidden non-null assertion.",
+      "messageId": "noNonNull",
+      "nodeType": "TSNonNullExpression",
+      "ruleId": "@typescript-eslint/no-non-null-assertion",
+      "severity": 1,
+    },
   ],
-  "source": "export const blah = 3!!;",
+  "output": "export const blah = 3!;
+",
   "suppressedMessages": [],
-  "usedDeprecatedRules": [],
-  "warningCount": 0,
+  "usedDeprecatedRules": [
+    {
+      "replacedBy": [
+        "padding-line-between-statements",
+      ],
+      "ruleId": "lines-around-directive",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "global-require",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-buffer-constructor",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-new-require",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-path-concat",
+    },
+  ],
+  "warningCount": 1,
 }
 `;
 
 exports[`lints with the Hardcore config: fixtures/all-06.ts 1`] = `
 {
-  "errorCount": 1,
-  "fatalErrorCount": 1,
+  "errorCount": 7,
+  "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
   "messages": [
     {
-      "column": 24,
-      "fatal": true,
+      "column": 1,
+      "endColumn": 2,
+      "endLine": 1,
       "line": 1,
-      "message": "Parsing error: Unexpected token :",
-      "ruleId": null,
+      "message": "Definition for rule 'functional/no-expression-statement' was not found.",
+      "nodeType": null,
+      "ruleId": "functional/no-expression-statement",
       "severity": 2,
     },
+    {
+      "column": 42,
+      "endColumn": 46,
+      "endLine": 1,
+      "line": 1,
+      "message": "Use \`undefined\` instead of \`null\`.",
+      "messageId": "error",
+      "nodeType": "Literal",
+      "ruleId": "unicorn/no-null",
+      "severity": 2,
+      "suggestions": [
+        {
+          "data": {},
+          "desc": "Replace \`null\` with \`undefined\`.",
+          "fix": {
+            "range": [
+              41,
+              45,
+            ],
+            "text": "undefined",
+          },
+          "messageId": "replace",
+        },
+      ],
+    },
+    {
+      "column": 44,
+      "endColumn": 48,
+      "endLine": 2,
+      "line": 2,
+      "message": "Use \`undefined\` instead of \`null\`.",
+      "messageId": "error",
+      "nodeType": "Literal",
+      "ruleId": "unicorn/no-null",
+      "severity": 2,
+      "suggestions": [
+        {
+          "data": {},
+          "desc": "Replace \`null\` with \`undefined\`.",
+          "fix": {
+            "range": [
+              90,
+              94,
+            ],
+            "text": "undefined",
+          },
+          "messageId": "replace",
+        },
+      ],
+    },
+    {
+      "column": 42,
+      "endColumn": 46,
+      "endLine": 3,
+      "line": 3,
+      "message": "Use \`undefined\` instead of \`null\`.",
+      "messageId": "error",
+      "nodeType": "Literal",
+      "ruleId": "unicorn/no-null",
+      "severity": 2,
+      "suggestions": [
+        {
+          "data": {},
+          "desc": "Replace \`null\` with \`undefined\`.",
+          "fix": {
+            "range": [
+              137,
+              141,
+            ],
+            "text": "undefined",
+          },
+          "messageId": "replace",
+        },
+      ],
+    },
+    {
+      "column": 42,
+      "endColumn": 46,
+      "endLine": 4,
+      "line": 4,
+      "message": "Use \`undefined\` instead of \`null\`.",
+      "messageId": "error",
+      "nodeType": "Literal",
+      "ruleId": "unicorn/no-null",
+      "severity": 2,
+      "suggestions": [
+        {
+          "data": {},
+          "desc": "Replace \`null\` with \`undefined\`.",
+          "fix": {
+            "range": [
+              184,
+              188,
+            ],
+            "text": "undefined",
+          },
+          "messageId": "replace",
+        },
+      ],
+    },
+    {
+      "column": 42,
+      "endColumn": 46,
+      "endLine": 5,
+      "line": 5,
+      "message": "Use \`undefined\` instead of \`null\`.",
+      "messageId": "error",
+      "nodeType": "Literal",
+      "ruleId": "unicorn/no-null",
+      "severity": 2,
+      "suggestions": [
+        {
+          "data": {},
+          "desc": "Replace \`null\` with \`undefined\`.",
+          "fix": {
+            "range": [
+              231,
+              235,
+            ],
+            "text": "undefined",
+          },
+          "messageId": "replace",
+        },
+      ],
+    },
+    {
+      "column": 61,
+      "endColumn": 65,
+      "endLine": 6,
+      "line": 6,
+      "message": "Use \`undefined\` instead of \`null\`.",
+      "messageId": "error",
+      "nodeType": "Literal",
+      "ruleId": "unicorn/no-null",
+      "severity": 2,
+      "suggestions": [
+        {
+          "data": {},
+          "desc": "Replace \`null\` with \`undefined\`.",
+          "fix": {
+            "range": [
+              297,
+              301,
+            ],
+            "text": "undefined",
+          },
+          "messageId": "replace",
+        },
+      ],
+    },
   ],
-  "source": "export const numberTest: Number | null = null;
-export const booleanTest: Boolean | null = null;
-export const symbolTest: Symbol | null = null;
-export const objectTest: Object | null = null;
-export const stringTest: String | null = null;
-export const objectShorthandTest: {} | null = null;",
+  "output": "export const numberTest: number | null = null;
+export const booleanTest: boolean | null = null;
+export const symbolTest: symbol | null = null;
+export const objectTest: object | null = null;
+export const stringTest: string | null = null;
+export const objectShorthandTest: Readonly<object> | null = null;
+",
   "suppressedMessages": [],
-  "usedDeprecatedRules": [],
+  "usedDeprecatedRules": [
+    {
+      "replacedBy": [
+        "padding-line-between-statements",
+      ],
+      "ruleId": "lines-around-directive",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "global-require",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-buffer-constructor",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-new-require",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-path-concat",
+    },
+  ],
   "warningCount": 0,
 }
 `;
 
 exports[`lints with the Hardcore config: fixtures/all-07.js 1`] = `
 {
-  "errorCount": 1,
+  "errorCount": 6,
   "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
@@ -560,23 +1519,99 @@ exports[`lints with the Hardcore config: fixtures/all-07.js 1`] = `
       "ruleId": "functional/no-expression-statement",
       "severity": 2,
     },
+    {
+      "column": 15,
+      "endColumn": 18,
+      "endLine": 1,
+      "line": 1,
+      "message": "Unable to resolve path to module 'b'.",
+      "nodeType": "Literal",
+      "ruleId": "import/no-unresolved",
+      "severity": 2,
+    },
+    {
+      "column": 15,
+      "endColumn": 18,
+      "endLine": 2,
+      "line": 2,
+      "message": "Unable to resolve path to module 'c'.",
+      "nodeType": "Literal",
+      "ruleId": "import/no-unresolved",
+      "severity": 2,
+    },
+    {
+      "column": 15,
+      "endColumn": 20,
+      "endLine": 4,
+      "line": 4,
+      "message": "Unable to resolve path to module './d'.",
+      "nodeType": "Literal",
+      "ruleId": "import/no-unresolved",
+      "severity": 2,
+    },
+    {
+      "column": 19,
+      "endColumn": 22,
+      "endLine": 6,
+      "line": 6,
+      "message": "Unable to resolve path to module 'a'.",
+      "nodeType": "Literal",
+      "ruleId": "import/no-unresolved",
+      "severity": 2,
+    },
+    {
+      "column": 19,
+      "endColumn": 22,
+      "endLine": 7,
+      "line": 7,
+      "message": "Unable to resolve path to module 'e'.",
+      "nodeType": "Literal",
+      "ruleId": "import/no-unresolved",
+      "severity": 2,
+    },
   ],
-  "source": "const a = require('a');
-import d from './d';
-const e = require('e');
+  "output": "import b from 'b';
 import c from 'c';
-import b from 'b';
 
-export default a + b + c + d + e;",
+import d from './d';
+
+const a = require('a');
+const e = require('e');
+
+export default a + b + c + d + e;
+",
   "suppressedMessages": [],
-  "usedDeprecatedRules": [],
+  "usedDeprecatedRules": [
+    {
+      "replacedBy": [
+        "padding-line-between-statements",
+      ],
+      "ruleId": "lines-around-directive",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "global-require",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-buffer-constructor",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-new-require",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-path-concat",
+    },
+  ],
   "warningCount": 0,
 }
 `;
 
 exports[`lints with the Hardcore config: fixtures/node-00.js 1`] = `
 {
-  "errorCount": 1,
+  "errorCount": 2,
   "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
@@ -591,50 +1626,310 @@ exports[`lints with the Hardcore config: fixtures/node-00.js 1`] = `
       "ruleId": "functional/no-expression-statement",
       "severity": 2,
     },
+    {
+      "column": 7,
+      "endColumn": 11,
+      "endLine": 1,
+      "line": 1,
+      "message": "'data' is assigned a value but never used.",
+      "messageId": "unusedVar",
+      "nodeType": "Identifier",
+      "ruleId": "no-unused-vars",
+      "severity": 2,
+    },
   ],
   "output": "const data = Buffer.alloc(16);
 ",
   "suppressedMessages": [],
-  "usedDeprecatedRules": [],
+  "usedDeprecatedRules": [
+    {
+      "replacedBy": [
+        "padding-line-between-statements",
+      ],
+      "ruleId": "lines-around-directive",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "global-require",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-buffer-constructor",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-new-require",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-path-concat",
+    },
+  ],
   "warningCount": 0,
 }
 `;
 
 exports[`lints with the Hardcore config: fixtures/react-and-react-native-00.js 1`] = `
 {
-  "errorCount": 1,
-  "fatalErrorCount": 1,
-  "fixableErrorCount": 0,
+  "errorCount": 21,
+  "fatalErrorCount": 0,
+  "fixableErrorCount": 1,
   "fixableWarningCount": 0,
   "messages": [
     {
-      "column": 12,
-      "fatal": true,
-      "line": 33,
-      "message": "Parsing error: Unexpected token <",
-      "ruleId": null,
+      "column": 1,
+      "endColumn": 2,
+      "endLine": 1,
+      "line": 1,
+      "message": "Definition for rule 'functional/no-expression-statement' was not found.",
+      "nodeType": null,
+      "ruleId": "functional/no-expression-statement",
+      "severity": 2,
+    },
+    {
+      "column": 1,
+      "endColumn": 2,
+      "endLine": 36,
+      "line": 1,
+      "message": "Filename 'react-and-react-native-00' must match any of the exported and transformed names 'Example', 'example', 'example'.",
+      "nodeType": "Program",
+      "ruleId": "filenames/match-exported",
+      "severity": 2,
+    },
+    {
+      "column": 19,
+      "endColumn": 26,
+      "endLine": 1,
+      "line": 1,
+      "message": "Unable to resolve path to module 'react'.",
+      "nodeType": "Literal",
+      "ruleId": "import/no-unresolved",
+      "severity": 2,
+    },
+    {
+      "column": 16,
+      "endColumn": 2,
+      "endLine": 36,
+      "line": 3,
+      "message": "Unexpected class, use functions not classes.",
+      "messageId": "generic",
+      "nodeType": "ClassDeclaration",
+      "ruleId": "functional/no-classes",
+      "severity": 2,
+    },
+    {
+      "column": 25,
+      "endColumn": 30,
+      "endLine": 4,
+      "line": 4,
+      "message": "Functions must have at least one parameter.",
+      "messageId": "paramCountAtLeastOne",
+      "nodeType": "FunctionExpression",
+      "ruleId": "functional/functional-parameters",
+      "severity": 2,
+    },
+    {
+      "column": 5,
+      "endColumn": 32,
+      "endLine": 15,
+      "line": 15,
+      "message": "Using expressions to cause side-effects not allowed.",
+      "messageId": "generic",
+      "nodeType": "ExpressionStatement",
+      "ruleId": "functional/no-expression-statements",
+      "severity": 2,
+    },
+    {
+      "column": 5,
+      "endColumn": 7,
+      "endLine": 19,
+      "line": 16,
+      "message": "Using expressions to cause side-effects not allowed.",
+      "messageId": "generic",
+      "nodeType": "ExpressionStatement",
+      "ruleId": "functional/no-expression-statements",
+      "severity": 2,
+    },
+    {
+      "column": 3,
+      "endColumn": 20,
+      "endLine": 22,
+      "line": 22,
+      "message": "Expected 'this' to be used by class method 'componentDidMount'.",
+      "messageId": "missingThis",
+      "nodeType": "FunctionExpression",
+      "ruleId": "class-methods-use-this",
+      "severity": 2,
+    },
+    {
+      "column": 20,
+      "endColumn": 4,
+      "endLine": 27,
+      "line": 22,
+      "message": "Functions must have at least one parameter.",
+      "messageId": "paramCountAtLeastOne",
+      "nodeType": "FunctionExpression",
+      "ruleId": "functional/functional-parameters",
+      "severity": 2,
+    },
+    {
+      "column": 5,
+      "endColumn": 33,
+      "endLine": 23,
+      "line": 23,
+      "message": "Using expressions to cause side-effects not allowed.",
+      "messageId": "generic",
+      "nodeType": "ExpressionStatement",
+      "ruleId": "functional/no-expression-statements",
+      "severity": 2,
+    },
+    {
+      "column": 5,
+      "endColumn": 33,
+      "endLine": 24,
+      "line": 24,
+      "message": "Using expressions to cause side-effects not allowed.",
+      "messageId": "generic",
+      "nodeType": "ExpressionStatement",
+      "ruleId": "functional/no-expression-statements",
+      "severity": 2,
+    },
+    {
+      "column": 9,
+      "endColumn": 23,
+      "endLine": 24,
+      "line": 24,
+      "message": "'XMLHttpRequest' is not defined.",
+      "messageId": "undef",
+      "nodeType": "Identifier",
+      "ruleId": "no-undef",
+      "severity": 2,
+    },
+    {
+      "column": 5,
+      "endColumn": 39,
+      "endLine": 25,
+      "line": 25,
+      "message": "Using expressions to cause side-effects not allowed.",
+      "messageId": "generic",
+      "nodeType": "ExpressionStatement",
+      "ruleId": "functional/no-expression-statements",
+      "severity": 2,
+    },
+    {
+      "column": 5,
+      "endColumn": 43,
+      "endLine": 26,
+      "line": 26,
+      "message": "Using expressions to cause side-effects not allowed.",
+      "messageId": "generic",
+      "nodeType": "ExpressionStatement",
+      "ruleId": "functional/no-expression-statements",
+      "severity": 2,
+    },
+    {
+      "column": 5,
+      "endColumn": 42,
+      "endLine": 26,
+      "fix": {
+        "range": [
+          444,
+          481,
+        ],
+        "text": "[...new SharedArrayBuffer(16)]",
+      },
+      "line": 26,
+      "message": "Prefer the spread operator over \`Array.from(…)\`.",
+      "messageId": "array-from",
+      "nodeType": "CallExpression",
+      "ruleId": "unicorn/prefer-spread",
+      "severity": 2,
+    },
+    {
+      "column": 3,
+      "endColumn": 24,
+      "endLine": 29,
+      "line": 29,
+      "message": "Expected 'this' to be used by class method 'shouldComponentUpdate'.",
+      "messageId": "missingThis",
+      "nodeType": "FunctionExpression",
+      "ruleId": "class-methods-use-this",
+      "severity": 2,
+    },
+    {
+      "column": 24,
+      "endColumn": 29,
+      "endLine": 29,
+      "line": 29,
+      "message": "Functions must have at least one parameter.",
+      "messageId": "paramCountAtLeastOne",
+      "nodeType": "FunctionExpression",
+      "ruleId": "functional/functional-parameters",
+      "severity": 2,
+    },
+    {
+      "column": 9,
+      "endColumn": 4,
+      "endLine": 33,
+      "line": 31,
+      "message": "Functions must have at least one parameter.",
+      "messageId": "paramCountAtLeastOne",
+      "nodeType": "FunctionExpression",
+      "ruleId": "functional/functional-parameters",
+      "severity": 2,
+    },
+    {
+      "column": 3,
+      "endColumn": 23,
+      "endLine": 35,
+      "line": 35,
+      "message": "Unexpected dangling '_' in '_handleWhatever'.",
+      "messageId": "unexpectedUnderscore",
+      "nodeType": "MethodDefinition",
+      "ruleId": "no-underscore-dangle",
+      "severity": 2,
+    },
+    {
+      "column": 3,
+      "endColumn": 18,
+      "endLine": 35,
+      "line": 35,
+      "message": "Expected 'this' to be used by class method '_handleWhatever'.",
+      "messageId": "missingThis",
+      "nodeType": "FunctionExpression",
+      "ruleId": "class-methods-use-this",
+      "severity": 2,
+    },
+    {
+      "column": 18,
+      "endColumn": 23,
+      "endLine": 35,
+      "line": 35,
+      "message": "Functions must have at least one parameter.",
+      "messageId": "paramCountAtLeastOne",
+      "nodeType": "FunctionExpression",
+      "ruleId": "functional/functional-parameters",
       "severity": 2,
     },
   ],
-  "source": "import React from 'react';
+  "output": "import React from 'react';
 
 export default class Example extends React.Component {
+  static getInitialProps() {}
+
   state = {
     x: 'x',
-    ...{
-      y: 'y',
-    },
+
+    y: 'y',
   };
 
   props;
 
-  static getInitialProps() {}
-
-  constructor(props, context) {
-    super(props, context);
+  constructor(properties, context) {
+    super(properties, context);
     this.state = {
       ...this.state,
-      x: props.x,
+      x: properties.x,
     };
   }
 
@@ -642,7 +1937,7 @@ export default class Example extends React.Component {
     fetch('http://example.com');
     new XMLHttpRequest().send();
     Uint16Array.from([1, 2, 3, 4, 5]);
-    new SharedArrayBuffer(16).slice();
+    Array.from(new SharedArrayBuffer(16));
   }
 
   shouldComponentUpdate() {}
@@ -655,24 +1950,146 @@ export default class Example extends React.Component {
 }
 ",
   "suppressedMessages": [],
-  "usedDeprecatedRules": [],
+  "usedDeprecatedRules": [
+    {
+      "replacedBy": [
+        "padding-line-between-statements",
+      ],
+      "ruleId": "lines-around-directive",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "global-require",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-buffer-constructor",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-new-require",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-path-concat",
+    },
+  ],
   "warningCount": 0,
 }
 `;
 
 exports[`lints with the Hardcore config: fixtures/react-and-react-native-01.js 1`] = `
 {
-  "errorCount": 1,
-  "fatalErrorCount": 1,
+  "errorCount": 9,
+  "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
   "messages": [
     {
-      "column": 12,
-      "fatal": true,
-      "line": 12,
-      "message": "Parsing error: Unexpected token <",
-      "ruleId": null,
+      "column": 1,
+      "endColumn": 2,
+      "endLine": 1,
+      "line": 1,
+      "message": "Definition for rule 'functional/no-expression-statement' was not found.",
+      "nodeType": null,
+      "ruleId": "functional/no-expression-statement",
+      "severity": 2,
+    },
+    {
+      "column": 1,
+      "endColumn": 2,
+      "endLine": 14,
+      "line": 1,
+      "message": "Filename 'react-and-react-native-01' must match any of the exported and transformed names 'Example', 'example', 'example'.",
+      "nodeType": "Program",
+      "ruleId": "filenames/match-exported",
+      "severity": 2,
+    },
+    {
+      "column": 19,
+      "endColumn": 26,
+      "endLine": 1,
+      "line": 1,
+      "message": "Unable to resolve path to module 'react'.",
+      "nodeType": "Literal",
+      "ruleId": "import/no-unresolved",
+      "severity": 2,
+    },
+    {
+      "column": 16,
+      "endColumn": 2,
+      "endLine": 14,
+      "line": 3,
+      "message": "Unexpected class, use functions not classes.",
+      "messageId": "generic",
+      "nodeType": "ClassDeclaration",
+      "ruleId": "functional/no-classes",
+      "severity": 2,
+    },
+    {
+      "column": 20,
+      "endColumn": 4,
+      "endLine": 9,
+      "line": 6,
+      "message": "Functions must have at least one parameter.",
+      "messageId": "paramCountAtLeastOne",
+      "nodeType": "FunctionExpression",
+      "ruleId": "functional/functional-parameters",
+      "severity": 2,
+    },
+    {
+      "column": 5,
+      "endColumn": 20,
+      "endLine": 7,
+      "line": 7,
+      "message": "Using expressions to cause side-effects not allowed.",
+      "messageId": "generic",
+      "nodeType": "ExpressionStatement",
+      "ruleId": "functional/no-expression-statements",
+      "severity": 2,
+    },
+    {
+      "column": 5,
+      "endColumn": 19,
+      "endLine": 7,
+      "line": 7,
+      "message": "Unexpected alert.",
+      "messageId": "unexpected",
+      "nodeType": "CallExpression",
+      "ruleId": "no-alert",
+      "severity": 1,
+    },
+    {
+      "column": 5,
+      "endColumn": 10,
+      "endLine": 7,
+      "line": 7,
+      "message": "'alert' is not defined.",
+      "messageId": "undef",
+      "nodeType": "Identifier",
+      "ruleId": "no-undef",
+      "severity": 2,
+    },
+    {
+      "column": 5,
+      "endColumn": 23,
+      "endLine": 8,
+      "line": 8,
+      "message": "Using expressions to cause side-effects not allowed.",
+      "messageId": "generic",
+      "nodeType": "ExpressionStatement",
+      "ruleId": "functional/no-expression-statements",
+      "severity": 2,
+    },
+    {
+      "column": 9,
+      "endColumn": 4,
+      "endLine": 13,
+      "line": 11,
+      "message": "Functions must have at least one parameter.",
+      "messageId": "paramCountAtLeastOne",
+      "nodeType": "FunctionExpression",
+      "ruleId": "functional/functional-parameters",
       "severity": 2,
     },
   ],
@@ -692,14 +2109,37 @@ export default class Example extends React.Component {
 }
 ",
   "suppressedMessages": [],
-  "usedDeprecatedRules": [],
-  "warningCount": 0,
+  "usedDeprecatedRules": [
+    {
+      "replacedBy": [
+        "padding-line-between-statements",
+      ],
+      "ruleId": "lines-around-directive",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "global-require",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-buffer-constructor",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-new-require",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-path-concat",
+    },
+  ],
+  "warningCount": 1,
 }
 `;
 
 exports[`lints with the Hardcore config: fixtures/react-and-react-native-02.js 1`] = `
 {
-  "errorCount": 8,
+  "errorCount": 13,
   "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
@@ -725,6 +2165,16 @@ exports[`lints with the Hardcore config: fixtures/react-and-react-native-02.js 1
       "severity": 2,
     },
     {
+      "column": 19,
+      "endColumn": 26,
+      "endLine": 1,
+      "line": 1,
+      "message": "Unable to resolve path to module 'react'.",
+      "nodeType": "Literal",
+      "ruleId": "import/no-unresolved",
+      "severity": 2,
+    },
+    {
       "column": 16,
       "endColumn": 2,
       "endLine": 13,
@@ -736,8 +2186,8 @@ exports[`lints with the Hardcore config: fixtures/react-and-react-native-02.js 1
       "severity": 2,
     },
     {
-      "column": 21,
-      "endColumn": 26,
+      "column": 25,
+      "endColumn": 30,
       "endLine": 4,
       "line": 4,
       "message": "Functions must have at least one parameter.",
@@ -747,9 +2197,20 @@ exports[`lints with the Hardcore config: fixtures/react-and-react-native-02.js 1
       "severity": 2,
     },
     {
-      "column": 9,
-      "endColumn": 4,
-      "endLine": 8,
+      "column": 3,
+      "endColumn": 21,
+      "endLine": 6,
+      "line": 6,
+      "message": "Expected 'this' to be used by class method 'componentDidUpdate'.",
+      "messageId": "missingThis",
+      "nodeType": "FunctionExpression",
+      "ruleId": "class-methods-use-this",
+      "severity": 2,
+    },
+    {
+      "column": 21,
+      "endColumn": 26,
+      "endLine": 6,
       "line": 6,
       "message": "Functions must have at least one parameter.",
       "messageId": "paramCountAtLeastOne",
@@ -758,10 +2219,42 @@ exports[`lints with the Hardcore config: fixtures/react-and-react-native-02.js 1
       "severity": 2,
     },
     {
+      "column": 3,
+      "endColumn": 9,
+      "endLine": 8,
+      "line": 8,
+      "message": "Expected 'this' to be used by class method 'render'.",
+      "messageId": "missingThis",
+      "nodeType": "FunctionExpression",
+      "ruleId": "class-methods-use-this",
+      "severity": 2,
+    },
+    {
+      "column": 9,
+      "endColumn": 4,
+      "endLine": 10,
+      "line": 8,
+      "message": "Functions must have at least one parameter.",
+      "messageId": "paramCountAtLeastOne",
+      "nodeType": "FunctionExpression",
+      "ruleId": "functional/functional-parameters",
+      "severity": 2,
+    },
+    {
+      "column": 9,
+      "endColumn": 4,
+      "endLine": 10,
+      "line": 8,
+      "message": "Prefer _.constant over a function returning a literal",
+      "nodeType": "FunctionExpression",
+      "ruleId": "lodash/prefer-constant",
+      "severity": 2,
+    },
+    {
       "column": 12,
       "endColumn": 16,
-      "endLine": 7,
-      "line": 7,
+      "endLine": 9,
+      "line": 9,
       "message": "Use \`undefined\` instead of \`null\`.",
       "messageId": "error",
       "nodeType": "Literal",
@@ -773,8 +2266,8 @@ exports[`lints with the Hardcore config: fixtures/react-and-react-native-02.js 1
           "desc": "Remove \`null\`.",
           "fix": {
             "range": [
-              134,
-              138,
+              165,
+              169,
             ],
             "text": "",
           },
@@ -785,8 +2278,8 @@ exports[`lints with the Hardcore config: fixtures/react-and-react-native-02.js 1
           "desc": "Replace \`null\` with \`undefined\`.",
           "fix": {
             "range": [
-              134,
-              138,
+              165,
+              169,
             ],
             "text": "undefined",
           },
@@ -795,19 +2288,19 @@ exports[`lints with the Hardcore config: fixtures/react-and-react-native-02.js 1
       ],
     },
     {
-      "column": 20,
-      "endColumn": 25,
-      "endLine": 10,
-      "line": 10,
-      "message": "Functions must have at least one parameter.",
-      "messageId": "paramCountAtLeastOne",
+      "column": 3,
+      "endColumn": 20,
+      "endLine": 12,
+      "line": 12,
+      "message": "Expected 'this' to be used by class method 'componentDidMount'.",
+      "messageId": "missingThis",
       "nodeType": "FunctionExpression",
-      "ruleId": "functional/functional-parameters",
+      "ruleId": "class-methods-use-this",
       "severity": 2,
     },
     {
-      "column": 25,
-      "endColumn": 30,
+      "column": 20,
+      "endColumn": 25,
       "endLine": 12,
       "line": 12,
       "message": "Functions must have at least one parameter.",
@@ -817,9 +2310,11 @@ exports[`lints with the Hardcore config: fixtures/react-and-react-native-02.js 1
       "severity": 2,
     },
   ],
-  "source": "import React from 'react';
+  "output": "import React from 'react';
 
 export default class Example extends React.Component {
+  static getInitialProps() {}
+
   componentDidUpdate() {}
 
   render() {
@@ -827,29 +2322,115 @@ export default class Example extends React.Component {
   }
 
   componentDidMount() {}
-
-  static getInitialProps() {}
 }
 ",
   "suppressedMessages": [],
-  "usedDeprecatedRules": [],
+  "usedDeprecatedRules": [
+    {
+      "replacedBy": [
+        "padding-line-between-statements",
+      ],
+      "ruleId": "lines-around-directive",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "global-require",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-buffer-constructor",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-new-require",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-path-concat",
+    },
+  ],
   "warningCount": 0,
 }
 `;
 
 exports[`lints with the Hardcore config: fixtures/react-and-react-native-03.js 1`] = `
 {
-  "errorCount": 1,
-  "fatalErrorCount": 1,
+  "errorCount": 7,
+  "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
   "messages": [
     {
+      "column": 1,
+      "endColumn": 2,
+      "endLine": 1,
+      "line": 1,
+      "message": "Definition for rule 'functional/no-expression-statement' was not found.",
+      "nodeType": null,
+      "ruleId": "functional/no-expression-statement",
+      "severity": 2,
+    },
+    {
+      "column": 1,
+      "endColumn": 2,
+      "endLine": 6,
+      "line": 1,
+      "message": "Filename 'react-and-react-native-03' must match any of the exported and transformed names 'Example', 'example', 'example'.",
+      "nodeType": "Program",
+      "ruleId": "filenames/match-exported",
+      "severity": 2,
+    },
+    {
+      "column": 8,
+      "endColumn": 13,
+      "endLine": 1,
+      "line": 1,
+      "message": "'React' is defined but never used.",
+      "messageId": "unusedVar",
+      "nodeType": "Identifier",
+      "ruleId": "no-unused-vars",
+      "severity": 2,
+    },
+    {
+      "column": 19,
+      "endColumn": 26,
+      "endLine": 1,
+      "line": 1,
+      "message": "Unable to resolve path to module 'react'.",
+      "nodeType": "Literal",
+      "ruleId": "import/no-unresolved",
+      "severity": 2,
+    },
+    {
       "column": 10,
-      "fatal": true,
-      "line": 5,
-      "message": "Parsing error: Unexpected token <",
-      "ruleId": null,
+      "endColumn": 14,
+      "endLine": 2,
+      "line": 2,
+      "message": "'View' is defined but never used.",
+      "messageId": "unusedVar",
+      "nodeType": "Identifier",
+      "ruleId": "no-unused-vars",
+      "severity": 2,
+    },
+    {
+      "column": 22,
+      "endColumn": 36,
+      "endLine": 2,
+      "line": 2,
+      "message": "Unable to resolve path to module 'react-native'.",
+      "nodeType": "Literal",
+      "ruleId": "import/no-unresolved",
+      "severity": 2,
+    },
+    {
+      "column": 16,
+      "endColumn": 2,
+      "endLine": 6,
+      "line": 4,
+      "message": "Functions must have at least one parameter.",
+      "messageId": "paramCountAtLeastOne",
+      "nodeType": "FunctionDeclaration",
+      "ruleId": "functional/functional-parameters",
       "severity": 2,
     },
   ],
@@ -861,14 +2442,37 @@ export default function Example() {
 }
 ",
   "suppressedMessages": [],
-  "usedDeprecatedRules": [],
+  "usedDeprecatedRules": [
+    {
+      "replacedBy": [
+        "padding-line-between-statements",
+      ],
+      "ruleId": "lines-around-directive",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "global-require",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-buffer-constructor",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-new-require",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-path-concat",
+    },
+  ],
   "warningCount": 0,
 }
 `;
 
 exports[`lints with the Hardcore config: fixtures/react-and-react-native-04.js 1`] = `
 {
-  "errorCount": 12,
+  "errorCount": 16,
   "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
@@ -891,6 +2495,16 @@ exports[`lints with the Hardcore config: fixtures/react-and-react-native-04.js 1
       "message": "Filename 'react-and-react-native-04' must match any of the exported and transformed names 'Example', 'example', 'example'.",
       "nodeType": "Program",
       "ruleId": "filenames/match-exported",
+      "severity": 2,
+    },
+    {
+      "column": 27,
+      "endColumn": 34,
+      "endLine": 1,
+      "line": 1,
+      "message": "Unable to resolve path to module 'react'.",
+      "nodeType": "Literal",
+      "ruleId": "import/no-unresolved",
       "severity": 2,
     },
     {
@@ -925,6 +2539,17 @@ exports[`lints with the Hardcore config: fixtures/react-and-react-native-04.js 1
       "nodeType": "ExpressionStatement",
       "ruleId": "functional/no-expression-statements",
       "severity": 2,
+    },
+    {
+      "column": 5,
+      "endColumn": 16,
+      "endLine": 6,
+      "line": 6,
+      "message": "Unexpected console statement.",
+      "messageId": "unexpected",
+      "nodeType": "MemberExpression",
+      "ruleId": "no-console",
+      "severity": 1,
     },
     {
       "column": 7,
@@ -993,6 +2618,16 @@ exports[`lints with the Hardcore config: fixtures/react-and-react-native-04.js 1
       "severity": 2,
     },
     {
+      "column": 15,
+      "endColumn": 23,
+      "endLine": 10,
+      "line": 10,
+      "message": "Prefer _.noop over an empty function",
+      "nodeType": "ArrowFunctionExpression",
+      "ruleId": "lodash/prefer-noop",
+      "severity": 2,
+    },
+    {
       "column": 1,
       "endColumn": 2,
       "endLine": 16,
@@ -1001,6 +2636,17 @@ exports[`lints with the Hardcore config: fixtures/react-and-react-native-04.js 1
       "messageId": "paramCountAtLeastOne",
       "nodeType": "FunctionDeclaration",
       "ruleId": "functional/functional-parameters",
+      "severity": 2,
+    },
+    {
+      "column": 10,
+      "endColumn": 18,
+      "endLine": 14,
+      "line": 14,
+      "message": "'notAHook' is defined but never used.",
+      "messageId": "unusedVar",
+      "nodeType": "Identifier",
+      "ruleId": "no-unused-vars",
       "severity": 2,
     },
     {
@@ -1025,6 +2671,16 @@ exports[`lints with the Hardcore config: fixtures/react-and-react-native-04.js 1
       "ruleId": "functional/functional-parameters",
       "severity": 2,
     },
+    {
+      "column": 13,
+      "endColumn": 21,
+      "endLine": 15,
+      "line": 15,
+      "message": "Prefer _.noop over an empty function",
+      "nodeType": "ArrowFunctionExpression",
+      "ruleId": "lodash/prefer-noop",
+      "severity": 2,
+    },
   ],
   "output": "import { useEffect } from 'react';
 
@@ -1044,7 +2700,30 @@ function notAHook() {
 }
 ",
   "suppressedMessages": [],
-  "usedDeprecatedRules": [],
-  "warningCount": 0,
+  "usedDeprecatedRules": [
+    {
+      "replacedBy": [
+        "padding-line-between-statements",
+      ],
+      "ruleId": "lines-around-directive",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "global-require",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-buffer-constructor",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-new-require",
+    },
+    {
+      "replacedBy": [],
+      "ruleId": "no-path-concat",
+    },
+  ],
+  "warningCount": 1,
 }
 `;

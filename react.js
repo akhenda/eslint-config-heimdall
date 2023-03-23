@@ -1,6 +1,6 @@
 module.exports = {
   env: { browser: true, commonjs: true },
-  extends: ['./shared/core.js', './shared/typescript.js', './shared/react-ts.js', './shared/prettier.js'],
+  extends: ['./shared/core.js', './shared/react.js', './shared/prettier.js'],
   rules: {
     'import/prefer-default-export': 'off',
     'no-use-before-define': ['off', { classes: false, functions: false }],
@@ -19,4 +19,13 @@ module.exports = {
       },
     ],
   },
+
+  overrides: [
+    {
+      files: ['*.ts', '*.tsx'],
+      parserOptions: {
+        project: './tsconfig.base.json',
+      },
+    },
+  ],
 };

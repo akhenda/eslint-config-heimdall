@@ -20,8 +20,8 @@ module.exports = {
     'plugin:promise/recommended',
     'plugin:sonarjs/recommended',
     'plugin:unicorn/recommended',
-    'plugin:functional/recommended',
     'plugin:functional/external-vanilla-recommended',
+    'plugin:functional/recommended',
     'plugin:functional/stylistic',
   ],
   rules: {

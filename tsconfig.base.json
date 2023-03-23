@@ -15,7 +15,6 @@
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "moduleResolution": "node",
-    // "importHelpers": true, // NOTE: This needs tslib. Let it be decided upstream
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
 
