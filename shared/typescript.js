@@ -6,7 +6,7 @@ const allExtensions = [...jsExtensions, ...tsExtensions];
 module.exports = {
   extends: ['plugin:@typescript-eslint/recommended', 'plugin:import/typescript', 'airbnb-typescript/base'],
   parserOptions: {
-    project: './tsconfig.base.json',
+    // project: './tsconfig.base.json',
   },
   rules: {
     '@typescript-eslint/no-var-requires': 'off',
