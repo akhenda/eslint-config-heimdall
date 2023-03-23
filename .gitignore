@@ -410,3 +410,5 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/vim,node,macos,react,windows,reactnative
+
+*.orig
