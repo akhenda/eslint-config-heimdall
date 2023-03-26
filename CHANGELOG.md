@@ -1,3 +1,10 @@
+## [2.0.3](https://github.com/akhenda/eslint-config-heimdall/compare/v2.0.2...v2.0.3) (2023-03-26)
+
+
+### Bug Fixes
+
+* 🐛 jest-dom and import/extensions issues ([a9f67d0](https://github.com/akhenda/eslint-config-heimdall/commit/a9f67d028a96cbcac81f69d4fc20d97f66f1bd22))
+
 ## [2.0.2](https://github.com/akhenda/eslint-config-heimdall/compare/v2.0.1...v2.0.2) (2023-03-26)
 
 
