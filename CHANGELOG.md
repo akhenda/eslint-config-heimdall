@@ -1,3 +1,10 @@
+## [2.0.2](https://github.com/akhenda/eslint-config-heimdall/compare/v2.0.1...v2.0.2) (2023-03-26)
+
+
+### Bug Fixes
+
+* **react:** 🐛 simplify react & native rules ([f66aee9](https://github.com/akhenda/eslint-config-heimdall/commit/f66aee927d688a56e7e1a51db7477812044c9e3f))
+
 ## [2.0.1](https://github.com/akhenda/eslint-config-heimdall/compare/v2.0.0...v2.0.1) (2023-03-23)
 
 
