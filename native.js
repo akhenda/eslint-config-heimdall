@@ -46,16 +46,5 @@ module.exports = {
       node: { extensions: allExtensions },
     },
   },
-  rules: {
-    // Since airbnb config enables these, disable them here again
-    'import/extensions': [
-      2,
-      {
-        js: 'never',
-        jsx: 'never',
-        ts: 'never',
-        tsx: 'never',
-      },
-    ],
-  },
+  rules: {},
 };

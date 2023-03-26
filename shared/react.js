@@ -1,6 +1,6 @@
 /* eslint-disable sort-keys-fix/sort-keys-fix */
 module.exports = {
-  extends: ['airbnb', 'plugin:react/jsx-runtime'], // consider replacing Airbnb with Shopify's config
+  extends: ['airbnb', 'airbnb/hooks', 'plugin:react/jsx-runtime'], // consider replacing Airbnb with Shopify's config
   parserOptions: { ecmaFeatures: { jsx: true } },
   plugins: ['react', 'react-hooks'],
   overrides: [
@@ -12,16 +12,14 @@ module.exports = {
       },
     },
     {
-      env: { node: false, 'cypress/globals': true },
+      env: { node: false },
       files: [
         '**/test/**/*.[jt]s?(x)',
         '**/tests/**/*.[jt]s?(x)',
         '**/__tests__/**/*.[jt]s?(x)',
         '**/?(*.)+(spec|test).[jt]s?(x)',
       ],
-      plugins: ['cypress', 'testing-library'],
-      extends: ['plugin:jest-dom/recommended', 'plugin:cypress/recommended'],
-      rules: {},
+      plugins: ['testing-library'],
     },
   ],
   rules: {
@@ -43,6 +41,18 @@ module.exports = {
     ],
     'react/prop-types': 'off', // Since we do not use prop-types
     'react/require-default-props': 'off', // Since we do not use prop-types
+
+    // Don"t explicitly add .js/.jsx/.tsx/.ts extensions
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'never',
+        jsx: 'never',
+        ts: 'never',
+        tsx: 'never',
+      },
+    ],
   },
   settings: {
     react: { version: 'detect' },

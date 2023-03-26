@@ -25,7 +25,7 @@ specifiers:
   eslint-plugin-html: 7.1.0
   eslint-plugin-import: 2.27.5
   eslint-plugin-jest: 27.2.1
-  eslint-plugin-jest-dom: ^4.0.3
+  eslint-plugin-jest-dom: 4.0.3
   eslint-plugin-jest-formatting: 3.1.0
   eslint-plugin-jsonc: 2.7.0
   eslint-plugin-jsx: 0.1.0
@@ -73,6 +73,7 @@ dependencies:
   eslint-plugin-html: 7.1.0
   eslint-plugin-import: 2.27.5_cnkxirszkzb4o6ts7gbclno24e
   eslint-plugin-jest: 27.2.1_bfoae2dnidapiplqb656fcbgyi
+  eslint-plugin-jest-dom: 4.0.3_eslint@8.36.0
   eslint-plugin-jest-formatting: 3.1.0_eslint@8.36.0
   eslint-plugin-jsonc: 2.7.0_eslint@8.36.0
   eslint-plugin-jsx: 0.1.0
@@ -107,7 +108,6 @@ devDependencies:
   commitizen: 4.3.0
   eslint: 8.36.0
   eslint-config-heimdall: file:_dzq4sglfl3yv4kxodieycp32vy
-  eslint-plugin-jest-dom: 4.0.3_eslint@8.36.0
   git-cz: 4.9.0
   jest: 29.5.0
   prettier: 2.8.7
@@ -1117,7 +1117,6 @@ packages:
       dom-accessibility-api: 0.5.16
       lz-string: 1.5.0
       pretty-format: 27.5.1
-    dev: true
 
   /@tootallnate/once/2.0.0:
     resolution: {integrity: sha512-XCuKFP5PS55gnMVu3dty8KPatLqUoy/ZYzDzAGCQ8JNFCkLXzmI7vNHCR+XpbZaMWQK/vQubr7PkYq8g470J/A==}
@@ -1146,7 +1145,6 @@ packages:
 
   /@types/aria-query/5.0.1:
     resolution: {integrity: sha512-XTIieEY+gvJ39ChLcB4If5zHtPxt3Syj5rgZR+e1ctpmK8NjPf0zFqsz4JpLJT0xla9GFDKjy8Cpu331nrmE1Q==}
-    dev: true
 
   /@types/babel__core/7.20.0:
     resolution: {integrity: sha512-+n8dL/9GWblDO0iU6eZAwEIJVr5DWigtle+Q6HLOrh/pdbXOhOtqzq8VPPE2zvNJzSKY4vH/z3iT3tn0A3ypiQ==}
@@ -2184,7 +2182,6 @@ packages:
 
   /dom-accessibility-api/0.5.16:
     resolution: {integrity: sha512-X7BJ2yElsnOJ30pZF4uIIDfBEVgF4XEBxL9Bxhy6dnrm5hkzqmsWHGTiHqRiITNhMyFLyAiWndIJP7Z1NTteDg==}
-    dev: true
 
   /dom-serializer/2.0.0:
     resolution: {integrity: sha512-wIkAryiqt/nV5EQKqQpo3SToSOV9J0DnbJqwK7Wv/Trc92zIAYZ4FlMu+JPFW1DfGFt81ZTCGgDEabffXeLyJg==}
@@ -2617,7 +2614,6 @@ packages:
       '@testing-library/dom': 8.20.0
       eslint: 8.36.0
       requireindex: 1.2.0
-    dev: true
 
   /eslint-plugin-jest-formatting/3.1.0_eslint@8.36.0:
     resolution: {integrity: sha512-XyysraZ1JSgGbLSDxjj5HzKKh0glgWf+7CkqxbTqb7zEhW7X2WHo5SBQ8cGhnszKN+2Lj3/oevBlHNbHezoc/A==}
@@ -4636,7 +4632,6 @@ packages:
   /lz-string/1.5.0:
     resolution: {integrity: sha512-h5bgJWpxJNswbU7qCrV0tIKQCaS3blPDrqKWx+QxzuzL1zGUzij9XCWLrSLsJPu5t+eWA/ycetzYAO5IOMcWAQ==}
     hasBin: true
-    dev: true
 
   /make-dir/3.1.0:
     resolution: {integrity: sha512-g3FeP20LNwhALb/6Cz6Dd4F2ngze0jz7tbzrD2wAV+o9FeNHe4rL+yK2md0J/fiSf1sa1ADhXqi5+oVwOM/eGw==}
@@ -5268,7 +5263,6 @@ packages:
       ansi-regex: 5.0.1
       ansi-styles: 5.2.0
       react-is: 17.0.2
-    dev: true
 
   /pretty-format/29.5.0:
     resolution: {integrity: sha512-V2mGkI31qdttvTFX7Mt4efOqHXqJWMu4/r66Xh3Z3BwZaPfPJgp6/gbwoujRpPUtfEF6AUUWx3Jim3GCw5g/Qw==}
@@ -5335,7 +5329,6 @@ packages:
 
   /react-is/17.0.2:
     resolution: {integrity: sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==}
-    dev: true
 
   /react-is/18.2.0:
     resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
@@ -6317,7 +6310,7 @@ packages:
     resolution: {directory: '', type: directory}
     id: 'file:'
     name: eslint-config-heimdall
-    version: 2.0.1
+    version: 2.0.2
     engines: {node: '18', npm: Please Use PNPM instead of NPM, yarn: Please Use PNPM instead of Yarn}
     peerDependencies:
       eslint: '>=8.36'
@@ -6344,6 +6337,7 @@ packages:
       eslint-plugin-html: 7.1.0
       eslint-plugin-import: 2.27.5_cnkxirszkzb4o6ts7gbclno24e
       eslint-plugin-jest: 27.2.1_bfoae2dnidapiplqb656fcbgyi
+      eslint-plugin-jest-dom: 4.0.3_eslint@8.36.0
       eslint-plugin-jest-formatting: 3.1.0_eslint@8.36.0
       eslint-plugin-jsonc: 2.7.0_eslint@8.36.0
       eslint-plugin-jsx: 0.1.0

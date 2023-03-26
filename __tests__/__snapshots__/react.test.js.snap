@@ -115,11 +115,21 @@ function *gen() {}
 
 exports[`lints with the react config: fixtures/all-01.ts 1`] = `
 {
-  "errorCount": 10,
+  "errorCount": 11,
   "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
   "messages": [
+    {
+      "column": 15,
+      "endColumn": 20,
+      "endLine": 8,
+      "line": 8,
+      "message": "Missing file extension for "./e"",
+      "nodeType": "Literal",
+      "ruleId": "import/extensions",
+      "severity": 2,
+    },
     {
       "column": 3,
       "endColumn": 18,
@@ -718,7 +728,7 @@ export const objectShorthandTest: object | null = null;
 
 exports[`lints with the react config: fixtures/all-07.js 1`] = `
 {
-  "errorCount": 5,
+  "errorCount": 6,
   "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
@@ -741,6 +751,16 @@ exports[`lints with the react config: fixtures/all-07.js 1`] = `
       "message": "Unable to resolve path to module 'c'.",
       "nodeType": "Literal",
       "ruleId": "import/no-unresolved",
+      "severity": 2,
+    },
+    {
+      "column": 15,
+      "endColumn": 20,
+      "endLine": 4,
+      "line": 4,
+      "message": "Missing file extension for "./d"",
+      "nodeType": "Literal",
+      "ruleId": "import/extensions",
       "severity": 2,
     },
     {
@@ -1126,7 +1146,7 @@ export default function Example() {
 
 exports[`lints with the react config: fixtures/react-and-react-native-04.js 1`] = `
 {
-  "errorCount": 4,
+  "errorCount": 7,
   "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
@@ -1153,6 +1173,38 @@ exports[`lints with the react config: fixtures/react-and-react-native-04.js 1`] 
       "severity": 1,
     },
     {
+      "column": 6,
+      "endColumn": 8,
+      "endLine": 7,
+      "line": 7,
+      "message": "React Hook useEffect has a missing dependency: 'dependentVariable'. Either include it or remove the dependency array.",
+      "nodeType": "ArrayExpression",
+      "ruleId": "react-hooks/exhaustive-deps",
+      "severity": 2,
+      "suggestions": [
+        {
+          "desc": "Update the dependencies array to be: [dependentVariable]",
+          "fix": {
+            "range": [
+              177,
+              179,
+            ],
+            "text": "[dependentVariable]",
+          },
+        },
+      ],
+    },
+    {
+      "column": 5,
+      "endColumn": 14,
+      "endLine": 10,
+      "line": 10,
+      "message": "React Hook "useEffect" is called conditionally. React Hooks must be called in the exact same order in every component render.",
+      "nodeType": "Identifier",
+      "ruleId": "react-hooks/rules-of-hooks",
+      "severity": 2,
+    },
+    {
       "column": 15,
       "endColumn": 23,
       "endLine": 10,
@@ -1171,6 +1223,16 @@ exports[`lints with the react config: fixtures/react-and-react-native-04.js 1`] 
       "messageId": "unusedVar",
       "nodeType": "Identifier",
       "ruleId": "no-unused-vars",
+      "severity": 2,
+    },
+    {
+      "column": 3,
+      "endColumn": 12,
+      "endLine": 15,
+      "line": 15,
+      "message": "React Hook "useEffect" is called in function "notAHook" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".",
+      "nodeType": "Identifier",
+      "ruleId": "react-hooks/rules-of-hooks",
       "severity": 2,
     },
     {

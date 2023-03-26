@@ -8,17 +8,17 @@ module.exports = {
         project: './tsconfig.base.json',
       },
     },
+    {
+      env: { 'cypress/globals': true, node: false },
+      extends: ['plugin:jest-dom/recommended', 'plugin:cypress/recommended'],
+      files: [
+        '**/test/**/*.[jt]s?(x)',
+        '**/tests/**/*.[jt]s?(x)',
+        '**/__tests__/**/*.[jt]s?(x)',
+        '**/?(*.)+(spec|test).[jt]s?(x)',
+      ],
+      plugins: ['cypress', 'testing-library'],
+    },
   ],
-  rules: {
-    // Since airbnb config enables these, disable them here again
-    'import/extensions': [
-      2,
-      {
-        js: 'never',
-        jsx: 'never',
-        ts: 'never',
-        tsx: 'never',
-      },
-    ],
-  },
+  rules: {},
 };

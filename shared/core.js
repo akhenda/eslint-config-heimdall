@@ -44,7 +44,8 @@ module.exports = {
 
     // Don"t explicitly add .js/.jsx/.tsx/.ts extensions
     'import/extensions': [
-      2,
+      'error',
+      'ignorePackages',
       {
         js: 'never',
         jsx: 'never',
