@@ -115,21 +115,11 @@ function *gen() {}
 
 exports[`lints with the React Native config: fixtures/all-01.ts 1`] = `
 {
-  "errorCount": 11,
+  "errorCount": 10,
   "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
   "messages": [
-    {
-      "column": 15,
-      "endColumn": 20,
-      "endLine": 8,
-      "line": 8,
-      "message": "Missing file extension for "./e"",
-      "nodeType": "Literal",
-      "ruleId": "import/extensions",
-      "severity": 2,
-    },
     {
       "column": 3,
       "endColumn": 18,
@@ -728,7 +718,7 @@ export const objectShorthandTest: object | null = null;
 
 exports[`lints with the React Native config: fixtures/all-07.js 1`] = `
 {
-  "errorCount": 6,
+  "errorCount": 5,
   "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
@@ -761,16 +751,6 @@ exports[`lints with the React Native config: fixtures/all-07.js 1`] = `
       "message": "Unable to resolve path to module './d'.",
       "nodeType": "Literal",
       "ruleId": "import/no-unresolved",
-      "severity": 2,
-    },
-    {
-      "column": 15,
-      "endColumn": 20,
-      "endLine": 4,
-      "line": 4,
-      "message": "Missing file extension for "./d"",
-      "nodeType": "Literal",
-      "ruleId": "import/extensions",
       "severity": 2,
     },
     {
