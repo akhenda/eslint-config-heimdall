@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['./shared/core.js', './shared/hardcore.js', './shared/prettier.js'],
+  extends: ['./shared/hardcore.js'],
   overrides: [
     {
       files: ['*.ts', '*.tsx'],

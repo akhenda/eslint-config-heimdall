@@ -47,20 +47,14 @@ module.exports = {
     },
   },
   rules: {
-    'import/prefer-default-export': 'off',
-    'no-use-before-define': ['off', { classes: false, functions: false }],
-    'react/function-component-definition': [
-      'error',
+    // Since airbnb config enables these, disable them here again
+    'import/extensions': [
+      2,
       {
-        namedComponents: ['function-declaration', 'arrow-function'],
-        unnamedComponents: 'arrow-function',
-      },
-    ],
-    'react/jsx-props-no-spreading': 'off',
-    'react/style-prop-object': [
-      'error',
-      {
-        allow: ['StatusBar'],
+        js: 'never',
+        jsx: 'never',
+        ts: 'never',
+        tsx: 'never',
       },
     ],
   },
