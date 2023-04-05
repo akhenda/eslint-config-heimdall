@@ -145,7 +145,7 @@ devDependencies:
     specifier: 4.3.0
     version: 4.3.0
   eslint:
-    specifier: '>=8.37'
+    specifier: 8.37.0
     version: 8.37.0
   eslint-config-heimdall:
     specifier: file:./
@@ -6331,7 +6331,6 @@ packages:
     id: 'file:'
     name: eslint-config-heimdall
     version: 2.1.0
-    engines: {node: '16'}
     peerDependencies:
       eslint: '>=8.36'
       jest: '>=29'

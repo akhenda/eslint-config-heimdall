@@ -115,11 +115,77 @@ function *gen() {}
 
 exports[`lints with the Node config: fixtures/all-01.ts 1`] = `
 {
-  "errorCount": 11,
+  "errorCount": 18,
   "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
   "messages": [
+    {
+      "column": 1,
+      "endColumn": 19,
+      "endLine": 1,
+      "line": 1,
+      "message": "Import and export declarations are not supported yet.",
+      "messageId": "no-modules",
+      "nodeType": "ImportDeclaration",
+      "ruleId": "n/no-unsupported-features/es-syntax",
+      "severity": 2,
+    },
+    {
+      "column": 1,
+      "endColumn": 23,
+      "endLine": 2,
+      "line": 2,
+      "message": "Import and export declarations are not supported yet.",
+      "messageId": "no-modules",
+      "nodeType": "ImportDeclaration",
+      "ruleId": "n/no-unsupported-features/es-syntax",
+      "severity": 2,
+    },
+    {
+      "column": 1,
+      "endColumn": 27,
+      "endLine": 3,
+      "line": 3,
+      "message": "Import and export declarations are not supported yet.",
+      "messageId": "no-modules",
+      "nodeType": "ImportDeclaration",
+      "ruleId": "n/no-unsupported-features/es-syntax",
+      "severity": 2,
+    },
+    {
+      "column": 1,
+      "endColumn": 24,
+      "endLine": 4,
+      "line": 4,
+      "message": "Import and export declarations are not supported yet.",
+      "messageId": "no-modules",
+      "nodeType": "ImportDeclaration",
+      "ruleId": "n/no-unsupported-features/es-syntax",
+      "severity": 2,
+    },
+    {
+      "column": 1,
+      "endColumn": 13,
+      "endLine": 6,
+      "line": 6,
+      "message": "Import and export declarations are not supported yet.",
+      "messageId": "no-modules",
+      "nodeType": "ImportDeclaration",
+      "ruleId": "n/no-unsupported-features/es-syntax",
+      "severity": 2,
+    },
+    {
+      "column": 1,
+      "endColumn": 21,
+      "endLine": 8,
+      "line": 8,
+      "message": "Import and export declarations are not supported yet.",
+      "messageId": "no-modules",
+      "nodeType": "ImportDeclaration",
+      "ruleId": "n/no-unsupported-features/es-syntax",
+      "severity": 2,
+    },
     {
       "column": 15,
       "endColumn": 20,
@@ -128,6 +194,17 @@ exports[`lints with the Node config: fixtures/all-01.ts 1`] = `
       "message": "Missing file extension for "./e"",
       "nodeType": "Literal",
       "ruleId": "import/extensions",
+      "severity": 2,
+    },
+    {
+      "column": 1,
+      "endColumn": 2,
+      "endLine": 34,
+      "line": 11,
+      "message": "Import and export declarations are not supported yet.",
+      "messageId": "no-modules",
+      "nodeType": "ExportNamedDeclaration",
+      "ruleId": "n/no-unsupported-features/es-syntax",
       "severity": 2,
     },
     {
@@ -599,11 +676,27 @@ function tsUnused2() {
 
 exports[`lints with the Node config: fixtures/all-04.ts 1`] = `
 {
-  "errorCount": 0,
+  "errorCount": 1,
   "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
-  "messages": [],
+  "messages": [
+    {
+      "column": 1,
+      "endColumn": 3,
+      "endLine": 3,
+      "line": 1,
+      "message": "Import and export declarations are not supported yet.",
+      "messageId": "no-modules",
+      "nodeType": "ExportNamedDeclaration",
+      "ruleId": "n/no-unsupported-features/es-syntax",
+      "severity": 2,
+    },
+  ],
+  "source": "export const blah = (): Array<string> => {
+  return ['1'];
+};
+",
   "suppressedMessages": [],
   "usedDeprecatedRules": [
     {
@@ -635,11 +728,22 @@ exports[`lints with the Node config: fixtures/all-04.ts 1`] = `
 
 exports[`lints with the Node config: fixtures/all-05.ts 1`] = `
 {
-  "errorCount": 0,
+  "errorCount": 1,
   "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
   "messages": [
+    {
+      "column": 1,
+      "endColumn": 24,
+      "endLine": 1,
+      "line": 1,
+      "message": "Import and export declarations are not supported yet.",
+      "messageId": "no-modules",
+      "nodeType": "ExportNamedDeclaration",
+      "ruleId": "n/no-unsupported-features/es-syntax",
+      "severity": 2,
+    },
     {
       "column": 21,
       "endColumn": 23,
@@ -685,11 +789,78 @@ exports[`lints with the Node config: fixtures/all-05.ts 1`] = `
 
 exports[`lints with the Node config: fixtures/all-06.ts 1`] = `
 {
-  "errorCount": 0,
+  "errorCount": 6,
   "fatalErrorCount": 0,
   "fixableErrorCount": 0,
   "fixableWarningCount": 0,
-  "messages": [],
+  "messages": [
+    {
+      "column": 1,
+      "endColumn": 47,
+      "endLine": 1,
+      "line": 1,
+      "message": "Import and export declarations are not supported yet.",
+      "messageId": "no-modules",
+      "nodeType": "ExportNamedDeclaration",
+      "ruleId": "n/no-unsupported-features/es-syntax",
+      "severity": 2,
+    },
+    {
+      "column": 1,
+      "endColumn": 49,
+      "endLine": 2,
+      "line": 2,
+      "message": "Import and export declarations are not supported yet.",
+      "messageId": "no-modules",
+      "nodeType": "ExportNamedDeclaration",
+      "ruleId": "n/no-unsupported-features/es-syntax",
+      "severity": 2,
+    },
+    {
+      "column": 1,
+      "endColumn": 47,
+      "endLine": 3,
+      "line": 3,
+      "message": "Import and export declarations are not supported yet.",
+      "messageId": "no-modules",
+      "nodeType": "ExportNamedDeclaration",
+      "ruleId": "n/no-unsupported-features/es-syntax",
+      "severity": 2,
+    },
+    {
+      "column": 1,
+      "endColumn": 47,
+      "endLine": 4,
+      "line": 4,
+      "message": "Import and export declarations are not supported yet.",
+      "messageId": "no-modules",
+      "nodeType": "ExportNamedDeclaration",
+      "ruleId": "n/no-unsupported-features/es-syntax",
+      "severity": 2,
+    },
+    {
+      "column": 1,
+      "endColumn": 47,
+      "endLine": 5,
+      "line": 5,
+      "message": "Import and export declarations are not supported yet.",
+      "messageId": "no-modules",
+      "nodeType": "ExportNamedDeclaration",
+      "ruleId": "n/no-unsupported-features/es-syntax",
+      "severity": 2,
+    },
+    {
+      "column": 1,
+      "endColumn": 56,
+      "endLine": 6,
+      "line": 6,
+      "message": "Import and export declarations are not supported yet.",
+      "messageId": "no-modules",
+      "nodeType": "ExportNamedDeclaration",
+      "ruleId": "n/no-unsupported-features/es-syntax",
+      "severity": 2,
+    },
+  ],
   "output": "export const numberTest: number | null = null;
 export const booleanTest: boolean | null = null;
 export const symbolTest: symbol | null = null;
