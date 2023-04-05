@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/akhenda/eslint-config-heimdall/compare/v2.0.3...v2.1.0) (2023-04-05)
+
+
+### Features
+
+* **react:** 🎸 modify no-param-reassign rule ([382ca13](https://github.com/akhenda/eslint-config-heimdall/commit/382ca13214de3d275ebb44fa66df265f605e304e))
+
 ## [2.0.3](https://github.com/akhenda/eslint-config-heimdall/compare/v2.0.2...v2.0.3) (2023-03-26)
 
 
