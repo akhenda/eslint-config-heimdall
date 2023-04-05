@@ -25,9 +25,6 @@
     "url": "https://github.com/akhenda/eslint-config-heimdall/issues"
   },
   "homepage": "https://github.com/akhenda/eslint-config-heimdall#readme",
-  "engines": {
-    "node": "16"
-  },
   "volta": {
     "node": "16.20.0",
     "pnpm": "8.1.1"
