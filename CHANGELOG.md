@@ -1,3 +1,10 @@
+## [2.1.1](https://github.com/akhenda/eslint-config-heimdall/compare/v2.1.0...v2.1.1) (2023-04-05)
+
+
+### Bug Fixes
+
+* **deps:** 🐛 update ([90d7489](https://github.com/akhenda/eslint-config-heimdall/commit/90d74895eb51b49495bd79d905769af325f7f7f3))
+
 # [2.1.0](https://github.com/akhenda/eslint-config-heimdall/compare/v2.0.3...v2.1.0) (2023-04-05)
 
 
