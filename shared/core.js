@@ -103,6 +103,8 @@ module.exports = {
         devDependencies: true,
       },
     ],
+
+    'no-param-reassign': ['error', { props: true, ignorePropertyModificationsForRegex: ['^draft'] }],
   },
   overrides: [
     {

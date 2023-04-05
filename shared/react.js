@@ -53,6 +53,8 @@ module.exports = {
         tsx: 'never',
       },
     ],
+
+    'no-param-reassign': ['error', { props: true, ignorePropertyModificationsForRegex: ['^draft'] }],
   },
   settings: {
     react: { version: 'detect' },

@@ -26,15 +26,13 @@
   },
   "homepage": "https://github.com/akhenda/eslint-config-heimdall#readme",
   "engines": {
-    "node": "18",
-    "npm": "Please Use PNPM instead of NPM",
-    "yarn": "Please Use PNPM instead of Yarn"
+    "node": "16"
   },
   "volta": {
-    "node": "18.15.0",
-    "pnpm": "7.30.3"
+    "node": "16.20.0",
+    "pnpm": "8.1.1"
   },
-  "packageManager": "pnpm@7.30.3",
+  "packageManager": "pnpm@8.1.1",
   "scripts": {
     "gc": "git add . && git-cz",
     "test": "jest --coverage",
