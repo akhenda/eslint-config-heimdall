@@ -8,6 +8,7 @@ module.exports = {
       files: ['*.ts', '*.tsx'],
       extends: ['airbnb-typescript'],
       parserOptions: {
+        tsconfigRootDir: __dirname,
         project: '../tsconfig.base.json',
       },
     },
