@@ -1,3 +1,10 @@
+## [2.1.2](https://github.com/akhenda/eslint-config-heimdall/compare/v2.1.1...v2.1.2) (2023-05-13)
+
+
+### Bug Fixes
+
+* parser options tsconfig path ([709449f](https://github.com/akhenda/eslint-config-heimdall/commit/709449fb31e128d3ba4dda59c84f6e3b1aa0c727))
+
 ## [2.1.1](https://github.com/akhenda/eslint-config-heimdall/compare/v2.1.0...v2.1.1) (2023-04-05)
 
 
