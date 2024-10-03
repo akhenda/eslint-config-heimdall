@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/akhenda/eslint-config-heimdall#readme",
   "volta": {
-    "node": "18.15.0",
+    "node": "20.18.0",
     "pnpm": "8.1.1"
   },
   "packageManager": "pnpm@8.1.1",
