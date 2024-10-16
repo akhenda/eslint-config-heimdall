@@ -27,9 +27,9 @@
   "homepage": "https://github.com/akhenda/eslint-config-heimdall#readme",
   "volta": {
     "node": "18.15.0",
-    "pnpm": "8.1.1"
+    "pnpm": "9.12.2"
   },
-  "packageManager": "pnpm@8.1.1",
+  "packageManager": "pnpm@9.12.2",
   "scripts": {
     "gc": "git add . && git-cz",
     "test": "jest --coverage",
